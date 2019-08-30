@@ -1,53 +1,41 @@
 <section class="home-sec-1">
     <div class="prelative container">
         <div class="row">
-            <div class="col-md-60">
-                <div class="box-content top">
-                    <div class="title">
-                        <h4>Reich Architecture & Hardware Accessories Category</h4>
-                    </div>
-                    <div class="subtitle">
-                        <p>Click here to view all products.</p>
+            <div class="col-md-15">
+                <div class="box-content">
+                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-1.jpg" alt=""></div>
+                    <div class="inner">
+                        <h4>Get to know SAP</h4>
+                        <p>Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.</p>
+                        <p class="readmore">READ MORE</p>
+                        <img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-md-30">
+            <div class="col-md-15">
                 <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>home1.jpg" alt="">
-                        <p>Aluminium related solution</p>
+                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-2.jpg" alt=""></div>
+                    <div class="inner">
+                        <h4>Our Markets</h4>
+                        <p>With more than 4 decades of operations, our business has vastly expand to cover a bigger market.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-30">
+            <div class="col-md-15">
                 <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>home2.jpg" alt="">
-                        <p>Digital door locks</p>
+                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-3.jpg" alt=""></div>
+                    <div class="inner">
+                        <h4>SAP Products</h4>
+                        <p>We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-20">
+            <div class="col-md-15">
                 <div class="box-content">
-                    <div class="image bottom">
-                        <img src="<?php echo $this->assetBaseurl; ?>home3.jpg" alt="">
-                        <p>Slim drawer solution</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image bottom">
-                        <img src="<?php echo $this->assetBaseurl; ?>home4.jpg" alt="">
-                        <p>Glass related solution</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image bottom">
-                        <img src="<?php echo $this->assetBaseurl; ?>home5.jpg" alt="">
-                        <p>Wood related solution</p>
+                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-4.jpg" alt=""></div>
+                    <div class="inner">
+                        <h4>SAP Solutions</h4>
+                        <p>There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.</p>
                     </div>
                 </div>
             </div>
@@ -58,17 +46,13 @@
 <section class="home-sec-2">
     <div class="prelative container2">
         <div class="row">
-            <div class="col-md-30"></div>
-            <div class="col-md-30">
+            <div class="col-md-60">
                 <div class="box-content">
-                    <div class="caption">
-                        <p>Want to become our partner in distributing<br><b>Reich hardware & accessories products?</b></p>
+                    <div class="title">
+                        <h3>SAP Corporate Profile Video</h3>
                     </div>
                     <div class="subtitle">
-                        <p>Reich Architectural & Interior accessories will bring you an excellent plan to market and distribute smart and technological solution products. Expect a profitable business plan that can help construct and build your relationship with modern customers and furniture makers. Come and join us, our representative will be ready to answer your inquiries.</p>
-                    </div>
-                    <div class="click">
-                        <p><a href="#">CLICK HERE</a></p>
+                        <p>Sharing our passion, realizing your ideas and visions.</p>
                     </div>
                 </div>
             </div>
@@ -80,53 +64,25 @@
     <div class="prelative container">
         <div class="row">
             <div class="col-md-60">
-                <div class="box-content quality">
-                    <div class="title">
-                        <h4>Reich Standard Quality & Advantage</h4>
-                    </div>
-                    <div class="subtitle">
-                        <p>4 basic concepts that act as a company and product characteristicof Reich.</p>
+                <div class="box-content">
+                    <div class="our-corporation">
+                        <h4>OUR CORPORATION GROUP</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-20">
                 <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality1.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Never ending creative Inovation, development and creation.</p>
-                    </div>
+                    <div class="image-corporation"><img src="" alt=""></div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-20">
                 <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality2.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Consistency in quality and international standard checking.</p>
-                    </div>
+                    <div class="image-corporation"><img src="" alt=""></div>
                 </div>
             </div>
-            <div class="col-md-15">
+            <div class="col-md-20">
                 <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality3.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Good business plan for profitable partnership and distribution.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image">
-                        <img src="<?php echo $this->assetBaseurl; ?>quality4.png" alt="">
-                    </div>
-                    <div class="caption">
-                        <p>Optimum value that exceeds price and expectations.</p>
-                    </div>
+                    <div class="image-corporation"><img src="" alt=""></div>
                 </div>
             </div>
         </div>
