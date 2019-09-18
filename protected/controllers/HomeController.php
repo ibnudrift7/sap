@@ -148,6 +148,7 @@ class HomeController extends Controller
 		// $model->scenario = 'insert';
 
 		$this->layout='//layouts/column1';
+		
 		$this->render('index', array(
 			// 'product'=>$product,
 			// 'model'=>$model,

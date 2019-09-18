@@ -1,86 +1,91 @@
-<!-- <header class="header">
-  <div class="d-none d-sm-none d-md-block d-lg-block">
-      <div class="prelative container pt-3 pb-2">
-          <div class="row">
-              <div class="col-md-20">
-                  <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
-                      <img src="<?php echo $this->assetBaseurl; ?>logo-header.png" alt="">
+<?php
+$e_activemenu = $this->action->id;
+$controllers_ac = $this->id;
+$session=new CHttpSession;
+$session->open();
+$login_member = $session['login_member'];
 
-                  </a>
-              </div>
-              <div class="col-md-40 pt-2">
-                  <ul>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
-                      <li><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <div class="header-bottom">
-          <div class="prelative container">
-              <div class="row">
-                  <div class="col-md-20">
-                      <div class="grant py-2">
-                          <p>GRANIT TILE & ANEKA BAHAN BANGUNAN</p>
-                      </div>
-                  </div>
-                  <div class="col-md-40 text-right d-block">
-                      <div class="whatsapp py-2">
-                          <a href="#">
-                              <p><img src="<?php echo $this->assetBaseurl; ?>logo-wa.png" alt=""><span>
-                              WA / HOTLINE  082154073738 
-                              </span></p>
-                          </a>
-                      </div>
-                      <div class="line-separator">
-                          
-                      </div>
-                      <div class="belanja py-2">
-                          <img src="<?php echo $this->assetBaseurl; ?>belanja-logo.png" alt="">
-                          <p><?php echo Cart::getTotalCartItem(); ?></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    <div class="d-block d-sm-block d-md-none">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="<?php echo $this->assetBaseurl ?>logo-footer.png" alt="" class="img-fluid img">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+$active_menu_pg = $controllers_ac.'/'.$e_activemenu;
+?>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi Kami</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog Kami</a></li>
-          </ul>
+<header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
+  <div class="prelatife container d-none d-sm-block">
+    <div class="inner-header">
+      <div class="row">
+        <div class="col-md-20">
+          <div class="logo_heads"><a href="#"><img src="<?php echo $this->assetBaseurl; ?>lgo-header.png" alt="" class="img img-fluid"></a></div>
         </div>
-      </nav>
+        <div class="col-md-40">
+          <div class="tops_iso text-right">
+            <div class="isols_headr"><img src="<?php echo $this->assetBaseurl; ?>iso-headers.png" alt="" class="img img-fluid"></div>
+          </div>
+          <div class="clear clearfix"></div>
+          <div class="py-1"></div>
+          <div class="bottoms_head_menu pt-3 text-right">
+            <ul class="list-inline m-0">
+              <li class="list-inline-item"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="#">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
+  </div>
+  
+  <?php
+  /*
+  <div class="d-block d-sm-none">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <img src="<?php echo $this->assetBaseurl ?>lgo-heads-lic.png" alt="" class="img img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PRODUCTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  */ ?>
 </header>
 
-<section id="myAffix" class="header-affixs affix-top">
+
+<!-- <section id="myAffix" class="header-affixs affix-top">
   <div class="clear height-15"></div>
   <div class="prelatife container">
     <div class="row">
       <div class="col-md-15 col-sm-15">
         <div class="lgo_web_headrs_wb">
-          <a href="#">
-            <img src="<?php echo $this->assetBaseurl; ?>logo-footer.png" alt="" class="img img-fluid">
+          <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
+            <img src="<?php echo $this->assetBaseurl; ?>lgo-heads-lic.png" alt="" class="img img-fluid">
           </a>
         </div>
       </div>
@@ -88,13 +93,12 @@
         <div class="text-right"> 
           <div class="menu-taffix">
             <ul class="list-inline d-inline">
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">Produk Bahan Bangunan</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/about')); ?>">Profil</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/merk')); ?>">Merk & Keagenan</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/jadiagen')); ?>">Jadi Agen</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/hubungi')); ?>">Hubungi</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>">Blog</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">PRODUCTS</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
             </ul>
           </div>
         </div>
@@ -106,64 +110,18 @@
 
 
 <script type="text/javascript">
-  $(document).ready(function(){
-      // $('.nl_popup a').live('hover', function(){
-      //     $('.popup_carts_header').fadeIn();
-      // });
-      // $('.popup_carts_header').live('mouseleave', function(){
-      //   setTimeout(function(){ 
-      //       $('.popup_carts_header').fadeOut();
-      //   }, 500);
-      // });
-  });
-</script>
-
-
-<script type="text/javascript">
-  $(document).ready(function(){
-      // $('.nl_popup a').live('hover', function(){
-      //     $('.popup_carts_header').fadeIn();
-      // });
-      // $('.popup_carts_header').live('mouseleave', function(){
-      //   setTimeout(function(){ 
-      //       $('.popup_carts_header').fadeOut();
-      //   }, 500);
-      // });
-      $('a.closes_btn').on('click', function(){
-        $('.collapsesn_viewmenu').removeClass('show');
-      });
-      $('.navbar-toggler').on('click', function(){
-        $('.collapsesn_viewmenu').addClass('show');
-      });
-
-      var ns_height = $(window).height();
-      $('.collapsesn_viewmenu').css('height', ns_height+"px");
-  });
-  $(function(){
-
-// show and hide m\enu responsive
-    $('a.showmenu_barresponsive').on('click', function() {
-      $('.outer-blok-black-menuresponss-hides').slideToggle('slow');
-      return false;
-    });
-    $('a.closemrespobtn').on('click', function() {
-      $('.outer-blok-black-menuresponss-hides').slideUp('slow');
-      return false;
-        });
-        
-    });
-</script>
-<script type="text/javascript">
-  $(function(){
+  $(document).ready(function() {
 
   var sn_width = $(window).width();
-  if (sn_width > 1150) {
 
-      $(window).scroll(function(){
-        var sntop1 = $(window).scrollTop();
+  // console.log($(document).scrollTop());
+  if (sn_width > 1150) {
+      $('body').scroll(function(){
+
+        var sntop1 = $(this).scrollTop();
+        // console.log(sntop1);
 
         if(sntop1 > 115){
-          // console.log(sntop1);
           $('.header-affixs').removeClass('affix-top').addClass('affix');
           // $('.header-affixs').addClass('affix');
         }else{
