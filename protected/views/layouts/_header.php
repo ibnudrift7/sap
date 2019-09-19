@@ -79,9 +79,9 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 
   <div id="about-menu" class="blocks_bottom_menuDropdown back-about">
     <div class="prelatife container">
+    <div class="inners_mndropdown">
       <div class="row">
         <div class="col-md-25">
-          <div class="inners_mndropdown">
             <span class="in_title">ABOUT US</span>
             <ul class="list-unstyled">
               <li><a href="#">Our Mission</a></li>

@@ -6639,3 +6639,613 @@ in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
 in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
 2019/09/19 18:03:23 [trace] [system.CModule] Loading "assetManager" application component
 in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (76)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (76)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/slide-1-mob.jpg
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/slide-1-mob.jpg
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:39 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:39 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:03:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/favicon.png
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:03:40 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:03:40 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (76)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/slide-1-mob.jpg
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:06 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:06 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column1.php (76)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (155)
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/slide-1-mob.jpg
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:07 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:07 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "log" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "request" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "urlManager" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "cache" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [trace] [system.caching.CFileCache] Serving "Yii.CUrlManager.rules" from cache
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "coreMessages" application component
+in D:\xampp\htdocs\sap\index.php (21)
+2019/09/19 18:05:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asset/images". in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('asset/images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\sap\index.php(21): CApplication->run()
+#3 {main}
+REQUEST_URI=/sap/asset/images/favicon.png
+HTTP_REFERER=http://192.168.1.2/sap/
+---
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "errorHandler" application component
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "db" application component
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.db.CDbConnection] Opening DB connection
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `language`
+in D:\xampp\htdocs\sap\protected\models\Language.php (22)
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.db.ar.CActiveRecord] Language.find()
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `language` `t` WHERE code = :code LIMIT 1
+in D:\xampp\htdocs\sap\protected\components\Controller.php (41)
+2019/09/19 18:05:09 [trace] [system.caching.CFileCache] Serving "setting_en" from cache
+in D:\xampp\htdocs\sap\protected\components\Controller.php (43)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_product`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (494)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category`
+in D:\xampp\htdocs\sap\protected\models\PrdCategory.php (23)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.db.ar.CActiveRecord] PrdCategory.findAll()
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `prd_category_description`
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.db.CDbCommand] Querying SQL: SELECT `t`.`id` AS `t0_c0`, `t`.`parent_id` AS `t0_c1`, `t`.`sort` AS `t0_c2`, `t`.`image` AS `t0_c3`, `t`.`image2` AS `t0_c4`, `t`.`image3` AS `t0_c5`, `t`.`type` AS `t0_c6`, `t`.`data` AS `t0_c7`, `description`.`id` AS `t1_c0`, `description`.`category_id` AS `t1_c1`, `description`.`language_id` AS `t1_c2`, `description`.`name` AS `t1_c3`, `description`.`desc` AS `t1_c4`, `description`.`data` AS `t1_c5` FROM `prd_category` `t`  LEFT OUTER JOIN `prd_category_description` `description` ON (`description`.`category_id`=`t`.`id`)  WHERE ((t.parent_id = :parent_id) AND (t.type = :type)) ORDER BY sort ASC LIMIT 3
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (507)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "themeManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "widgetFactory" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (2)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "clientScript" application component
+in D:\xampp\htdocs\sap\protected\views\layouts\main.php (36)
+in D:\xampp\htdocs\sap\protected\views\layouts\column2.php (9)
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
+2019/09/19 18:05:09 [trace] [system.CModule] Loading "assetManager" application component
+in D:\xampp\htdocs\sap\protected\controllers\HomeController.php (515)
