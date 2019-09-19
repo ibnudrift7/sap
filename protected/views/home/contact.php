@@ -1,115 +1,114 @@
-<?php
-$session = new CHttpSession;
-$session->open();
-$login_member = $session['login_member'];
-?>
-<!-- Bawah header -->
-<section class="default-sc inside-page product-details"> 
-  <section class="top-product-detail">
-    <div class="container defaults">
-      <div class="tops">
-        <div class="row">
-          <div class="col-md-40">
-            <div class="shn-back-products">
-              <a href="javascript:void(-1);"><i class="fa fa-long-arrow-left"></i> &nbsp;BACK</a> 
-              <span class="new-back-product"><div class="separators_linetop"></div> <span class="new-back-product">HOME / CONTACT US
-              </span>
-              </span>
-            </div>
-          </div>
-          <div class="col-md-20">
-            <div class="box-search">
-              <form class="form-inline">
-              <label for="inlineFormInputNN2">SEARCH</label>
-              <div class="blob-input">
-                <form method="GET" action="<?php echo CHtml::normalizeUrl(array('/product/index')); ?>">
-                  <input type="text" class="form-control mb-2" id="inlineFormInputNN2" placeholder="" name="q">
-                  <button type="submit" class="btn mb-2"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear height-50"></div>
-      <div class="clear height-20"></div>
+<section class="breadcrumb-det">
+    <div class="prelative container">
       <div class="row">
-        <div class="col-md-60">
-          <div class="contactus-header-top mx-auto d-block text-center">
-            <div class="seen-header-top"><?php echo $this->setting['contact_hero_title'] ?></div>
-            <div class="clear height-30"></div>
-            <div class="contactus-header-mid">
-              <?php echo $this->setting['contact_hero_subtitle'] ?>
-            </div>
-            <div class="clear height-30"></div>
-            <div class="clear height-25"></div>
-            <div class="contactus-header-hotline">
-              OUR HOTLINE
-            </div>
-            <div class="clear height-40"></div>
-            <div class="contactus-header-nomor">
-              <i class="fa fa-whatsapp" aria-hidden="true"></i><span class="after-logo-wa">Phone / Whatsapp: <?php echo $this->setting['contact_phone'] ?></span><div class="d-block d-sm-none clear clearfix"></div><span class="after-number-wa"><i class="fa fa-envelope" aria-hidden="true"></i><span class="after-logo-wa">Email: <?php echo $this->setting['email'] ?></span></span>
-            </div>
-            <div class="clear height-30"></div>
-            <div class="clear height-25"></div>
-            <div class="contactus-header-hotline">
-              FACTORY & HEAD OFFICE
-            </div>
-            <div class="clear height-25"></div>
-            <div class="contactus-header-nomor">
-              <?php echo $this->setting['contact_content'] ?>
-            </div>
-            <div class="clear height-50"></div>
-            <div class="clear height-50"></div>
-            <div class="contactus-header-inquiries">
-              For any other inquiries, you can drop us a message and we’ll respond to you shortly.
-            </div>
-            <div class="clear height-20"></div>
-            <div class="clear height-20"></div>
+        <div class="col-md-45">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="col-md-15">
+          <div class="block-back-link text-right">
+            <a href="#">Back</a>
           </div>
         </div>
       </div>
-      <div class="form-contact">
-        <div class="row">
-          <div class="col-md-60">
-            <div class="title-form">
-              <div class="clear height-50"></div>
-              <div class="clear height-40"></div>
-              ONLINE INQUIRY FORM
-            </div>
-            <div class="clear height-50"></div>
-            <div class="title-form-label">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-20">
-                    <label for="inputEmail4" class="label-form-contact">NAME</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                  </div>
-                  <div class="form-group col-md-20">
-                    <label for="inputEmail4" class="label-form-contact">EMAIL</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                  </div>
-                  <div class="form-group col-md-20">
-                    <label for="inputEmail4" class="label-form-contact">PHONE</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="exampleTextarea" class="label-form-contact">MESSAGE</label>
-                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary submitform">SUBMIT</button>
-              </form>
-            </div>
-            <div class="clear height-50"></div>
-            <div class="clear height-50"></div>
-          </div>
-        </div>
-      </div>
-      <div class="clear height-50"></div>
-      <div class="clear height-10"></div>
+      <div class="py-2"></div>
+    </div>
+</section>
 
-      <?php echo $this->renderPartial('//layouts/_tops_footer_partner', array()); ?>
-  </section>
+
+<section class="contact-sec-1">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-15">
+        <div class="title">
+          <p>Contact Us</p>
+        </div>
+      </div>
+      <div class="col-md-35">
+        <div class="content-top">
+          <h5>We’re here to help you</h5>
+          <p>We provide a variety of resources to assist our customers and partners in configuring, designing, enhancing and upgrading products. Customers will receive support services and product consultancy support, technical asisstance and product sampling.</p>
+          <h4>Please contact our help-line at these numbers</h4>
+          <div class="row">
+            <div class="col-md-30">
+              <div class="inner-content">
+                <h3>SURYASUKSES GROUP SURABAYA</h3>
+                <h4>031 5030 450</h4>
+                <p>Jl. Kertajaya 109 Surabaya 60286 - Indonesia</p>
+              </div>
+            </div>
+            <div class="col-md-30">
+              <div class="inner-content">
+                <h3>SURYASUKSES GROUP JAKARTA</h3>
+                <h4>021 386 1333</h4>
+                <p>Jl. Cideng Timur No. 70E dan F Jakarta Pusat - Indonesia</p>
+              </div>
+            </div>
+          </div>
+          <div class="e-mail">
+            <h4>Or email your inquiry at cs@suryasukses.com</h4>
+            <p>Whatsapp (logo wa) +62 857 7730 3030</p>
+          </div>
+        </div>
+        <div class="image-bottom">
+          <div class="row no-gutters">
+            <div class="col-md-30">
+              <img src="" alt="">
+            </div>
+            <div class="col-md-30">
+              <div class="row no-gutters">
+                <div class="col-md-30"><img src="" alt=""></div>
+                <div class="col-md-30"><img src="" alt=""></div>
+                <div class="col-md-30"><img src="" alt=""></div>
+                <div class="col-md-30"><img src="" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-bottom">
+          <h6>Member of Suryasukses Group</h6>
+          <div class="content-inner-bottom">
+            <div class="row">
+              <div class="col-md-30">
+                <h3>PT Suryasukses Abadi Prima</h3>
+                <h4>Thermoforming PP Cup & HDPE Cap</h4>
+                <p>Jl. Raya Sedati 97 Ds. Wedi
+                    Gedangan - Sidoarjo
+                    Tel. +62 31 8011 888
+                    Fax. +62 31 502 7624, 503 8934</p>
+              </div>
+              <div class="col-md-30">
+                <h3>PT Suryasukses Mekar Makmur</h3>
+                <h4>Nonwoven Spunbond</h4>
+                <p>Jl. Raya Sedati 97 Ds. Wedi
+                    Gedangan - Sidoarjo
+                    Tel. +62 31 8011 888
+                    Fax. +62 31 502 7624, 503 8934</p>
+              </div>
+              <div class="col-md-30">
+                <h3>PT Suryasukses Adi Perkasa</h3>
+                <h4>Thermoforming PP Cup & HDPE Cap</h4>
+                <p>Jl. Selayar Blok B3-1
+                    Kawasan Industri MM 2100, Cikarang Barat, Bekasi
+                    Jawa Barat - Indonesia
+                    Tel. +62 21 8998 3777 / 8998 3999
+                    Fax. +62 21 8998 4222</p>
+              </div>
+              <div class="col-md-30">
+                <h3>PT Multiplast Indo Makmur</h3>
+                <h4>Plastic Houseware</h4>
+                <p>Dusun Winong, Desa Winong
+                    Kec Gempol - Pasuruan
+                    Tel. +62 34 3656 329 (hunting)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

@@ -148,7 +148,7 @@ class HomeController extends Controller
 		// $model->scenario = 'insert';
 
 		$this->layout='//layouts/column1';
-		
+
 		$this->render('index', array(
 			// 'product'=>$product,
 			// 'model'=>$model,
@@ -1368,7 +1368,55 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 			'model'=>$model,
 		));
 	}
+	public function actionCerf_fssc()
+	{
+		$this->layout='//layouts/column2';
 
+		$this->pageTitle = 'Cerf_fssc'.$this->pageTitle;
+		$this->render('cerf_fssc', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionCerf_iso()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Cerf_iso'.$this->pageTitle;
+		$this->render('cerf_iso', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionQuality()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Quality'.$this->pageTitle;
+		$this->render('quality', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionSol_blue()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Sol Blue'.$this->pageTitle;
+		$this->render('sol_blue', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionSol_capabilities()
+	{
+		$this->layout='//layouts/column2';
+
+		$this->pageTitle = 'Sol Capabilities'.$this->pageTitle;
+		$this->render('sol_capabilities', array(
+			'model'=>$model,
+		));
+	}
 }
 
 
