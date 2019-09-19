@@ -1,118 +1,104 @@
+<div class="py-1"></div>
+
 <section class="home-sec-1">
     <div class="prelative container">
-        <div class="row">
+        <div class="row innsers_section">
+            <?php 
+            $arrs_nk = array(
+                            array(
+                                'picture' => 'homesec-1.jpg',
+                                'titles' => 'Get to know SAP',
+                                'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
+                            ),
+                            array(
+                                'picture' => 'homesec-2.jpg',
+                                'titles' => 'Our Markets',
+                                'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
+                            ),
+                            array(
+                                'picture' => 'homesec-3.jpg',
+                                'titles' => 'SAP Products',
+                                'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
+                            ),
+                            array(
+                                'picture' => 'homesec-4.jpg',
+                                'titles' => 'SAP Solutions',
+                                'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
+                            ),
+                            
+                        );
+            ?>
+            <?php foreach ($arrs_nk as $key => $value): ?>
             <div class="col-md-15">
                 <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-1.jpg" alt=""></div>
+                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt=""></div>
                     <div class="inner">
-                        <h4>Get to know SAP</h4>
-                        <p>Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.</p>
-                    </div>
-                    <div class="readmore">
-                        <p>READ MORE</p>
-                        <img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt="">
+                        <div class="paddings">
+                            <h4><?php echo $value['titles'] ?></h4>
+                            <p><?php echo $value['info'] ?></p>
+                        </div>
+                        <div class="buttons_read">
+                            <p><a href="#">READ MORE</a></p>
+                            <a href="#" class="rights"><img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-2.jpg" alt=""></div>
-                    <div class="inner">
-                        <h4>Our Markets</h4>
-                        <p>With more than 4 decades of operations, our business has vastly expand to cover a bigger market.</p>
-                    </div>
-                    <div class="readmore">
-                        <p>READ MORE</p>
-                        <img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-3.jpg" alt=""></div>
-                    <div class="inner">
-                        <h4>SAP Products</h4>
-                        <p>We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings.</p>
-                    </div>
-                    <div class="readmore-2-kanan">
-                        <p>READ MORE</p>
-                        <img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-15">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec-4.jpg" alt=""></div>
-                    <div class="inner">
-                        <h4>SAP Solutions</h4>
-                        <p>There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.</p>
-                    </div>
-                    <div class="readmore-2-kanan">
-                        <p>READ MORE</p>
-                        <img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt="">
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
+
         </div>
     </div>
 </section>
 
-<section class="home-sec-2">
-    <div class="prelative container2">
-        <div class="row">
-            <div class="col-md-60">
-                <div class="box-content">
-                    <div class="image"><img src="<?php echo $this->assetBaseurl; ?>homesec2.jpg" alt=""></div>
-                    <div class="title">
-                        <p>SAP Corporate Profile Video</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Sharing our passion, realizing your ideas and visions.</p>
-                    </div>
-                    <div class="play">
-                        <img src="<?php echo $this->assetBaseurl; ?>play.png" alt="">
-                        <p>Play Video</p>
+<div class="prelative container2">
+    <section class="home-sec-2">
+            <div class="row">
+                <div class="col-md-60">
+                    <div class="box-content">
+                        <div class="title">
+                            <h3>SAP Corporate Profile Video</h3>
+                        </div>
+                        <div class="subtitle">
+                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                        </div>
+                        <div class="blocks_btn text-center pt-1">
+                            <a href="#"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<section class="home-sec-3">
+<section class="home-sec-3 py-5 my-auto">
     <div class="prelative container">
-        <div class="row">
+        <div class="row py-5">
             <div class="col-md-60">
-                <div class="box-content">
+                <div class="py-3"></div>
+                <div class="box-content ">
                     <div class="our-corporation">
                         <h4>OUR CORPORATION GROUP</h4>
                     </div>
+                    <div class="py-3"></div>
                 </div>
             </div>
             <div class="col-md-60">
-                <div class="box-content">
-                    <div class="image-corporation">
-                        <img src="<?php echo $this->assetBaseurl; ?>logo-sap.png" alt="">
-                        <img src="<?php echo $this->assetBaseurl; ?>logo-amari.png" alt=""
-                        ><img src="<?php echo $this->assetBaseurl; ?>logo-multindo.png" alt="">
-                    </div>
+                <div class="box-content inners_listcompany">
+                    <ul class="list-inline text-center justify-content-center">
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_1.png" alt="" class="img img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_2.png" alt="" class="img img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_3.png" alt="" class="img img-fluid">
+                        </li>
+                    </ul>
                 </div>
+                <div class="py-3"></div>
             </div>
-            <!-- <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image-corporation"><img src="<?php echo $this->assetBaseurl; ?>logo-sap.png" alt=""></div>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image-corporation"><img src="<?php echo $this->assetBaseurl; ?>logo-amari.png" alt=""></div>
-                </div>
-            </div>
-            <div class="col-md-20">
-                <div class="box-content">
-                    <div class="image-corporation"><img src="<?php echo $this->assetBaseurl; ?>logo-multindo.png" alt=""></div>
-                </div>
-            </div> -->
+
         </div>
     </div>
 </section>
