@@ -26,7 +26,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li class="list-inline-item"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="#">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
             </ul>
           </div>
@@ -76,6 +76,83 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
   </div>
   */ ?>
 </header>
+
+<div id="about-menu" class="blocks_bottom_menuDropdown back-about">
+  <div class="prelatife container">
+    <div class="row">
+      <div class="col-md-25">
+        <div class="inners_mndropdown">
+          <span class="in_title">ABOUT US</span>
+          <ul class="list-unstyled">
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Company History</a></li>
+            <li><a href="#">Quality Statement</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="col-md-35">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="products-menu" class="blocks_bottom_menuDropdown back-products">
+  <div class="prelatife container">
+    <div class="inners_mndropdown menu_small">
+      <span class="in_title">PRODUCTS</span>
+      <div class="row">
+        <div class="col-md-15">
+            <ul class="list-unstyled">
+              <li class="firsts"><a href="#">Packaging</a></li>
+              <li><a href="#">Preforms</a></li>
+              <li><a href="#">Bottles</a></li>
+              <li><a href="#">Closures</a></li>
+              <li><a href="#">Drinking Cups</a></li>
+              <li><a href="#">Lids</a></li>
+              <li><a href="#">Containers</a></li>
+            </ul>
+            <div class="py-3"></div>
+            <ul class="list-unstyled">
+              <li class="firsts"><a href="#">Our Brands</a></li>
+              <li><a href="#">SAP</a></li>
+              <li><a href="#">AMARI</a></li>
+            </ul>
+        </div>
+        <div class="col-md-15">
+          <ul class="list-unstyled">
+            <li class="firsts"><a href="#">Specialty Nonwoven</a></li>
+            <li><a href="#">Spunbond Polypropylene</a></li>
+            <li><a href="#">Meltblown</a></li>
+          </ul>
+        </div>
+        <div class="col-md-15">
+          <ul class="list-unstyled">
+            <li class="firsts"><a href="#">Housewares</a></li>
+            <li><a href="#">Storage</a></li>
+            <li><a href="#">Containers</a></li>
+            <li><a href="#">Racks</a></li>
+            <li><a href="#">Sealware</a></li>
+            <li><a href="#">Kitchenware</a></li>
+            <li><a href="#">Cleaning ware</a></li>
+            <li><a href="#">Bathroom</a></li>
+            <li><a href="#">Garden</a></li>
+          </ul>
+        </div>
+        <div class="col-md-15">
+          <ul class="list-unstyled">
+            <li class="firsts"><a href="#">Roofing</a></li>
+            <li><a href="#">Twinwall corrugated roofing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
 
 
 <!-- <section id="myAffix" class="header-affixs affix-top">
