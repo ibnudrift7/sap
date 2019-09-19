@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="language" content="<?php echo Yii::app()->language ?>" />
+    <meta name="language" content="<?php echo Yii::app()->language ?>" />
 
-	<meta name="keywords" content="<?php echo CHtml::encode($this->metaKey); ?>">
-	<meta name="description" content="<?php echo CHtml::encode($this->metaDesc); ?>">
-	
-	<link rel="Shortcut Icon" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
-	<link rel="icon" type="image/ico" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
-	<link rel="icon" type="image/x-icon" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
+    <meta name="keywords" content="<?php echo CHtml::encode($this->metaKey); ?>">
+    <meta name="description" content="<?php echo CHtml::encode($this->metaDesc); ?>">
+    
+    <link rel="Shortcut Icon" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
+    <link rel="icon" type="image/ico" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/images/favicon.png" />
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.Yii::app()->theme->baseUrl; ?>/asset/css/comon.css" />
-    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+    <!-- <title><?php //echo CHtml::encode($this->pageTitle); ?></title>     -->
+    <title>Arsimetris</title>
     
 
     <!-- Bootstrap -->
