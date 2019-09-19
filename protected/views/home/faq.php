@@ -1,120 +1,118 @@
-<?php
-$this->pageTitle = $this->setting['faq_hero_title'].' - '.$this->pageTitle;
-?>
-
-<div class="blocks_subpage_banner promotion mih393 inside_top_illustration" style="background: none; background-image: none;">
-    <div class="picts_full">
-      <img src="<?php echo Yii::app()->baseUrl.'/images/static/'.$this->setting['faq_hero_image']; ?>" alt="<?php echo $this->setting['faq_hero_title'] ?>" class="img-responsive center-block">  
-    </div>
-    
-    <?php if ($this->setting['faq_hero_title']): ?>
-    <div class="outers_block_text">
-      <div class="prelatife blocks_text">
-        <h3 class="sub_title_p"><?php echo $this->setting['faq_hero_title'] ?></h3>
-      </div>
-    </div>
-    <?php endif; ?>
-</div>
-<script type="text/javascript">
-  $(window).load(function(){
-    if ( $(window).width() > 768 ) {
-      var get_heightBanner = $('.blocks_subpage_banner.inside_top_illustration .picts_full').height();
-      $('.blocks_subpage_banner.inside_top_illustration .outers_block_text').css('height', get_heightBanner+'px');
-    }
-  });
-</script>
-
-<div class="clear"></div>
-<div class="subpage static_about">
-  <section class="default_sc back-black conts_block_about1 hide hidden">
-    <div class="prelatife container text-center">
-      <div class="insides">
-        <p><?php echo $this->setting['faq_hero_subtitle'] ?></p>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="default_sc back-white blocks_middle_inside_outern text-left padding-top-50 pg_contact">
-    <div class="prelatife container pb-0">
-      <div class="insides content-text">
-        <h1 class="n_title_top text-center"><?php echo $this->setting['faq_hero_subtitle'] ?></h1>
-        <div class="clear height-50"></div>
-
-        <div class="blocks_inner_faq_cnt">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="lefts_con">
-                <div class="tops">
-                  TOPICS
-                </div>
-                <div class="clear"></div>
-
-                <?php 
-                $data_faq = array(
-                            1 => array(
-                                  'question' => 'How many bottles in each case and what does it consist of?',
-                                  'answer' => '<p><strong>How many bottles in each case and what does it consist of?</strong><br />
-                                               There are 6 bottles in each case. It consists of 2 bottles of Realfit&trade; Classic, 2 bottles of Realfit&trade; Calm and 2 bottles Realfit&trade; Beauty.</p>',
-                                  ),
-                                array(
-                                  'question' => 'How much is your monthly subscription?',
-                                  'answer' => '<p><strong>How much is your monthly subscription?</strong><br />
-                                                We are currently offering minimum 1 case monthly subscription at S$49.90. This includes free delivery within Singapore.</p>',
-                                  ),
-                            );
-                ?>
-				<?php
-				$data = $dataFaq->getData();
-				?>
-                <ul class="list-unstyled">
-                  <?php foreach ($data as $key_faq => $val_faq): ?>
-                  <li><a href="#" class="toScroll" data-id="list_<?php echo $key_faq ?>" data-minusl="0"><?php echo $val_faq->description->question ?></a></li>
-                  <?php endforeach ?>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="rights_con">
-                <div class="tops">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                    ANSWER
-                    </div>
-                    <div class="col-md-6 col-sm-6 text-right">
-                    <span>(<?php echo count($data); ?> answers)</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="clear"></div>
-
-
-                <div class="lists_in_faqn">
-                  <?php foreach ($data as $key_faq => $val_faq): ?>
-                  <div class="list data1" id="list_<?php echo $key_faq ?>">
-                    <p><strong><?php echo $val_faq->description->question ?></strong><br />
-                    <?php echo $val_faq->description->answer ?>
-                    <div class="clear"></div>
-                  </div>
-                  <?php endforeach; ?>                  
-
-                </div>
-
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-          <div class="claer"></div>
+<section class="breadcrumb-det">
+    <div class="prelative container">
+      <div class="row">
+        <div class="col-md-45">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Glass Suction GSC 3S</a></li>
+                </ol>
+            </nav>
         </div>
-        <!-- End block inner Faq -->
-
-
-        <div class="clear height-50"></div>
-        <div class="clear height-20"></div>
+        <div class="col-md-15">
+          <div class="block-back-link text-right">
+            <a href="#">Back</a>
+          </div>
+        </div>
       </div>
+      <div class="py-2"></div>
+    </div>
+</section>
+
+<section class="cerf-sec-1">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-15">
+        <div class="title">
+          <h5>Our Certification</h5>
+          <ol>
+          <li>WHAT IS THE LEXUS FINANCIAL SERVICES PORTAL?</li>
+          <li>HOW CAN I ACCESS MY LEXUS FINANCIAL SERVICES ACCOUNT ONLINE?</li>
+          <li>WHAT TYPES OF FINANCE ARE AVAILABLE FROM LEXUS FINANCIAL SERVICES?</li>
+          <li>HOW CAN I MAKE A COMPLAINT TO LEXUS FINANCIAL SERVICES?</li>
+          <li>I AM EXPERIENCING FINANCIAL HARDSHIP AND HAVING DIFFICULTIES WITH MY PAYMENTS. WHAT CAN I DO?</li>
+          <li>CAN I SELL MY CAR WHILE IT IS UNDER FINANCE?</li>
+        </ol>
+        </div>
+      </div>
+      <div class="col-md-45">
+      <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h2>
     </div>
 
-  </section>
-
-  <div class="clear"></div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
 </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-sec-3 py-5 my-auto">
+    <div class="prelative container">
+        <div class="row py-5">
+            <div class="col-md-60">
+                <div class="py-3"></div>
+                <div class="box-content ">
+                    <div class="our-corporation">
+                    </div>
+                    <div class="py-3"></div>
+                </div>
+            </div>
+            <div class="col-md-60">
+                <div class="box-content inners_listcompany">
+                    <ul class="list-inline text-center justify-content-center">
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_1.png" alt="" class="img img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_2.png" alt="" class="img img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_3.png" alt="" class="img img-fluid">
+                        </li>
+                    </ul>
+                </div>
+                <div class="py-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
