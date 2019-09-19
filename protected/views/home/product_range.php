@@ -6,7 +6,8 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Products</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Packaging</a></li>
+                    <li class="breadcrumb-item"><a href="#">Packaging</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Preforms</a></li>
                 </ol>
             </nav>
         </div>
@@ -24,38 +25,23 @@
 $products = [
     1 => [
         'images' => 'product2.jpg',
-        'title' => 'Preforms',
-        'subtitle' => 'We’re always ahead on innovation and always promoting creativity all in the purpose of giving successful approach on our customers’ end, to win their market.',
+        'title' => 'Bottle Preforms 1',
+        'subtitle' => 'Standard single wall jars are available from 1.5oz to 34oz, with finishes ranging from 48mm to 120mm. Heavy Wall jars include 2oz, 3oz, and 6oz sizes, all with 70mm finishes. We also offer light weight expanded jars that uniquely provide a flush silhouette with the closure in a single wall design. These are available in six sizes, from 3oz to 16oz.',
     ],
     [
         'images' => 'product2.jpg',
-        'title' => 'Bootles',
-        'subtitle' => 'Through the latest technology and design we aim to be a resourceful partner that can accommodate the latest trend and moreover to pioneer the style.',        
+        'title' => 'Bottle Preforms 2',
+        'subtitle' => 'Standard single wall jars are available from 1.5oz to 34oz, with finishes ranging from 48mm to 120mm. Heavy Wall jars include 2oz, 3oz, and 6oz sizes, all with 70mm finishes. We also offer light weight expanded jars that uniquely provide a flush silhouette with the closure in a single wall design. These are available in six sizes, from 3oz to 16oz.',        
     ],
     [
         'images' => 'product2.jpg',
-        'title' => 'Closures',
-        'subtitle' => 'We believe well crafted and flawless products not just elevate our group, but giving a strong impact to the very end of our consumer chain.',        
-    ],
-    [
-        'images' => 'product2.jpg',
-        'title' => 'Drinking Cups',
-        'subtitle' => 'We’re always ahead on innovation and always promoting creativity all in the purpose of giving successful approach on our customers’ end, to win their market.',
-    ],
-    [
-        'images' => 'product2.jpg',
-        'title' => 'Lids',
-        'subtitle' => 'Through the latest technology and design we aim to be a resourceful partner that can accommodate the latest trend and moreover to pioneer the style.',   
-    ],
-    [
-        'images' => 'product2.jpg',
-        'title' => 'Containers',
-        'subtitle' => 'We believe well crafted and flawless products not just elevate our group, but giving a strong impact to the very end of our consumer chain.',        
+        'title' => 'Bottle Preforms 3',
+        'subtitle' => 'Standard single wall jars are available from 1.5oz to 34oz, with finishes ranging from 48mm to 120mm. Heavy Wall jars include 2oz, 3oz, and 6oz sizes, all with 70mm finishes. We also offer light weight expanded jars that uniquely provide a flush silhouette with the closure in a single wall design. These are available in six sizes, from 3oz to 16oz.',        
     ]
 ];
 ?>
 
-<section class="product-sec-1">
+<section class="product-range-sec-1">
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
@@ -86,8 +72,12 @@ $products = [
         <div class="row">
         <?php foreach($products as $key => $value): ?>
             <div class="col-md-20">
-                <div class="box-content">
+                <div class="box-content-kiri">
                     <div class="image"><img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-40">
+                <div class="box-content-kanan">
                     <div class="title">
                         <p><?php echo $value['title']?></p>
                     </div>
@@ -95,7 +85,7 @@ $products = [
                         <p><?php echo $value['subtitle']?></p>
                     </div>
                     <div class="klik">
-                        <a href=""><p>Learn More</p></a>
+                        <a href=""><p>Click to enlarge</p></a>
                     </div>
                 </div>
             </div>
