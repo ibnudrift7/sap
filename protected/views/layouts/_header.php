@@ -169,7 +169,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       $('section.header-baru').addClass('opened');
 
       // $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('views');
-      $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(2000);
+      $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(1200);
       return false;
     });
 
