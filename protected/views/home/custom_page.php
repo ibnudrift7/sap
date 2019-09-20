@@ -37,7 +37,7 @@ if(isset($_GET['page']) and $_GET['page'] != ''){
       </div>
       <div class="col-md-45">
         <div class="box-content">
-          <h3>Title Of <?php echo $pages ?></h3>
+          <h3><?php echo $pages ?></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorum autem fuga illum, natus, rem ullam magnam atque saepe ipsum iste eius, optio officiis! Quam vero voluptatibus nobis laboriosam cum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, pariatur eum. Sed deserunt fuga tempore, dicta eius consequatur magnam unde. Dolores aut iure dolorum nam. Nemo repellat asperiores tenetur ut.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reiciendis voluptatum similique sed, placeat commodi molestiae laborum odit! Harum vero repellat, dicta nobis placeat beatae totam, incidunt deserunt minus consequatur?</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam perspiciatis earum aliquid, explicabo illo ipsam harum reprehenderit tempora sed a pariatur consequuntur ea facilis excepturi illum eaque temporibus voluptate.</p>

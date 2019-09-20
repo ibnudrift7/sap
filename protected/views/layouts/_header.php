@@ -27,7 +27,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li class="list-inline-item" data-id="market-menu"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="solution-menu"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Contact')); ?>">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
             </ul>
           </div>
         </div>
@@ -214,7 +214,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 
       // $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('views');
       $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(1200);
-      return false;
+      // return false;
     });
 
     // $('.bottoms_head_menu ul li').hover(
