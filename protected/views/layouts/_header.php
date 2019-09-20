@@ -84,11 +84,11 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-25">
             <span class="in_title">ABOUT US</span>
             <ul class="list-unstyled">
-              <li><a href="#">Our Mission</a></li>
-              <li><a href="#">Company History</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a></li>
-              <li><a href="#">Locations</a></li>
-              <li><a href="#">Career</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">FAQ</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li>
             </ul>
@@ -108,13 +108,13 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-25">
             <span class="in_title">MARKETS</span>
             <ul class="list-unstyled">
-              <li><a href="#">Beverages</a></li>
-              <li><a href="#">Healthcare</a></li>
-              <li><a href="#">Household</a></li>
-              <li><a href="#">Agriculture</a></li>
-              <li><a href="#">Industrial</a></li>
-              <li><a href="#">Filtration</a></li>
-              <li><a href="#">Building & Construction</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages')); ?>">Beverages</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Healthcare')); ?>">Healthcare</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Household')); ?>">Household</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Agriculture')); ?>">Agriculture</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Industrial')); ?>">Industrial</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Filtration')); ?>">Filtration</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Building-Construction')); ?>">Building & Construction</a></li>
             </ul>
             <div class="clear"></div>
           </div>
