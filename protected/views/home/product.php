@@ -77,7 +77,9 @@ $products = [
         <?php foreach($products as $key => $value): ?>
             <div class="col-md-20">
                 <div class="box-content">
-                    <div class="image"><img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt=""></div>
+                    <div class="image">
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/productrange')); ?>"><img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt="">
+                        </a></div>
                     <div class="title">
                         <p><?php echo $value['title']?></p>
                     </div>
@@ -85,7 +87,7 @@ $products = [
                         <p><?php echo $value['subtitle']?></p>
                     </div>
                     <div class="klik">
-                        <a href=""><p>Learn More</p></a>
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/productrange')); ?>"><p>Learn More</p></a>
                     </div>
                 </div>
             </div>

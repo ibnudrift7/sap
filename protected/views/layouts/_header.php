@@ -151,45 +151,45 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="row">
           <div class="col-md-15">
               <ul class="list-unstyled">
-                <li class="firsts"><a href="#">Packaging</a></li>
-                <li><a href="#">Preforms</a></li>
-                <li><a href="#">Bottles</a></li>
-                <li><a href="#">Closures</a></li>
-                <li><a href="#">Drinking Cups</a></li>
-                <li><a href="#">Lids</a></li>
-                <li><a href="#">Containers</a></li>
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Preforms')); ?>">Preforms</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Bottles')); ?>">Bottles</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Closures')); ?>">Closures</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Lids')); ?>">Lids</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Containers')); ?>">Containers</a></li>
               </ul>
               <div class="py-3"></div>
               <ul class="list-unstyled">
-                <li class="firsts"><a href="#">Our Brands</a></li>
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Our Brands</a></li>
                 <li><a href="#">SAP</a></li>
                 <li><a href="#">AMARI</a></li>
               </ul>
           </div>
           <div class="col-md-15">
             <ul class="list-unstyled">
-              <li class="firsts"><a href="#">Specialty Nonwoven</a></li>
-              <li><a href="#">Spunbond Polypropylene</a></li>
-              <li><a href="#">Meltblown</a></li>
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Specialty Nonwoven</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Spunbond Polypropylene</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Meltblown</a></li>
             </ul>
           </div>
           <div class="col-md-15">
             <ul class="list-unstyled">
-              <li class="firsts"><a href="#">Housewares</a></li>
-              <li><a href="#">Storage</a></li>
-              <li><a href="#">Containers</a></li>
-              <li><a href="#">Racks</a></li>
-              <li><a href="#">Sealware</a></li>
-              <li><a href="#">Kitchenware</a></li>
-              <li><a href="#">Cleaning ware</a></li>
-              <li><a href="#">Bathroom</a></li>
-              <li><a href="#">Garden</a></li>
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Housewares</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Storage</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Containers</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Racks</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Sealware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Kitchenware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Cleaning ware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Bathroom</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Garden</a></li>
             </ul>
           </div>
           <div class="col-md-15">
             <ul class="list-unstyled">
-              <li class="firsts"><a href="#">Roofing</a></li>
-              <li><a href="#">Twinwall corrugated roofing</a></li>
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Roofing</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Twinwall corrugated roofing</a></li>
             </ul>
           </div>
         </div>
