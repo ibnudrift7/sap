@@ -77,7 +77,7 @@ $solblue = [
           <div class="col-md-30">
             <div class="row no-gutters">
             <?php foreach($solblue as $key => $value): ?>
-              <div class="col-md-30">
+              <div class="col-md-30 col-30">
                 <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt="">  
               </div>
               <?php endforeach  ?>
