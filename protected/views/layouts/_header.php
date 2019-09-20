@@ -24,8 +24,8 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <div class="bottoms_head_menu pt-3 text-right">
             <ul class="list-inline m-0">
               <li class="list-inline-item" data-id="products-menu"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="market-menu"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="solution-menu"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="#">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
             </ul>
@@ -86,10 +86,53 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
             <ul class="list-unstyled">
               <li><a href="#">Our Mission</a></li>
               <li><a href="#">Company History</a></li>
-              <li><a href="#">Quality Statement</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a></li>
               <li><a href="#">Locations</a></li>
               <li><a href="#">Career</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">FAQ</a></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-md-35">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="market-menu" class="blocks_bottom_menuDropdown back-about">
+    <div class="prelatife container">
+    <div class="inners_mndropdown">
+      <div class="row">
+        <div class="col-md-25">
+            <span class="in_title">MARKETS</span>
+            <ul class="list-unstyled">
+              <li><a href="#">Beverages</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Household</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Industrial</a></li>
+              <li><a href="#">Filtration</a></li>
+              <li><a href="#">Building & Construction</a></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-md-35">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="solution-menu" class="blocks_bottom_menuDropdown back-about">
+    <div class="prelatife container">
+    <div class="inners_mndropdown">
+      <div class="row">
+        <div class="col-md-25">
+            <span class="in_title">SOLUTIONS</span>
+            <ul class="list-unstyled">
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
             </ul>
             <div class="clear"></div>
           </div>
