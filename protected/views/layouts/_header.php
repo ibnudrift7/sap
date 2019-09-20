@@ -7,13 +7,13 @@ $login_member = $session['login_member'];
 
 $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
-
+<div class="prelatife">
 <header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
   <div class="prelatife container d-none d-sm-block">
     <div class="inner-header">
       <div class="row">
         <div class="col-md-20">
-          <div class="logo_heads"><a href="#"><img src="<?php echo $this->assetBaseurl; ?>lgo-header.png" alt="" class="img img-fluid"></a></div>
+          <div class="logo_heads"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>"><img src="<?php echo $this->assetBaseurl; ?>lgo-header.png" alt="" class="img img-fluid"></a></div>
         </div>
         <div class="col-md-40">
           <div class="tops_iso text-right">
@@ -23,10 +23,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <div class="py-1"></div>
           <div class="bottoms_head_menu pt-3 text-right">
             <ul class="list-inline m-0">
-              <li class="list-inline-item"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="products-menu"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="market-menu"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="solution-menu"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item" data-id="about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="#">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
             </ul>
           </div>
@@ -77,83 +77,169 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
   */ ?>
 </header>
 
-<div id="about-menu" class="blocks_bottom_menuDropdown back-about">
-  <div class="prelatife container">
-    <div class="row">
-      <div class="col-md-25">
-        <div class="inners_mndropdown">
-          <span class="in_title">ABOUT US</span>
-          <ul class="list-unstyled">
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Company History</a></li>
-            <li><a href="#">Quality Statement</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div class="col-md-35">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="products-menu" class="blocks_bottom_menuDropdown back-products">
-  <div class="prelatife container">
-    <div class="inners_mndropdown menu_small">
-      <span class="in_title">PRODUCTS</span>
+  <div id="about-menu" class="blocks_bottom_menuDropdown back-about">
+    <div class="prelatife container">
+    <div class="inners_mndropdown">
       <div class="row">
-        <div class="col-md-15">
+        <div class="col-md-25">
+            <span class="in_title">ABOUT US</span>
             <ul class="list-unstyled">
-              <li class="firsts"><a href="#">Packaging</a></li>
-              <li><a href="#">Preforms</a></li>
-              <li><a href="#">Bottles</a></li>
-              <li><a href="#">Closures</a></li>
-              <li><a href="#">Drinking Cups</a></li>
-              <li><a href="#">Lids</a></li>
-              <li><a href="#">Containers</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Company History</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">FAQ</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li>
             </ul>
-            <div class="py-3"></div>
-            <ul class="list-unstyled">
-              <li class="firsts"><a href="#">Our Brands</a></li>
-              <li><a href="#">SAP</a></li>
-              <li><a href="#">AMARI</a></li>
-            </ul>
+            <div class="clear"></div>
+          </div>
         </div>
-        <div class="col-md-15">
-          <ul class="list-unstyled">
-            <li class="firsts"><a href="#">Specialty Nonwoven</a></li>
-            <li><a href="#">Spunbond Polypropylene</a></li>
-            <li><a href="#">Meltblown</a></li>
-          </ul>
-        </div>
-        <div class="col-md-15">
-          <ul class="list-unstyled">
-            <li class="firsts"><a href="#">Housewares</a></li>
-            <li><a href="#">Storage</a></li>
-            <li><a href="#">Containers</a></li>
-            <li><a href="#">Racks</a></li>
-            <li><a href="#">Sealware</a></li>
-            <li><a href="#">Kitchenware</a></li>
-            <li><a href="#">Cleaning ware</a></li>
-            <li><a href="#">Bathroom</a></li>
-            <li><a href="#">Garden</a></li>
-          </ul>
-        </div>
-        <div class="col-md-15">
-          <ul class="list-unstyled">
-            <li class="firsts"><a href="#">Roofing</a></li>
-            <li><a href="#">Twinwall corrugated roofing</a></li>
-          </ul>
+        <div class="col-md-35">
         </div>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
+
+  <div id="market-menu" class="blocks_bottom_menuDropdown back-about">
+    <div class="prelatife container">
+    <div class="inners_mndropdown">
+      <div class="row">
+        <div class="col-md-25">
+            <span class="in_title">MARKETS</span>
+            <ul class="list-unstyled">
+              <li><a href="#">Beverages</a></li>
+              <li><a href="#">Healthcare</a></li>
+              <li><a href="#">Household</a></li>
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Industrial</a></li>
+              <li><a href="#">Filtration</a></li>
+              <li><a href="#">Building & Construction</a></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-md-35">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="solution-menu" class="blocks_bottom_menuDropdown back-about">
+    <div class="prelatife container">
+    <div class="inners_mndropdown">
+      <div class="row">
+        <div class="col-md-25">
+            <span class="in_title">SOLUTIONS</span>
+            <ul class="list-unstyled">
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="col-md-35">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="products-menu" class="blocks_bottom_menuDropdown back-products">
+    <div class="prelatife container">
+      <div class="inners_mndropdown menu_small">
+        <span class="in_title">PRODUCTS</span>
+        <div class="row">
+          <div class="col-md-15">
+              <ul class="list-unstyled">
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Preforms')); ?>">Preforms</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Bottles')); ?>">Bottles</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Closures')); ?>">Closures</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Lids')); ?>">Lids</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Containers')); ?>">Containers</a></li>
+              </ul>
+              <div class="py-3"></div>
+              <ul class="list-unstyled">
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Our Brands</a></li>
+                <li><a href="#">SAP</a></li>
+                <li><a href="#">AMARI</a></li>
+              </ul>
+          </div>
+          <div class="col-md-15">
+            <ul class="list-unstyled">
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Specialty Nonwoven</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Spunbond Polypropylene</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Meltblown</a></li>
+            </ul>
+          </div>
+          <div class="col-md-15">
+            <ul class="list-unstyled">
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Housewares</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Storage</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Containers</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Racks</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Sealware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Kitchenware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Cleaning ware</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Bathroom</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Garden</a></li>
+            </ul>
+          </div>
+          <div class="col-md-15">
+            <ul class="list-unstyled">
+              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Roofing</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Twinwall corrugated roofing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('.bottoms_head_menu ul li').on('click', function(){
+      var cs_active = $(this).attr("data-id");
+      console.log(cs_active);
+
+      $('.blocks_bottom_menuDropdown').slideUp();
+      // $('.blocks_bottom_menuDropdown').removeClass('views');
+      // $('section.header-baru').slideDown();
+      $('section.header-baru').addClass('opened');
+
+      // $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('views');
+      $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(1200);
+      return false;
+    });
+
+    // $('.bottoms_head_menu ul li').hover(
+    //   function(){
+    //       var cs_active = $(this).attr("data-id");
+    //       // console.log(cs_active);
+    //       if (typeof cs_active === "undefined") {
+    //         console.log('masuk cok');
+    //         $('.blocks_bottom_menuDropdown').slideUp('fast');
+    //         $('.blocks_bottom_menuDropdown').removeClass('opened');  
+    //       } else {
+    //         $('#'+cs_active+'.blocks_bottom_menuDropdown').slideDown();
+    //         $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('opened');
+    //       }
+    //   }, function(){
+    //     var cs_active = $(this).attr("data-id");
+    //      setTimeout(function(){
+    //       $('.blocks_bottom_menuDropdown').slideUp();
+    //       $('.blocks_bottom_menuDropdown').removeClass('opened');
+    //     }, 5000);
+    //   }
+    // );
+
+  });
+</script>
 
 <!-- <section id="myAffix" class="header-affixs affix-top">
   <div class="clear height-15"></div>

@@ -47,28 +47,20 @@ $products = [
       <div class="col-md-15">
       <div class="box-konten-kiri">
         <h5>Products</h5>
-        <ol>Packaging
-          <li>Preforms</li>
-          <li>Bottles</li>
-          <li>Closures</li>
-          <li>Drinking Cups</li>
-          <li>Lids</li>
-          <li>Containers</li>
-        </ol>
-        <ol>Specialty Nonwoven</ol>
-        <ol>Housewares</ol>
-        <ol>Roofing</ol>
-        <ol>Our Brands</ol>
+        <?php echo $this->renderPartial('//layouts/_left_menu_products', array()); ?>
+
       </div>
       </div>
-      <div class="col-md-45">
+      <div class="col-md-45 inner-rights_product-range">
+        <h6>Packaging</h6>
         <h3>Blue Bottle Studio</h3>
-        <div class="row">
+        <div class="row featured">
           <div class="col-md-60">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt=""> 
             <p>Suryasukses packaging products are world class and have been certified by bsi ISO 9001 - FSSC 22000. Our facilities ranging from injection and blow molding to thermoforming, ready to cater to all our customer’s need with exceptional quality that exceeds expectations. Suryasukses will bring out the best innovative results to bring greate achievement for our customers .</p>
           </div>
         </div>
+
         <div class="row">
         <?php foreach($products as $key => $value): ?>
             <div class="col-md-20">
