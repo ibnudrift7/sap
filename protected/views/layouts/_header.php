@@ -89,7 +89,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">FAQ</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li>
             </ul>
             <div class="clear"></div>
