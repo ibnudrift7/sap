@@ -34,14 +34,13 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       </div>
       <div class="clear"></div>
     </div>
+
   </div>
-  
-  <?php
-  /*
+ 
   <div class="d-block d-sm-none">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">
-        <img src="<?php echo $this->assetBaseurl ?>lgo-heads-lic.png" alt="" class="img img-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <a class="navbar-brand" href="<?php echo CHtml::normalizeUrl(array('/home/index', 'page'=>'Contact')); ?>">
+        <img src="<?php echo $this->assetBaseurl ?>lgo-header.png" alt="" class="img img-fluid">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,16 +64,48 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
             </div>
           </li>
-
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MARKET
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages')); ?>">Beverages</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Healthcare')); ?>">Healthcare</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Household')); ?>">Household</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Agriculture')); ?>">Agriculture</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Industrial')); ?>">Industrial</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Filtration')); ?>">Filtration</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Building-Construction')); ?>">Building & Construction</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SOLUTIONS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ABOUT US
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Contact')); ?>">CONTACT US</a></li>
         </ul>
       </div>
     </nav>
   </div>
-  */ ?>
 </header>
 
   <div id="about-menu" class="blocks_bottom_menuDropdown back-about">

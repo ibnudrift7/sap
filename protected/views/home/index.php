@@ -9,21 +9,25 @@
                                 'picture' => 'homesec-1.jpg',
                                 'titles' => 'Get to know SAP',
                                 'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
+                                'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History'))
                             ),
                             array(
                                 'picture' => 'homesec-2.jpg',
                                 'titles' => 'Our Markets',
                                 'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
+                                'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages'))
                             ),
                             array(
                                 'picture' => 'homesec-3.jpg',
                                 'titles' => 'SAP Products',
                                 'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
+                                'link' => CHtml::normalizeUrl(array('/home/products'))
                             ),
                             array(
                                 'picture' => 'homesec-4.jpg',
                                 'titles' => 'SAP Solutions',
                                 'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
+                                'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
                             ),
                             
                         );
@@ -38,8 +42,8 @@
                             <p><?php echo $value['info'] ?></p>
                         </div>
                         <div class="buttons_read">
-                            <p><a href="#">READ MORE</a></p>
-                            <a href="#" class="rights"><img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt=""></a>
+                            <p><a href="<?php echo $value['link'] ?>">READ MORE</a></p>
+                            <a href="<?php echo $value['link'] ?>" class="rights"><img class="arrow" src="<?php echo $this->assetBaseurl; ?>right-arrow.png" alt=""></a>
                         </div>
                     </div>
                 </div>
