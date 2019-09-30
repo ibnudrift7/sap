@@ -1446,7 +1446,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'About History'.$this->pageTitle;
+		$this->pageTitle = 'Company History '.$this->pageTitle;
 		$this->render('about_history', array(
 			'model'=>$model,
 		));
@@ -1455,7 +1455,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'About locations'.$this->pageTitle;
+		$this->pageTitle = 'Company Locations '.$this->pageTitle;
 		$this->render('about_locations', array(
 			'model'=>$model,
 		));
@@ -1465,7 +1465,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'About career'.$this->pageTitle;
+		$this->pageTitle = 'About Career '.$this->pageTitle;
 		$this->render('about_career', array(
 			'model'=>$model,
 		));
@@ -1475,7 +1475,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'About quality'.$this->pageTitle;
+		$this->pageTitle = 'Company Quality '.$this->pageTitle;
 		$this->render('about_quality', array(
 			'model'=>$model,
 		));
