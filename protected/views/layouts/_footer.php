@@ -32,9 +32,9 @@
                             <div class="texts_menus">
                                 <ul class="list-unstyled">
                                     <li class="firsts">POLICIES</li>
-                                    <li><a href="#">SO 90001 Certification</a></li>
-                                    <li><a href="#">FSSC 22000 Certification</a></li>
-                                    <li><a href="#">Quality Policy</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_iso')); ?>">SO 90001 Certification</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">FSSC 22000 Certification</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Policy</a></li>
                                 </ul>
                             </div>
                         </div>
