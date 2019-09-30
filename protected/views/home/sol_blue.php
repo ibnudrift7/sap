@@ -4,7 +4,7 @@
         <div class="col-md-45">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Solution</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#">Blue Bottle Studio</a></li>
                 </ol>
@@ -50,8 +50,8 @@ $solblue = [
       <div class="box-konten-kiri">
         <h5>Solutions</h5>
         <ol>
-          <li>Blue Bottle Studio</li>
-          <li>Capabilities</li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue Bottle Studio</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
         </ol>
       </div>
       </div>
