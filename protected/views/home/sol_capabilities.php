@@ -36,39 +36,47 @@
       <div class="col-md-45">
         <h4>What we can do for you</h4>
         <h3>Capabilities</h3>
-        <div class="row no-gutters">
+        <div class="row no-gutters pt-4">
           <div class="col-md-20">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab1.jpg" alt="">
           </div>
           <div class="col-md-40">
             <div class="content-inner">
-              <h5>Injection Molding</h5>
-              <p>We have over XX products variations and over 30 years of experience and expertise necessary to provide the highest quality results for large and small scale manufacturing.</p>
+              <div class="innersssss">
+                <h5>Injection Molding</h5>
+                <p>We have over XX products variations and over 30 years of experience and expertise necessary to provide the highest quality results for large and small scale manufacturing.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters pt-4">
           <div class="col-md-20">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
           </div>
           <div class="col-md-40">
             <div class="content-inner">
-              <h5>Thermoforming</h5>
-              <p>As a trailblazer for deep draw, thermoformed drink cups, we lead the way for innovation.  We are continuously expanding our expertise to include new, thermoformed products.</p>
+              <div class="innersssss">
+                <h5>Thermoforming</h5>
+                <p>As a trailblazer for deep draw, thermoformed drink cups, we lead the way for innovation.  We are continuously expanding our expertise to include new, thermoformed products.</p>
+
+              </div>
             </div>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters pt-4">
           <div class="col-md-20">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
           </div>
           <div class="col-md-40">
             <div class="content-inner">
-              <h5>Blow Molding</h5>
-              <p>As a long-standing name in the blow molding space, we serve a multitude of markets ranging from beverages to automotive.  We currently manufacture a range of sizes from some of the smallest to largest bottles.</p>
+              <div class="innersssss">
+                <h5>Blow Molding</h5>
+                <p>As a long-standing name in the blow molding space, we serve a multitude of markets ranging from beverages to automotive.  We currently manufacture a range of sizes from some of the smallest to largest bottles.</p>
+
+              </div>
             </div>
           </div>
-          <div class="col-md-30">
+          <div class="col-md-30 pt-4">
           <div class="email">
                 <p>Email your inquiry at cs@suryasukses.com</p>
               </div>
