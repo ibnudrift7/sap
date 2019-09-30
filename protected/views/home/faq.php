@@ -5,13 +5,13 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Glass Suction GSC 3S</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Faq</a></li>
                 </ol>
             </nav>
         </div>
         <div class="col-md-15">
           <div class="block-back-link text-right">
-            <a href="#">Back</a>
+            <a href="#" onclick="window.history.back();">Back</a>
           </div>
         </div>
       </div>
@@ -23,9 +23,16 @@
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
-        <div class="title">
+        <div class="title box-konten-kiri">
           <h5>Faq</h5>
-          
+          <ol>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
+        </ol>
         </div>
       </div>
       <div class="col-md-45">

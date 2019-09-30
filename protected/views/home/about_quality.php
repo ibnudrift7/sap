@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-15">
           <div class="block-back-link text-right">
-            <a href="#">Back</a>
+            <a href="#" onclick="window.history.back();">Back</a>
           </div>
         </div>
       </div>
@@ -33,17 +33,17 @@
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
-        <div class="box-konten-kiri">
-          <h5>About Us</h5>
-          <ol>
-            <li><a href="#">Our Mission</a></li>
-            <li><a href="#">Company History</a></li>
-            <li><a href="#">Quality Statement</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ol>
-        </div>
+      <div class="box-konten-kiri">
+        <h5>About Us</h5>
+        <ol>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
+        </ol>
+      </div>
       </div>
       <div class="col-md-45">
         <h4>Our culture of perfections</h4>

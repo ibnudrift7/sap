@@ -27,7 +27,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li class="list-inline-item" data-id="market-menu"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="solution-menu"><a href="#">SOLUTIONS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Contact')); ?>">CONTACT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Contact')); ?>">CONTACT US</i></a></li>
             </ul>
           </div>
         </div>
@@ -116,10 +116,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
             <span class="in_title">ABOUT US</span>
             <ul class="list-unstyled">
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li>
             </ul>
