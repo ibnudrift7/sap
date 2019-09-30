@@ -33,17 +33,17 @@
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
-      <div class="box-konten-kiri">
-        <h5>About Us</h5>
-        <ol>
-          <li><a href="#">Our Mission</a></li>
-          <li><a href="#">Company History</a></li>
-          <li><a href="#">Quality Statement</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ol>
-      </div>
+        <div class="box-konten-kiri">
+          <h5>About Us</h5>
+          <ol>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Company History</a></li>
+            <li><a href="#">Quality Statement</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ol>
+        </div>
       </div>
       <div class="col-md-45">
         <h4>Our culture of perfections</h4>

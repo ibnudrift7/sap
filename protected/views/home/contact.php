@@ -1,3 +1,12 @@
+<section class="inside-cover">
+  <div class="text">
+    <h4>CONTACT US</h4>
+    <h3>We’re at your service</h3>
+  </div>
+</section>
+
+
+
 <section class="breadcrumb-det">
     <div class="prelative container">
       <div class="row">
@@ -24,28 +33,31 @@
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
-        <div class="title">
-          <p>Contact Us</p>
+        <div class="box-konten-kiri">
+          <h5>About Us</h5>
         </div>
       </div>
-      <div class="col-md-35">
+      <div class="col-md-45">
         <div class="content-top">
-          <h5>We’re here to help you</h5>
+          <h3>We’re here to help you</h3>
           <p>We provide a variety of resources to assist our customers and partners in configuring, designing, enhancing and upgrading products. Customers will receive support services and product consultancy support, technical asisstance and product sampling.</p>
-          <h4>Please contact our help-line at these numbers</h4>
+          <div class="py-2"></div>
+          <p>Please contact our help-line at these numbers</p>
           <div class="row">
             <div class="col-md-30">
               <div class="inner-content">
                 <h3>SURYASUKSES GROUP SURABAYA</h3>
                 <h4>031 5030 450</h4>
-                <p>Jl. Kertajaya 109 Surabaya 60286 - Indonesia</p>
+                <p>Jl. Kertajaya 109 </p>
+                <p>Surabaya 60286 - Indonesia</p>
               </div>
             </div>
             <div class="col-md-30">
               <div class="inner-content">
                 <h3>SURYASUKSES GROUP JAKARTA</h3>
                 <h4>021 386 1333</h4>
-                <p>Jl. Cideng Timur No. 70E dan F Jakarta Pusat - Indonesia</p>
+                <p>Jl. Cideng Timur No. 70E dan F </p>
+                <p>Jakarta Pusat - Indonesia</p>
               </div>
             </div>
           </div>
