@@ -54,14 +54,13 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               PRODUCTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Preforms')); ?>">Preforms</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Bottles')); ?>">Bottles</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Closures')); ?>">Closures</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Lids')); ?>">Lids</a>
+                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Containers')); ?>">Containers</a>
             </div>
           </li>
           <li class="nav-item dropdown">
