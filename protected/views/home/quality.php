@@ -6,7 +6,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
 					<li class="breadcrumb-item"><a href="#">Policies</a></li>
-					<li class="breadcrumb-item active" aria-current="page"><a href="#">Quality Polict</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><a href="#">Quality Policy</a></li>
                 </ol>
             </nav>
         </div>
