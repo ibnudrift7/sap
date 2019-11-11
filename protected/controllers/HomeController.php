@@ -922,6 +922,25 @@ class HomeController extends Controller
 		));
 	}
 
+	public function actionMarket_landing()
+	{
+		$model = new ContactForm;
+		$model->scenario = 'insert';
+		
+		$this->layout='//layouts/column2';
+		$this->pageTitle = 'Products - '. $this->pageTitle;
+
+		$data = DataMarket::nex_resource();
+		$s_id = intval($_GET['id']);
+
+		$n_model = $data[$s_id];
+
+		$this->render('market_landing', array(
+			'market_resource'=>$data,
+			'n_model'=>$n_model,
+		));
+	}
+
 	public function actionListInquiry()
 	{
 		$this->pageTitle = 'Daftar Inquiry - '. $this->pageTitle;

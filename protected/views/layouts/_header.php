@@ -138,14 +138,13 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       <div class="row">
         <div class="col-md-25">
             <span class="in_title">MARKETS</span>
+            <?php 
+            $datas = DataMarket::nex_resource();
+            ?>
             <ul class="list-unstyled">
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages')); ?>">Beverages</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Healthcare')); ?>">Healthcare</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Household')); ?>">Household</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Agriculture')); ?>">Agriculture</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Industrial')); ?>">Industrial</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Filtration')); ?>">Filtration</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Building-Construction')); ?>">Building & Construction</a></li>
+              <?php foreach ($datas as $key => $value): ?>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo $value['name_category'] ?></a></li>
+              <?php endforeach ?>
             </ul>
             <div class="clear"></div>
           </div>

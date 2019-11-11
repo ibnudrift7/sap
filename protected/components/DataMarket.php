@@ -132,7 +132,7 @@ class DataMarket {
                         'desc'=>'',
                         'lists' => [
                                         [
-                                            'names'=>'-	Geo Textiles',
+                                            'names'=>'Geo Textiles',
                                             'picture'=>['product1.jpg','product1.jpg'],
                                             'info'=>'<p>Surya Sukses Group’s geotextile products will help solve problems for construction and landscaping professionals. It is economic but very useful. Geotextile made from polypropylene spundbond will bring stabilization, landscaping, ground and grass reinforcement, and erosion control.</p>',
                                         ],
@@ -143,7 +143,9 @@ class DataMarket {
                                         ]
                                    ],
                     ],
-                ],
+                ];
 
-        return $data,
+        return $data;
     }
+
+}
