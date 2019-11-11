@@ -9,7 +9,8 @@
                     <?php if ( !isset($_GET['parent']) ): ?>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#"><?php echo ucwords($_GET['slug']) ?></a></li>
                     <?php else: ?>
-                        
+                    <li class="breadcrumb-item" aria-current="page"><a href="#"><?php echo ucwords($n_parent['name_category']) ?></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#"><?php echo ucwords($_GET['slug']) ?></a></li>
                     <?php endif ?>
                 </ol>
             </nav>
@@ -31,45 +32,38 @@
       <div class="box-konten-kiri">
         <h5>Products</h5>
         <?php echo $this->renderPartial('//layouts/_left_menu_products', array('product_resource'=> $product_resource)); ?>
-        
+
+        <div class="clearfix clear"></div>
       </div>
       </div>
       <div class="col-md-45">
-        <h3><?php echo ucwords($n_model['name_category']) ?></h3>
+        <h3><?php echo ucwords($n_child['names']) ?></h3>
         <div class="row feature-data">
           <div class="col-md-60">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> 
-            <?php if ($n_model['desc'] != ''): ?>
-            <?php echo $n_model['desc'] ?>
+            <div class="featured_car_detail">
+                <div id="carouselEx_gallery" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <?php for ($i=0; $i < 4; $i++) { ?>
+                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $i ?>" <?php if ($i == 0): ?>class="active"<?php endif ?>></li>
+                <?php } ?>
+                  </ol>
+                  <div class="carousel-inner">
+                    <?php for ($i=0; $i < 4; $i++) { ?>
+                    <div class="carousel-item <?php if ($i == 0): ?>active<?php endif ?>">
+                      <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> 
+                    </div>
+                    <?php } ?>
+                  </div>
+                </div>
+            </div>
+
+            <?php if ($n_child['info'] != ''): ?>
+            <?php echo $n_child['info'] ?>
             <?php endif ?>
           </div>
         </div>
 
-        <?php if ($n_model['lists']): ?>
-        <div class="row default-data">
-            <?php foreach ($n_model['lists'] as $key => $value): ?>
-                <div class="col-md-20">
-                    <div class="box-content">
-                        <div class="image">
-                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>">
-                                <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?>product2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="title">
-                            <p><?php echo ucwords($value['names']); ?></p>
-                        </div>
-                        <div class="subtitle">
-                            <p><?php echo substr(strip_tags($value['info']), 0, 80).'...'; ?></p>
-                        </div>
-                        <div class="klik">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><p>Learn More</p></a>
-                        </div>
-                    </div>
-                </div>
-            <?php endforeach ?>
-        </div>
-        <?php endif ?>
-
+        <div class="clearfix clear"></div>
       </div>
     </div>
   </div>

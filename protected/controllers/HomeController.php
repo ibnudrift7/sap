@@ -893,10 +893,32 @@ class HomeController extends Controller
 		$s_id = intval($_GET['id']);
 
 		$n_model = $data[$s_id];
-		
+
 		$this->render('product_landing', array(
 			'product_resource'=>$data,
 			'n_model'=>$n_model,
+		));
+	}
+
+	public function actionProduct_range()
+	{
+		$model = new ContactForm;
+		$model->scenario = 'insert';
+		
+		$this->layout='//layouts/column2';
+		$this->pageTitle = 'Products - '. $this->pageTitle;
+
+		$data = DataProducts::nex_resource();
+		$s_parent = intval($_GET['parent']);
+		$s_ids = intval($_GET['id']);
+
+		$n_parent = $data[$s_parent];
+		$n_child = $data[$s_parent]['lists'][$s_ids];
+
+		$this->render('product_range_detail', array(
+			'product_resource'=>$data,
+			'n_parent'=>$n_parent,
+			'n_child'=>$n_child,
 		));
 	}
 
