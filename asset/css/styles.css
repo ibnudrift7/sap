@@ -1465,4 +1465,44 @@ ul.list-unstyled.lefts_submenu_product li.dropdown.active a {
 ul.lefts_submenu_product li ul.dropdown-menu {
   display: block;
 }
+section.bawah-slide {
+  background: #ecf0f3;
+}
+section.bawah-slide .prelative.container {
+  max-width: 838px;
+  padding: 135px 0;
+}
+section.bawah-slide .prelative.container .row .box-content a {
+  text-decoration: none;
+}
+section.bawah-slide .prelative.container .row .box-content a .image {
+  background: #c2c5c7;
+  width: 121px;
+  height: 121px;
+  display: table;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+}
+section.bawah-slide .prelative.container .row .box-content a .image .inners {
+  display: table-cell;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+}
+section.bawah-slide .prelative.container .row .box-content a p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #474747;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+section.bawah-slide .prelative.container .row .box-content a:hover .image {
+  background: #c52026;
+}
+section.bawah-slide .prelative.container .row .box-content a:hover p {
+  color: #c52026;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -26,7 +26,7 @@
     <div class="row">
       <div class="col-md-15">
       <div class="box-konten-kiri">
-        <h5>Quality Policies</h5>
+        <h5>Policies</h5>
       </div>
       </div>
       <div class="col-md-45">
