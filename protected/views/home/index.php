@@ -1,4 +1,58 @@
+<?php
+$link_slide = array(
+	array(
+		'picture' => 'bawah-slide1.png',
+		'titles' => 'Packaging',
+		'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
+		'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History'))
+	),
+	array(
+		'picture' => 'bawah-slide2.png',
+		'titles' => 'Nonwoven',
+		'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
+		'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages'))
+	),
+	array(
+		'picture' => 'bawah-slide3.png',
+		'titles' => 'Houseware',
+		'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
+		'link' => CHtml::normalizeUrl(array('/home/products'))
+	),
+	array(
+		'picture' => 'bawah-slide4.png',
+		'titles' => 'Roofing',
+		'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
+		'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
+	),
+
+);
+?>
+
+<section class="bawah-slide">
+	<div class="prelative container ">
+		<div class="row">
+			<?php foreach ($link_slide as $key => $value): ?>
+			<div class="col-md-15">
+				<div class="box-content">
+					<a href="#">
+						<div class="image">
+							<div class="inners">
+							<img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt="">
+							</div>
+						</div>
+						<p><?php echo $value['titles'] ?></p>
+					</a>
+				</div>
+			</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+</section>
+
+
 <div class="py-1"></div>
+
+
 
 <section class="home-sec-1">
     <div class="prelative container">
@@ -17,17 +71,17 @@
                                 'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
                                 'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages'))
                             ),
-                            array(
-                                'picture' => 'homesec-3.jpg',
-                                'titles' => 'SAP Products',
-                                'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
-                                'link' => CHtml::normalizeUrl(array('/home/products'))
-                            ),
+							array(
+								'picture' => 'homesec-3.jpg',
+								'titles' => 'SAP Solutions',
+								'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
+								'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
+							),
                             array(
                                 'picture' => 'homesec-4.jpg',
-                                'titles' => 'SAP Solutions',
-                                'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
-                                'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
+                                'titles' => 'SAP Career',
+                                'info' => 'We challenge ourselves and became better everyday. If you got what it takes, you’re the one that we’re looking for.',
+                                'link' => CHtml::normalizeUrl(array('/home/career'))
                             ),
                             
                         );
