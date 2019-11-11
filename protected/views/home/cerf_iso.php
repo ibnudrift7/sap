@@ -4,7 +4,8 @@
         <div class="col-md-45">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Policies</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#">ISO 9001 Certification</a></li>
                 </ol>
             </nav>
@@ -31,7 +32,7 @@
         <div class="box-content">
           <h3>ISO 9001 Certification</h3>
           <p>ISO 9001 is the internationally recognized standard for Quality Management Systems (QMS). ISO 9001 certification provides the basis for effective processes and effective people to deliver an effective product or service time after time. </p>
-          <img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>image-9001.jpg" alt="">
+			<a data-fancybox="gallery" href="<?php echo $this->assetBaseurl; ?>sertfikat-iso-sap.jpg"><img style="border: 1px solid #ccc;" class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sertfikat-iso-sap.jpg" alt=""></a>
         </div>
       </div>
     </div>
@@ -68,3 +69,8 @@
         </div>
     </div>
 </section>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+

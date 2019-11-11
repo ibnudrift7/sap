@@ -53,7 +53,7 @@ $products = [
       </div>
       <div class="col-md-45 inner-rights_product-range">
         <h6>Packaging</h6>
-        <h3>Blue Bottle Studio</h3>
+        <h3>Preforms</h3>
         <div class="row featured">
           <div class="col-md-60">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt=""> 
@@ -71,7 +71,7 @@ $products = [
             <div class="col-md-40">
                 <div class="box-content-kanan">
                     <div class="title">
-                        <p><?php echo $value['title']?></p>
+                        <p>Preforms</p>
                     </div>
                     <div class="subtitle">
                         <p><?php echo $value['subtitle']?></p>
@@ -88,7 +88,7 @@ $products = [
   </div>
 </section>
 
-<section class="home-sec-3 py-5 my-auto">
+<section class="home-sec-3 py-5 my-auto d-none">
     <div class="prelative container">
         <div class="row py-5">
             <div class="col-md-60">

@@ -41,7 +41,7 @@
           <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
+<!--          <li><a href="--><?php //echo CHtml::normalizeUrl(array('/home/faq')); ?><!--">FAQ</a></li>-->
         </ol>
       </div>
       </div>
@@ -49,7 +49,7 @@
         <h4>Our culture of perfections</h4>
         <h3>Quality Statement</h3>
         <p>Quality products and on time delivery are the things that made us different. With hairline precision production and exceptional discipline in time management, Suryasukses Group has managed to be on top when it comes to quality.</p>
-        <img class="py-4" src="<?php echo $this->assetBaseurl; ?>quality.jpg" alt="">
+        <img class="w-100 py-4" src="<?php echo $this->assetBaseurl; ?>quality.jpg" alt="">
         <p>The Suryasukses Group puts strong emphasis on quality. The best manufacturing practice in Suryasukses Group is centrally coordinated and implemented at each plant to ensure superior quality. The best manufacturing practice is continuously pushed up to lift the quality level further. All Suryasukses Group plants are ISO 9000 certified and following the intense and strict interntional safety standard regulation.</p>
 
         <div class="row no-gutters py-4">
@@ -66,16 +66,16 @@
             </div>
           </div>
           <div class="col-md-30">
-            <img src="<?php echo $this->assetBaseurl; ?>Layer-43.jpg" alt="">
+            <img class="w-100" src="<?php echo $this->assetBaseurl; ?>Layer-43.jpg" alt="">
           </div>
         </div>
 
         <div class="row no-gutters py-4">
           <div class="col-md-30">
-            <img src="<?php echo $this->assetBaseurl; ?>Layer-44.jpg" alt="">
+            <img class="w-100" src="<?php echo $this->assetBaseurl; ?>Layer-44.jpg" alt="">
           </div>
           <div class="col-md-30">
-            <div class="content">
+            <div class="content pl-4">
               <div class="content-inner">
                 <div class="title">
                   <p>When Technology Meets Human Skill</p>

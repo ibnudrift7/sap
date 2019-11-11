@@ -74,35 +74,35 @@
     </section>
 </div>
 
-<section class="home-sec-3 py-5 my-auto">
-    <div class="prelative container">
-        <div class="row py-5">
-            <div class="col-md-60">
-                <div class="py-3"></div>
-                <div class="box-content ">
-                    <div class="our-corporation">
-                        <h4>OUR CORPORATION GROUP</h4>
-                    </div>
-                    <div class="py-3"></div>
-                </div>
-            </div>
-            <div class="col-md-60">
-                <div class="box-content inners_listcompany">
-                    <ul class="list-inline text-center justify-content-center">
-                        <li class="list-inline-item">
-                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_1.png" alt="" class="img img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_2.png" alt="" class="img img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="<?php echo $this->assetBaseurl; ?>small_logo_companys_3.png" alt="" class="img img-fluid">
-                        </li>
-                    </ul>
-                </div>
-                <div class="py-3"></div>
-            </div>
-
-        </div>
-    </div>
-</section>
+<!--<section class="home-sec-3 py-5 my-auto">-->
+<!--    <div class="prelative container">-->
+<!--        <div class="row py-5">-->
+<!--            <div class="col-md-60">-->
+<!--                <div class="py-3"></div>-->
+<!--                <div class="box-content ">-->
+<!--                    <div class="our-corporation">-->
+<!--                        <h4>OUR CORPORATION GROUP</h4>-->
+<!--                    </div>-->
+<!--                    <div class="py-3"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-60">-->
+<!--                <div class="box-content inners_listcompany">-->
+<!--                    <ul class="list-inline text-center justify-content-center">-->
+<!--                        <li class="list-inline-item">-->
+<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_1.png" alt="" class="img img-fluid">-->
+<!--                        </li>-->
+<!--                        <li class="list-inline-item">-->
+<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_2.png" alt="" class="img img-fluid">-->
+<!--                        </li>-->
+<!--                        <li class="list-inline-item">-->
+<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_3.png" alt="" class="img img-fluid">-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="py-3"></div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->

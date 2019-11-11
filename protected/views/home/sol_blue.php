@@ -89,7 +89,7 @@ $solblue = [
   </div>
 </section>
 
-<section class="home-sec-3 py-5 my-auto">
+<section class="home-sec-3 py-5 my-auto d-none">
     <div class="prelative container">
         <div class="row py-5">
             <div class="col-md-60">

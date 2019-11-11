@@ -4,8 +4,9 @@
         <div class="col-md-45">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Glass Suction GSC 3S</a></li>
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Policies</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">FSSC 22000 Certification</a></li>
                 </ol>
             </nav>
         </div>
@@ -31,7 +32,7 @@
         <div class="box-content">
           <h3>FSSC 22000 Certification</h3>
           <p>The FSSC 22000 Scheme is managed by Foundation FSSC 22000 and governed by an independent board of shareholders which consists of representatives from several sectors in the food industry.</p>
-          <img class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>image-FSSC.jpg" alt="">
+			<a data-fancybox="gallery" href="<?php echo $this->assetBaseurl; ?>sertfikat-fssc.jpg"><img style="border: 1px solid #ccc;" class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sertfikat-fssc.jpg" alt=""></a>
         </div>
       </div>
     </div>
@@ -68,3 +69,6 @@
         </div>
     </div>
 </section>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

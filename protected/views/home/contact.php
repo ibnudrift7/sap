@@ -34,7 +34,7 @@
     <div class="row">
       <div class="col-md-15">
         <div class="box-konten-kiri">
-          <h5>About Us</h5>
+          <h5>Contact Us</h5>
         </div>
       </div>
       <div class="col-md-45">
