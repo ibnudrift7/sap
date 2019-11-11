@@ -5,8 +5,8 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Products</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Packaging</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Products</a></li> 
+                    <!-- <li class="breadcrumb-item active" aria-current="page"><a href="#">Packaging</a></li> -->
                 </ol>
             </nav>
         </div>
@@ -66,7 +66,7 @@ $products = [
       </div>
       </div>
       <div class="col-md-45">
-        <h3>Blue Bottle Studio</h3>
+        <h3>Packaging</h3>
         <div class="row feature-data">
           <div class="col-md-60">
             <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt=""> 
@@ -87,7 +87,12 @@ $products = [
                         <p><?php echo $value['subtitle']?></p>
                     </div>
                     <div class="klik">
+						<?php if($key==1){ ?>
                         <a href="<?php echo CHtml::normalizeUrl(array('/home/productrange')); ?>"><p>Learn More</p></a>
+						<?php } ?>
+						<?php if($key>1){?>
+							<a href="#"><p>Learn More</p></a>
+						<?php } ?>
                     </div>
                 </div>
             </div>

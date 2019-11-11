@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6,p,a, div{
 }
 
 .prelative.container{
-    max-width: 1485px;
+    max-width: 1260px;
 }
 .prelative.container2 {
     max-width: 1490px;
@@ -280,8 +280,6 @@ section.home-sec-2{
         }
     }
 }
-
-
 
 section.home-sec-3{
     background: url('../images/backs_bottom_hm_gradients.jpg') center center;
@@ -881,33 +879,36 @@ section.cerf-sec-1{
 
 section.breadcrumb-det{
     padding: 2.5rem 0 0.3rem;
-    border-bottom: 1px solid #f4f4f4;
     margin-bottom: 2.5rem;
-    ol.breadcrumb {
-        background-color: transparent;
-        margin: 0;
-        padding: 0;
-        li.breadcrumb-item{
-            a{
-                color: #6a6a6a;
-                font-size: 15px;
-                text-decoration: none;
-            }
-        }
-        li.breadcrumb-item.active{
-            a{
-                color: #232323;
-                font-size: 15px;text-decoration: none;
-            }
-        }
-    }
-    .block-back-link{
-        a{
-            font-size: 15px;
-            color: #000000;
-            text-decoration: none;
-        }
-    }
+	.prelative.container{
+		border-bottom: 1px solid #f4f4f4;
+		ol.breadcrumb {
+			background-color: transparent;
+			margin: 0;
+			padding: 0;
+			li.breadcrumb-item{
+				a{
+					color: #6a6a6a;
+					font-size: 15px;
+					text-decoration: none;
+				}
+			}
+			li.breadcrumb-item.active{
+				a{
+					color: #232323;
+					font-size: 15px;text-decoration: none;
+				}
+			}
+		}
+		.block-back-link{
+			a{
+				font-size: 15px;
+				color: #000000;
+				text-decoration: none;
+			}
+		}
+	}
+
 }
 
 
@@ -1259,4 +1260,17 @@ section.inside-cover{
         min-height: auto;
         margin-bottom: 20px;
     }
+}
+
+section.about-location-sec-1 .box-konten-kiri ol li, section.cerf-sec-1.block_section_faq .box-konten-kiri ol li,
+section.sol_blue-sec-1 .box-konten-kiri ol li{
+	margin-bottom: 7px;
+}
+
+ul.list-unstyled.lefts_submenu_product li.dropdown.active a{
+	font-weight: 700;
+}
+
+ul.lefts_submenu_product li ul.dropdown-menu{
+	display: block;
 }

@@ -54,13 +54,14 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               PRODUCTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Preforms')); ?>">Preforms</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Bottles')); ?>">Bottles</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Closures')); ?>">Closures</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Lids')); ?>">Lids</a>
-                <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Containers')); ?>">Containers</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -165,6 +166,8 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
             </ul>
+            <div class="py-5"></div>
+            <div class="py-5"></div>
             <div class="clear"></div>
           </div>
         </div>
@@ -182,19 +185,19 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <div class="col-md-15">
               <ul class="list-unstyled">
                 <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Preforms')); ?>">Preforms</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Bottles')); ?>">Bottles</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Closures')); ?>">Closures</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Lids')); ?>">Lids</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Containers')); ?>">Containers</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Preforms')); ?>">Preforms</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Bottles')); ?>">Bottles</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Closures')); ?>">Closures</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Lids')); ?>">Lids</a></li>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Containers')); ?>">Containers</a></li>
               </ul>
               <div class="py-3"></div>
-              <ul class="list-unstyled">
+              <!-- <ul class="list-unstyled">
                 <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Our Brands</a></li>
                 <li><a href="#">SAP</a></li>
                 <li><a href="#">AMARI</a></li>
-              </ul>
+              </ul> -->
           </div>
           <div class="col-md-15">
             <ul class="list-unstyled">
@@ -238,12 +241,16 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       console.log(cs_active);
 
       $('.blocks_bottom_menuDropdown').slideUp();
-      // $('.blocks_bottom_menuDropdown').removeClass('views');
-      // $('section.header-baru').slideDown();
       $('section.header-baru').addClass('opened');
 
       // $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('views');
-      $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(1200);
+      if ( $('#'+cs_active+'.blocks_bottom_menuDropdown').hasClass('open_m') ) {
+        $('#'+cs_active+'.blocks_bottom_menuDropdown').slideUp();
+        $('#'+cs_active+'.blocks_bottom_menuDropdown').removeClass('open_m');
+      } else {
+        $('#'+cs_active+'.blocks_bottom_menuDropdown').slideToggle(1200);
+        $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('open_m');
+      }
       // return false;
     });
 

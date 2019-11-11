@@ -40,7 +40,7 @@
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
           <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
+<!--          <li><a href="--><?php //echo CHtml::normalizeUrl(array('/home/faq')); ?><!--">FAQ</a></li>-->
         </ol>
       </div>
       </div>
