@@ -5,8 +5,12 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Products</a></li> 
-                    <!-- <li class="breadcrumb-item active" aria-current="page"><a href="#">Packaging</a></li> -->
+                    <li class="breadcrumb-item" aria-current="page"><a href="#">Products</a></li> 
+                    <?php if ( !isset($_GET['parent']) ): ?>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#"><?php echo ucwords($_GET['slug']) ?></a></li>
+                    <?php else: ?>
+                        
+                    <?php endif ?>
                 </ol>
             </nav>
         </div>
@@ -31,38 +35,41 @@
       </div>
       </div>
       <div class="col-md-45">
-        <h3>Packaging</h3>
+        <h3><?php echo ucwords($n_model['name_category']) ?></h3>
         <div class="row feature-data">
           <div class="col-md-60">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt=""> 
-            <p>Suryasukses packaging products are world class and have been certified by bsi ISO 9001 - FSSC 22000. Our facilities ranging from injection and blow molding to thermoforming, ready to cater to all our customer’s need with exceptional quality that exceeds expectations. Suryasukses will bring out the best innovative results to bring greate achievement for our customers .</p>
+            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> 
+            <?php if ($n_model['desc'] != ''): ?>
+            <?php echo $n_model['desc'] ?>
+            <?php endif ?>
           </div>
         </div>
-        <div class="row default-data">
 
-            <?php /*<div class="col-md-20">
-                <div class="box-content">
-                    <div class="image">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/home/productrange')); ?>"><img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt="">
-                        </a></div>
-                    <div class="title">
-                        <p><?php echo $value['title']?></p>
-                    </div>
-                    <div class="subtitle">
-                        <p><?php echo $value['subtitle']?></p>
-                    </div>
-                    <div class="klik">
-						<?php if($key==1){ ?>
-                        <a href="<?php echo CHtml::normalizeUrl(array('/home/productrange')); ?>"><p>Learn More</p></a>
-						<?php } ?>
-						<?php if($key>1){?>
-							<a href="#"><p>Learn More</p></a>
-						<?php } ?>
+        <?php if ($n_model['lists']): ?>
+        <div class="row default-data">
+            <?php foreach ($n_model['lists'] as $key => $value): ?>
+                <div class="col-md-20">
+                    <div class="box-content">
+                        <div class="image">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>">
+                                <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?>product2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <p><?php echo ucwords($value['names']); ?></p>
+                        </div>
+                        <div class="subtitle">
+                            <p><?php echo substr(strip_tags($value['info']), 0, 80).'...'; ?></p>
+                        </div>
+                        <div class="klik">
+                        <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><p>Learn More</p></a>
+                        </div>
                     </div>
                 </div>
-            </div>*/ ?>
-            <?php //endforeach ?>
+            <?php endforeach ?>
         </div>
+        <?php endif ?>
+
       </div>
     </div>
   </div>

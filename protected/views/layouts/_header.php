@@ -181,50 +181,22 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="prelatife container">
       <div class="inners_mndropdown menu_small">
         <span class="in_title">PRODUCTS</span>
+        <?php 
+        $n_resource = DataProducts::nex_resource();
+        $kn_data = array(0, 1, 2, 3);
+        ?>
         <div class="row">
+          <?php foreach ($kn_data as $k_kat => $nkat): ?>
           <div class="col-md-15">
               <ul class="list-unstyled">
-                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products', 'name'=>'Packaging')); ?>">Packaging</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Preforms')); ?>">Preforms</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Bottles')); ?>">Bottles</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Closures')); ?>">Closures</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Drinking Cups')); ?>">Drinking Cups</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Lids')); ?>">Lids</a></li>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/productrange', 'name'=>'Containers')); ?>">Containers</a></li>
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $k_kat, 'slug'=>Slug::Create('packaging') )); ?>"><?php echo ucwords($n_resource[$k_kat]['name_category']) ?></a></li>
+                <?php foreach ($n_resource[$k_kat]['lists'] as $key => $value): ?>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $k_kat, 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><?php echo ucwords($value['names']) ?></a></li>
+                <?php endforeach ?>
               </ul>
-              <div class="py-3"></div>
-              <!-- <ul class="list-unstyled">
-                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Our Brands</a></li>
-                <li><a href="#">SAP</a></li>
-                <li><a href="#">AMARI</a></li>
-              </ul> -->
           </div>
-          <div class="col-md-15">
-            <ul class="list-unstyled">
-              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Specialty Nonwoven</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Spunbond Polypropylene</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Meltblown</a></li>
-            </ul>
-          </div>
-          <div class="col-md-15">
-            <ul class="list-unstyled">
-              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Housewares</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Storage</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Containers</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Racks</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Sealware</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Kitchenware</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Cleaning ware</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Bathroom</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Garden</a></li>
-            </ul>
-          </div>
-          <div class="col-md-15">
-            <ul class="list-unstyled">
-              <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Roofing</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/products')); ?>">Twinwall corrugated roofing</a></li>
-            </ul>
-          </div>
+          <?php endforeach ?>
+
         </div>
         <div class="clear"></div>
       </div>

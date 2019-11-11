@@ -11,6 +11,7 @@ section.product-range-sec-1 .box-content-kanan .klik a{
 	text-decoration: none;
 }
 
+section.product-sec-1 .box-konten-kiri,
 section.product-range-sec-1 .box-konten-kiri{
 	position: relative;
 	z-index: 17;

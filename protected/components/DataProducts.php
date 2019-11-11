@@ -9,6 +9,7 @@ class DataProducts {
     {
         
         $data = [
+                    // packaging
                     [
                         'name_category'=>'packaging',
                         'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
