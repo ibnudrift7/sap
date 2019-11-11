@@ -188,7 +188,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
           <?php foreach ($kn_data as $k_kat => $nkat): ?>
           <div class="col-md-15">
               <ul class="list-unstyled">
-                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $k_kat, 'slug'=>Slug::Create('packaging') )); ?>"><?php echo ucwords($n_resource[$k_kat]['name_category']) ?></a></li>
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $k_kat, 'slug'=>Slug::Create($n_resource[$k_kat]['name_category']) )); ?>"><?php echo ucwords($n_resource[$k_kat]['name_category']) ?></a></li>
                 <?php foreach ($n_resource[$k_kat]['lists'] as $key => $value): ?>
                 <li><a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $k_kat, 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><?php echo ucwords($value['names']) ?></a></li>
                 <?php endforeach ?>

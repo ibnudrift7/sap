@@ -1,7 +1,7 @@
 <?php if ($product_resource): ?>
 <ul class="list-unstyled lefts_submenu_product">
 	<?php foreach ($product_resource as $key => $value): ?>
-	<li class="dropdown <?php if (isset($_GET['parent']) && $_GET['parent'] == $key): ?>active<?php endif ?>"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo ucwords($value['name_category']) ?></a>
+	<li class="dropdown <?php if ( (isset($_GET['parent']) && $_GET['parent'] == $key) OR (!isset($_GET['parent']) and $key == $_GET['id'])): ?>active<?php endif ?>"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo ucwords($value['name_category']) ?></a>
 		<?php if ( count( $value['lists']) > 0): ?>
 		<ul class="dropdown-menu py-2">
 			<?php foreach ($value['lists'] as $keys_child => $val_child): ?>

@@ -4,25 +4,25 @@ $link_slide = array(
 		'picture' => 'bawah-slide1.png',
 		'titles' => 'Packaging',
 		'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
-		'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History'))
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') ))
 	),
 	array(
 		'picture' => 'bawah-slide2.png',
 		'titles' => 'Nonwoven',
 		'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
-		'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages'))
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 1, 'slug'=>Slug::Create('specialty-nonwoven') ))
 	),
 	array(
 		'picture' => 'bawah-slide3.png',
 		'titles' => 'Houseware',
 		'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
-		'link' => CHtml::normalizeUrl(array('/home/products'))
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 2, 'slug'=>Slug::Create('housewares') ))
 	),
 	array(
 		'picture' => 'bawah-slide4.png',
 		'titles' => 'Roofing',
 		'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
-		'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 3, 'slug'=>Slug::Create('roofing') ))
 	),
 
 );
@@ -34,7 +34,7 @@ $link_slide = array(
 			<?php foreach ($link_slide as $key => $value): ?>
 			<div class="col-md-15">
 				<div class="box-content">
-					<a href="#">
+					<a href="<?php echo $value['link'] ?>">
 						<div class="image">
 							<div class="inners">
 							<img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt="">
