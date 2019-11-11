@@ -61,7 +61,7 @@ $products = [
       <div class="col-md-15">
       <div class="box-konten-kiri">
         <h5>Products</h5>
-        <?php echo $this->renderPartial('//layouts/_left_menu_products', array()); ?>
+        <?php echo $this->renderPartial('//layouts/_left_menu_products', array('product_resource'=> $product_resource)); ?>
         
       </div>
       </div>

@@ -867,35 +867,46 @@ class HomeController extends Controller
 	
 	public function actionProducts()
 	{
-		$this->pageTitle = 'Products - '. $this->pageTitle;
+		// $criteria=new CDbCriteria;
+		// $criteria->with = array('description', 'category', 'categories');
+		// $criteria->order = 'date DESC';
+		// $criteria->addCondition('status = "1"');
+		// $criteria->addCondition('description.language_id = :language_id');
+		// // $criteria->addCondition('categoryView.language_id = :language_id');
+		// // $criteria->addCondition('categoryTitle.language_id = :language_id');
+		// $criteria->params[':language_id'] = $this->languageID;
 
-		$criteria=new CDbCriteria;
-		$criteria->with = array('description', 'category', 'categories');
-		$criteria->order = 'date DESC';
-		$criteria->addCondition('status = "1"');
-		$criteria->addCondition('description.language_id = :language_id');
-		// $criteria->addCondition('categoryView.language_id = :language_id');
-		// $criteria->addCondition('categoryTitle.language_id = :language_id');
-		$criteria->params[':language_id'] = $this->languageID;
+		// $criteria->addCondition('categories.category_id = :category');
+		// $criteria->params['category'] = 1;
 
-		$criteria->addCondition('categories.category_id = :category');
-		$criteria->params['category'] = 1;
+		// $pageSize = 12;
 
-		$pageSize = 12;
-
-		$product = new CActiveDataProvider('PrdProduct', array(
-			'criteria'=>$criteria,
-		    'pagination'=>array(
-		        'pageSize'=>$pageSize,
-		    ),
-		));
+		// $product = new CActiveDataProvider('PrdProduct', array(
+		// 	'criteria'=>$criteria,
+		//     'pagination'=>array(
+		//         'pageSize'=>$pageSize,
+		//     ),
+		// ));
 
 		$model = new ContactForm;
 		$model->scenario = 'insert';
-
+		
 		$this->layout='//layouts/column2';
+		$this->pageTitle = 'Products - '. $this->pageTitle;
+
+		$data = DataProducts::nex_resource();
+				
+		// $str = '<ul>';
+		// foreach ($data as $key => $value) {
+		// 	$str .= '<li>'. $value['name_category'] .'</li>';
+		// }
+		// $str .= '</ul>';
+
+		// echo $str;
+		// exit;
+
 		$this->render('product', array(
-			'product'=>$product,
+			'product_resource'=>$data,
 			'model'=>$model,
 		));
 	}
