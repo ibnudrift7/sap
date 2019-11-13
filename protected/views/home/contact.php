@@ -13,14 +13,14 @@
         <div class="col-md-45">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#">Contact Us</a></li>
                 </ol>
             </nav>
         </div>
         <div class="col-md-15">
           <div class="block-back-link text-right">
-            <a href="#">Back</a>
+            <a href="#" onclick="window.history.back();">Back</a>
           </div>
         </div>
       </div>
@@ -62,21 +62,21 @@
             </div>
           </div>
           <div class="email pt-4">
-                <p>Email your inquiry at cs@suryasukses.com</p>
+                <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
               </div>
               <div class="whatsapp pb-5 mb-3">
-                <h5>Whatsapp <img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</h5>
+                <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
               </div>
           </div>
 
 
-          <div class="image-bottom">
+          <!-- <div class="image-bottom">
             <div class="row no-gutters">
               <div class="col-md-60">
                 <img src="<?php echo $this->assetBaseurl; ?>Layer-34.jpg" alt="">
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="content-bottom">
             <h5>Member of Suryasukses Group</h5>
             <div class="content-inner-bottom">
@@ -113,6 +113,13 @@
                   <p>Kec Gempol - Pasuruan</p>
                   <p>Tel. +62 34 3656 329 (hunting)</p>
                 </div>
+				  <div class="col-md-30">
+					  <h3>PT. Suryasukses Inti Makmur</h3>
+<!--					  <h4>Plastic Houseware</h4>-->
+					  <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
+					  <p>Kec Gempol - Pasuruan</p>
+<!--					  <p>Tel. +62 34 3656 329 (hunting)</p>-->
+				  </div>
               </div>
             </div>
           </div>

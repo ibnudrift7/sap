@@ -38,7 +38,25 @@
         <h3><?php echo ucwords($n_model['name_category']) ?></h3>
         <div class="row feature-data">
           <div class="col-md-60">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> 
+            
+            <!-- <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>">  -->
+            <div class="featured_car_detail">
+                <div id="carouselEx_gallery" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <?php foreach ($n_model['picture'] as $key => $value): ?>
+                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?>></li>
+                    <?php endforeach ?>
+                  </ol>
+                  <div class="carousel-inner">
+                    <?php foreach ($n_model['picture'] as $key => $value): ?>
+                    <div class="carousel-item <?php if ($key == 0): ?>active<?php endif ?>">
+                      <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/products/'; ?><?php echo $value ?>" alt="<?php echo $_GET['slug'] ?>"> 
+                    </div>
+                    <?php endforeach; ?>
+                  </div>
+                </div>
+            </div>
+
             <?php if ($n_model['desc'] != ''): ?>
             <?php echo $n_model['desc'] ?>
             <?php endif ?>
@@ -52,7 +70,7 @@
                     <div class="box-content">
                         <div class="image">
                             <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>">
-                                <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?>product2.jpg" alt="">
+                                <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl.'../../images/products/'; ?><?php echo $value['picture'][0] ?>" alt="">
                             </a>
                         </div>
                         <div class="title">

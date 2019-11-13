@@ -32,7 +32,7 @@ $link_slide = array(
 	<div class="prelative container ">
 		<div class="row">
 			<?php foreach ($link_slide as $key => $value): ?>
-			<div class="col-md-15">
+			<div class="col-30 col-md-15">
 				<div class="box-content">
 					<a href="<?php echo $value['link'] ?>">
 						<div class="image">
@@ -63,13 +63,13 @@ $link_slide = array(
                                 'picture' => 'homesec-1.jpg',
                                 'titles' => 'Get to know SAP',
                                 'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
-                                'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History'))
+                                'link' => CHtml::normalizeUrl(array('/home/abouthistory'))
                             ),
                             array(
                                 'picture' => 'homesec-2.jpg',
                                 'titles' => 'Our Markets',
                                 'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
-                                'link' => CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages'))
+                                'link' => CHtml::normalizeUrl(array('/home/market_landing', 'id'=>0, 'slug'=> 'beverage'))
                             ),
 							array(
 								'picture' => 'homesec-3.jpg',
@@ -81,7 +81,7 @@ $link_slide = array(
                                 'picture' => 'homesec-4.jpg',
                                 'titles' => 'SAP Career',
                                 'info' => 'We challenge ourselves and became better everyday. If you got what it takes, you’re the one that we’re looking for.',
-                                'link' => CHtml::normalizeUrl(array('/home/career'))
+                                'link' => CHtml::normalizeUrl(array('/home/aboutcareer'))
                             ),
                             
                         );
@@ -120,13 +120,16 @@ $link_slide = array(
                             <p>Sharing our passion, realizing your ideas and visions.</p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <a href="#"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=Aj2C4Xp-GMM"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 </div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <!--<section class="home-sec-3 py-5 my-auto">-->
 <!--    <div class="prelative container">-->

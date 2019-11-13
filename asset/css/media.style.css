@@ -20,3 +20,88 @@ section.product-range-sec-1 .box-konten-kiri{
 section.product-sec-1 .box-content .klik a{
 	text-decoration: none;
 }
+
+section.product-sec-1 p a{
+	font-weight: 700;
+	color: #c52026;
+	text-decoration: none;
+}
+.featured_car_detail .carousel ol.carousel-indicators li{
+	height: 5px;
+}
+ul.lefts_submenu_product li.dropdown > ul.dropdown-menu{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+ul.lefts_submenu_product li.dropdown.active > ul.dropdown-menu li a,
+ul.lefts_submenu_product li.dropdown > ul.dropdown-menu li a{
+	font-weight: 400;
+}
+ul.lefts_submenu_product li ul.dropdown-menu li {
+    padding: 0.12rem 0;
+}
+
+
+section.sol-cap-sec-1 .email p a,
+section.sol-cap-sec-1 .whatsapp a,
+
+section.sol_blue-sec-1 .whatsapp a,
+section.sol_blue-sec-1 .email p a,
+
+section.contact-sec-1 .whatsapp h5 a,
+section.contact-sec-1 .email p a{
+	color: #6a6a6a;
+	text-decoration: none;
+}
+
+@media (max-width: 767px){
+
+	section.bawah-slide .prelative.container{
+		max-width: inherit;
+		padding: 3.5rem 15px 1.5rem;
+	}
+	section.bawah-slide .box-content{
+		padding-bottom: 1.3rem;
+	}
+	section.home-sec-1{
+		padding-top: 40px;
+	}
+
+	.navbar.navbar-light a.dropdown-item{
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+
+	section.contact-sec-1 .box-konten-kiri,
+	section.product-sec-1 .box-konten-kiri{
+		min-height: inherit !important;
+		height: auto;
+		margin-bottom: 4rem;
+	}
+	.navbar-light .navbar-toggler{
+		padding-right: 0px;
+	}
+	section.product-sec-1 h3{
+		margin-top: 0px;
+	}
+
+	section.inside-cover{
+		min-height: 360px !important;
+	}
+	section.inside-cover .text{
+		padding-top: 130px !important;
+	}
+	section.contact-sec-1 h3{
+		font-size: 33px;
+	}
+
+	section.bawah-slide .prelative.container .row .box-content a p{
+		margin-top: 7px;
+		font-size: 15px;
+	}
+	button.navbar-toggler:focus{
+		outline: none;
+	}
+
+}

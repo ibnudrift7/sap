@@ -38,7 +38,7 @@
         <div class="py-1"></div>
         <div class="clear clearfix"></div>
         <h3><?php echo ucwords($n_model['name_category']) ?></h3>
-        <div class="row feature-data">
+        <div class="row feature-data mb-0 mt-0">
           <div class="col-md-60">
             <!-- <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> --> 
             <?php if ($n_model['desc'] != ''): ?>
@@ -53,7 +53,7 @@
                 <div class="col-md-20">
                     <div class="box-content">
                         <div class="image">
-                            <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl; ?>product2.jpg" alt="">
+                            <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl.'../../images/markets/'; ?><?php echo $value['picture'][0] ?>" alt="">
                             <a href="<?php // echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>">
                             </a>
                         </div>
@@ -108,3 +108,8 @@
         </div>
     </div>
 </section>
+<style type="text/css">
+    section.product-sec-1 .box-konten-kiri{
+        min-height: 600px;
+    }
+</style>

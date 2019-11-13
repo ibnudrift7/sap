@@ -50,32 +50,30 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
           <li class="nav-item dropdown">
+            <?php 
+            $n_resource = DataProducts::nex_resource();
+            $kn_data = array(0, 1, 2, 3);
+            ?>
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               PRODUCTS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Door & Window</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Slide & Fold Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Glass</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Aluminum</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Steel Door</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Furniture</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Electronic Lock</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">Others</a>
+              <?php foreach ($kn_data as $k_kat => $nkat): ?>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $k_kat, 'slug'=>Slug::Create($n_resource[$k_kat]['name_category']) )); ?>"><?php echo ucwords($n_resource[$k_kat]['name_category']) ?></a>
+              <?php endforeach ?>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               MARKET
             </a>
+            <?php 
+            $datas = DataMarket::nex_resource();
+            ?>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Beverages')); ?>">Beverages</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Healthcare')); ?>">Healthcare</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Household')); ?>">Household</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Agriculture')); ?>">Agriculture</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Industrial')); ?>">Industrial</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Filtration')); ?>">Filtration</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'market-Building-Construction')); ?>">Building & Construction</a>
+              <?php foreach ($datas as $key => $value): ?>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo $value['name_category'] ?></a>
+              <?php endforeach ?>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -92,16 +90,16 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               ABOUT US
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a>
+              <!-- <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a> -->
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a>
+              <!-- <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a> -->
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Contact')); ?>">CONTACT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
         </ul>
       </div>
     </nav>
@@ -115,13 +113,13 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-25">
             <span class="in_title">ABOUT US</span>
             <ul class="list-unstyled">
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
+              <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li>
+              <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
+              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li> -->
             </ul>
             <div class="clear"></div>
           </div>

@@ -35,7 +35,7 @@
       <div class="box-konten-kiri">
         <h5>About Us</h5>
         <ol>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li>
+          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
           <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
@@ -59,7 +59,7 @@
                     <div class="alamat">
                         <p>Jl. Raya Sedati 97 Ds. Wedi</p>
                         <p>Gedangan - Sidoarjo</p>
-                        <a href="#">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+                        <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
                     </div>
                     <div class="tel">
                         <p>Tel. +62 31 8011 888</p>
@@ -76,7 +76,7 @@
                     <div class="alamat">
                         <p>Jl. Raya Sedati 97 Ds. Wedi</p>
                         <p>Gedangan - Sidoarjo</p>
-                        <a href="#">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+                        <a target="_blank" href="https://g.page/Amari-Spunbdond?share">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
                     </div>
                     <div class="tel">
                         <p>Tel. +62 31 8011 888</p>
@@ -94,7 +94,7 @@
                         <p>Jl. Selayar Blok B3-1</p>
                         <p>Kawasan Industri MM 2100, Cikarang Barat, Bekasi</p>
                         <p>Jawa Barat - Indonesia</p>
-                        <a href="#">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+                        <a target="_blank" href="https://goo.gl/maps/zPAR6jUZrvCZKfuR6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
                     </div>
                     <div class="tel">
                         <p>Tel. +62 21 8998 3777 / 8998 3999</p>
@@ -111,7 +111,7 @@
                     <div class="alamat">
                         <p>Dusun Winong, Desa Winong
                         <p>Kec Gempol - Pasuruan</p>
-                        <a href="#">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+                        <a target="_blank" href="https://goo.gl/maps/Qr2UKwEr5AY4QU1c7">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
                     </div>
                     <div class="tel">
                         <p>Tel. +62 34 3656 329 (hunting)</p>
@@ -124,6 +124,9 @@
   </div>
 </section>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<?php $str_alink = '<a data-fancybox href="https://www.youtube.com/watch?v=Aj2C4Xp-GMM">'; ?>
 <div class="prelative container2">
     <section class="home-sec-2">
             <div class="row">
@@ -136,7 +139,7 @@
                             <p>Sharing our passion, realizing your ideas and visions.</p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <a href="#"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>

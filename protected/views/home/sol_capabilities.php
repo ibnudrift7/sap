@@ -78,10 +78,10 @@
           </div>
           <div class="col-md-30 pt-4">
           <div class="email">
-                <p>Email your inquiry at cs@suryasukses.com</p>
+                <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
               </div>
               <div class="whatsapp">
-                <h5>Whatsapp <img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</h5>
+                <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
               </div>
           </div>
         </div>

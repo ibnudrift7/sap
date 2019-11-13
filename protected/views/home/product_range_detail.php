@@ -36,23 +36,27 @@
         <div class="clearfix clear"></div>
       </div>
       </div>
-      <div class="col-md-45">
+      <div class="col-md-45 rights_cont_def">
+
+        <h6><?php echo ucwords($n_parent['name_category']) ?></h6>
+        <div class="clear clearfix py-1"></div>
         <h3><?php echo ucwords($n_child['names']) ?></h3>
+
         <div class="row feature-data">
           <div class="col-md-60">
             <div class="featured_car_detail">
                 <div id="carouselEx_gallery" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                    <?php for ($i=0; $i < 4; $i++) { ?>
-                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $i ?>" <?php if ($i == 0): ?>class="active"<?php endif ?>></li>
-                <?php } ?>
+                    <?php foreach ($n_child['picture'] as $key => $value): ?>
+                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?>></li>
+                    <?php endforeach ?>
                   </ol>
                   <div class="carousel-inner">
-                    <?php for ($i=0; $i < 4; $i++) { ?>
-                    <div class="carousel-item <?php if ($i == 0): ?>active<?php endif ?>">
-                      <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>product1.jpg" alt="<?php echo $_GET['slug'] ?>"> 
+                    <?php foreach ($n_child['picture'] as $key => $value): ?>
+                    <div class="carousel-item <?php if ($key == 0): ?>active<?php endif ?>">
+                      <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/products/'; ?><?php echo $value ?>" alt="<?php echo $_GET['slug'] ?>"> 
                     </div>
-                    <?php } ?>
+                    <?php endforeach ?>
                   </div>
                 </div>
             </div>
