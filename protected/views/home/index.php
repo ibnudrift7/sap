@@ -2,50 +2,137 @@
 $link_slide = array(
 	array(
 		'picture' => 'bawah-slide1.png',
-		'titles' => 'Packaging',
-		'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
-		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') ))
+		'titles' => 'Bottles and Caps',
+		'info' => 'Recyclable bottles that deliver pristine quality to fulfill customers` needs.',
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') )),
+        'covers'=>['bottle001.jpg', 'bottle002.jpg'],
 	),
+
+    array(
+        'picture' => 'bawah-slide-5.png',
+        'titles' => 'Drinking Cups & Lids',
+        'info' => 'Our disposable cups are light-weight and cost efficient and offer multiple decoration options.',
+        'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') )),
+        'covers'=>['drinking-cups001.jpg','drinking-cups002.jpg'],
+    ),
+    
 	array(
 		'picture' => 'bawah-slide2.png',
-		'titles' => 'Nonwoven',
-		'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
-		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 1, 'slug'=>Slug::Create('specialty-nonwoven') ))
+		'titles' => 'Specialty Nonwoven',
+		'info' => 'A versatile product that can be printed or luminated. Its naturally poroous, light-weight and eco-friendly characteristics make spunbond a multipurpose product.',
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 1, 'slug'=>Slug::Create('specialty-nonwoven') )),
+        'covers'=>['cover-specialty.jpg'],
 	),
 	array(
 		'picture' => 'bawah-slide3.png',
-		'titles' => 'Houseware',
-		'info' => 'We develop a variety of plastic products from food grade packagings, housewares, nonwovens and now UPVC roofings. ',
-		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 2, 'slug'=>Slug::Create('housewares') ))
+		'titles' => 'Housewares',
+		'info' => 'To provide customers with qualified household products, innovative design, and prompt delivery at a very competitive price. Each products are designed to comfort and ease your life.',
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 2, 'slug'=>Slug::Create('housewares') )),
+        'covers'=>['cover-bathroom.jpg','cover-cleaningware.jpg','cover-garden.jpg','cover-kitchenware.jpg','cover-racks.jpg','cover-sealware.jpg'],
 	),
 	array(
 		'picture' => 'bawah-slide4.png',
-		'titles' => 'Roofing',
-		'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
-		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 3, 'slug'=>Slug::Create('roofing') ))
+		'titles' => 'Roofing System',
+		'info' => 'Roofing sheets manufactured from UPVC, designed to suit a diverse range of applications in various markets.',
+		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 3, 'slug'=>Slug::Create('roofing') )),
+        'covers'=>['cover-roofing-suryasukses.jpg'],
 	),
 
 );
 ?>
+<script type="text/javascript">
+    $(function(){
+        $('section.bawah-slide .nx_item').on('click', function(){
+            var to_ons = $(this).attr('data-id');
+            $('.others_description').addClass('d-none');
+            $('section.bawah-slide .nx_item').removeClass('active');
+
+            // console.log(to_ons);
+            sn_log_active = to_ons;
+            $(this).addClass('active');
+            $('.others_description.nactiv_'+ to_ons).removeClass('d-none');
+            return false;
+        });
+    });
+
+    var sn_log_active = 0;
+    function rundownSlide() {
+        $('.others_description').addClass('d-none');
+        $('section.bawah-slide .nx_item').removeClass('active');
+
+        $('section.bawah-slide .nx_item.nmenu_'+ sn_log_active).addClass('active');
+        $('.others_description.nactiv_'+ sn_log_active).removeClass('d-none');
+    }
+
+    var time = 1;
+    var interval = setInterval(function() { 
+       if (time <= 5) { 
+          rundownSlide();
+
+          console.log('log time = '+time);
+          console.log('log active = '+sn_log_active);
+          time++;
+          sn_log_active++;
+       } else { 
+        time = 1;
+        sn_log_active = 0;
+          // clearInterval(interval);
+       }
+    }, 3000);
+</script>
 
 <section class="bawah-slide">
 	<div class="prelative container ">
 		<div class="row">
 			<?php foreach ($link_slide as $key => $value): ?>
-			<div class="col-30 col-md-15">
-				<div class="box-content">
-					<a href="<?php echo $value['link'] ?>">
+			<div class="col-30 col-md-12">
+				<div class="box-content nx_item <?php if ($key == 0): ?>active<?php endif ?> nmenu_<?php echo $key ?>" data-id="<?php echo $key ?>">
+					<a href="#">
 						<div class="image">
 							<div class="inners">
 							<img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt="">
 							</div>
 						</div>
-						<p><?php echo $value['titles'] ?></p>
+						<!-- <p><?php echo $value['titles'] ?></p> -->
 					</a>
 				</div>
 			</div>
 			<?php endforeach; ?>
+
 		</div>
+
+        <div class="py-4"></div>
+        <?php foreach ($link_slide as $key => $value): ?>
+        <div class="others_description <?php if ($key != 0): ?>d-none<?php endif ?> nactiv_<?php echo $key ?>" data-id="<?php echo $key ?>">
+            <div class="row no-gutters">
+                <div class="col-md-38 back-white">
+                    <div class="descriptions_info pt-5 pb-5 pl-4 pr-4">
+                        <h3><?php echo $value['titles'] ?></h3>
+                        <div class="py-1"></div>
+                        <p><?php echo $value['info'] ?></p>
+                        <div class="py-1"></div>
+                        <div class="btns_click"><a href="<?php echo $value['link'] ?>" class="btn btn-link p-0">Learn more</a></div>
+                        <div class="clear clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-22 back-grey my-auto">
+                    <div class="pictures">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <?php foreach ($value['covers'] as $ke => $val): ?>
+                            <div class="carousel-item <?php if ($ke == 0): ?>active<?php endif ?>">
+                              <img src="<?php echo Yii::app()->baseUrl.'/images/products/'; ?><?php echo $val ?>" alt="" class="img img-fluid">
+                            </div>
+                            <?php endforeach ?>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endforeach; ?>
+
+        <div class="clearfix"></div>
 	</div>
 </section>
 

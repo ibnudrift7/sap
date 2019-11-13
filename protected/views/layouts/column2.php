@@ -8,7 +8,7 @@
 <?php echo $this->renderPartial('//layouts/_footer', array()); ?>
 
 <script type="text/javascript">
-	$(function(){
+	$(window).load(function(){
 		
 		if( $(window).width() > 800 ){
 			var xheight_cont =  $('section.about-location-sec-1 .row .col-md-45, section.product-sec-1 .row .col-md-45').height();

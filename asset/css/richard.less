@@ -4,6 +4,18 @@ section.bawah-slide{
 		max-width: 838px;
 		padding: 135px 0;
 		.row{
+			.nx_item:hover,
+			.nx_item:focus,
+			.nx_item.active{
+				cursor: pointer;
+				.image{
+					background:#c52026 ;
+				}
+				p{
+					color:#c52026 ;
+				}
+			}
+
 			.box-content{
 				a{
 					text-decoration: none;
@@ -33,9 +45,12 @@ section.bawah-slide{
 						text-decoration: none;
 					}
 				}
+
+				a.active,
 				a:hover .image{
 					background:#c52026 ;
 				}
+				a.active,
 				a:hover p{
 					color:#c52026 ;
 				}

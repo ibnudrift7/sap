@@ -4,7 +4,31 @@
 <?php echo $this->renderPartial('//layouts/_header', array()); ?>
 
 <div class="fcs-wrapper outers_fcs_wrapper prelatife wrapper-slide">
+    <div id="banner-home" class="banner-home banner-video">
+      <!-- <div class="cover" style="background-image: url('./addons/shared_addons/themes/gunungsewu/img/video/manufacturing.jpg')"></div> -->
+      <video width="100%" autoplay="" muted="" loop="" plays-inline="" class="hidden-md-down" poster=""> 
+        <source src="<?php echo Yii::app()->baseUrl.'/images/videoplayback.webm'; ?>" type="video/webm"> 
+        Your browser doesn't support HTML5 video tag. 
+        </video>
+    </div>
 
+    <div class="carousel-caption caption-slider-home mx-auto">
+      <div class="prelatife container">
+        <div class="bxsl_tx_fcs">
+          <div class="row no-gutters">
+            <div class="col-md-60 mx-auto pt-3 text-left">
+              <h3><b>Suryasukses</b> Group,</h3>
+              <p>A reputation in the premium plastic related products.</p>
+            </div>
+            <div class="col-md-60 d-block text-left pt-3">
+              <a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>" class="btn btn-info btns_morefcs">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php /*
     <div id="myCarousel_home" class="carousel carousel-fade" data-ride="carousel" data-interval="4500">
         <div class="carousel-inner">
           <div class="carousel-item active home-slider-new">
@@ -35,6 +59,7 @@
              </div>
          </div>
     </div>
+    */ ?>
 
 </div>
 
