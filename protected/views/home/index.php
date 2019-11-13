@@ -48,7 +48,6 @@ $link_slide = array(
             $('section.bawah-slide .nx_item').removeClass('active');
 
             // console.log(to_ons);
-            sn_log_active = to_ons;
             $(this).addClass('active');
             $('.others_description.nactiv_'+ to_ons).removeClass('d-none');
             return false;
