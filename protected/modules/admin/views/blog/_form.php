@@ -100,7 +100,7 @@
 			?>
 			<?php echo $form->textFieldRow($model, 'link', array('class'=>'form-control span6',)); ?>
 			
-			<?php echo $form->dropDownListRow($model, 'topik_id', $res_product , array('class'=>'form-control span6', 'empty'=>'-- Pilih Topik --')); ?>
+			<?php // echo $form->dropDownListRow($model, 'topik_id', $res_product , array('class'=>'form-control span6', 'empty'=>'-- Pilih Topik --')); ?>
 
 
 			<?php echo $form->fileFieldRow($model,'image',array(

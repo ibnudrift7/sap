@@ -1,18 +1,84 @@
-<section class="cover-blog">
-  <div class="prelative container py-5">
-    <div class="container2 mx-auto py-5">
-      <div class="row py-5">
-        <div class="col-md-60 text-center pt-3">
-          <button class="profil mx-auto">Blog</button>
+<section class="breadcrumb-det">
+    <div class="prelative container">
+      <div class="row">
+        <div class="col-md-45">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="#">Blog</a></li>
+                </ol>
+            </nav>
         </div>
-        <div class="col-md-60 text-center pt-4">
-          <h2 class="mx-auto">Aneka Artikel Dan Tips Seputar Dunia Bahan Bangunan Oleh Arsimetris Djaja Banjarmasin.</h2>  
+        <div class="col-md-15">
+          <div class="block-back-link text-right">
+            <a href="#" onclick="window.history.back();">Back</a>
+          </div>
         </div>
+      </div>
+      <div class="py-2"></div>
+    </div>
+</section>
+
+<section class="product-sec-1">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-15">
+      <div class="box-konten-kiri">
+          <h5>Blog</h5>        
+      </div>
+      </div>
+      <div class="col-md-45 rights_cont_def">
+        <div class="clear clearfix"></div>
+
+        <?php if ($dataBlog): ?>
+        <div class="row default-data">
+            <?php foreach ($dataBlog->getData() as $key => $value): ?>
+                <div class="col-md-20">
+                    <div class="box-content">
+                        <div class="image">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id' => $value->id )); ?>"><img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl.'../../images/blog/'; ?><?php echo $value->image ?>" alt=""></a>
+                        </div>
+                        <div class="title">
+                            <p><?php echo ucwords($value->description->title); ?></p>
+                        </div>
+                        <div class="klik">
+                        <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id' => $value->id )); ?>"><p>Read More</p></a>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
+        </div>
+        <?php endif ?>
+        <div class="py-4"></div>
+        <div class="textaboveheader-landing page">
+              <?php 
+               $this->widget('CLinkPager', array(
+                  'pages' => $dataBlog->getPagination(),
+                  'header'=>'',
+                  'footer'=>'',
+                  'lastPageCssClass' => 'd-none',
+                  'firstPageCssClass' => 'd-none',
+                  'nextPageCssClass' => 'd-none',
+                  'previousPageCssClass' => 'd-none',
+                  'itemCount'=> $dataBlog->totalItemCount,
+                  'htmlOptions'=>array('class'=>'pagination'),
+                  'selectedPageCssClass'=>'active',
+              ));
+           ?>
+          </div>
+
       </div>
     </div>
   </div>
 </section>
+<style type="text/css">
+    section.product-sec-1 .box-konten-kiri{
+        min-height: 500px;
+    }
+</style>
 
+<?php
+/*
 <section class="blog-sec-1">
   <div class="prelative container">
     <div class="row">
@@ -82,3 +148,4 @@
     </div>
   </div>
 </section>
+*/ ?>

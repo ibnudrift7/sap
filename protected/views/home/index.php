@@ -199,7 +199,7 @@ $link_slide = array(
             <div class="text-center tops pb-3">
                 <h3>News and Articles</h3>
             </div>
-            <div class="row innsers_section">
+            <div class="row innsers_section justify-content-center">
                 <?php 
                 $arrs_blog = array(
                                 array(
@@ -207,34 +207,32 @@ $link_slide = array(
                                     'titles' => 'Get to know SAP',
                                     'link' => '#',
                                 ),
-                                array(
-                                    'picture' => 'homesec-2.jpg',
-                                    'titles' => 'Our Markets',
-                                    'link' => '#',
-                                ),
-                                array(
-                                    'picture' => 'homesec-3.jpg',
-                                    'titles' => 'SAP Solutions',
-                                    'link' => '#',
-                                ),
-                                array(
-                                    'picture' => 'homesec-4.jpg',
-                                    'titles' => 'SAP Career',
-                                    'link' => '#',
-                                ),
                                 
                             );
+
+                $criteria = new CDbCriteria;
+                $criteria->with = array('description');
+                $criteria->addCondition('t.active = "1"');
+                $criteria->addCondition('description.language_id = :language_id');
+                $criteria->params[':language_id'] = $this->languageID;
+                $criteria->order = 'date_input DESC';
+
+                $model_blog = Blog::model()->findAll($criteria);
                 ?>
-                <?php foreach ($arrs_blog as $key => $value): ?>
+                <?php foreach ($model_blog as $key => $value): ?>
                 <div class="col-md-15">
                     <div class="box-content">
-                        <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt=""></div>
+                        <div class="image">
+                            <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id)); ?>">
+                            <img src="<?php echo Yii::app()->baseUrl.'/images/blog/'; ?><?php echo $value->image ?>" alt="<?php echo $value->description->title ?>">
+                            </a>
+                        </div>
                         <div class="inner">
                             <div class="paddings">
-                                <h4><?php echo $value['titles'] ?></h4>
+                                <h4><?php echo $value->description->title ?></h4>
                             </div>
                             <div class="buttons_read">
-                                <p><a href="<?php echo $value['link'] ?>">READ MORE</a></p>
+                                <p><a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id)); ?>">READ MORE</a></p>
                             </div>
                         </div>
                     </div>

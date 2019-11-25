@@ -1,18 +1,85 @@
-<section class="cover-blog">
-  <div class="prelative container py-5">
-    <div class="container2 mx-auto py-5">
-      <div class="row py-5">
-        <div class="col-md-60 text-center pt-3">
-          <button class="profil mx-auto">Blog</button>
+<section class="breadcrumb-det">
+    <div class="prelative container">
+      <div class="row">
+        <div class="col-md-45">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="#">Blog</a></li> 
+                </ol>
+            </nav>
         </div>
-        <div class="col-md-60 text-center pt-4">
-          <h2 class="mx-auto">Aneka Artikel Dan Tips Seputar Dunia Bahan Bangunan Oleh Arsimetris Djaja Banjarmasin.</h2>  
+        <div class="col-md-15">
+          <div class="block-back-link text-right">
+            <a href="#" onclick="window.history.back();">Back</a>
+          </div>
         </div>
+      </div>
+      <div class="py-2"></div>
+    </div>
+</section>
+
+<section class="product-sec-1">
+  <div class="prelative container">
+    <div class="row">
+      <div class="col-md-15">
+      <div class="box-konten-kiri">
+        <h5>Blog</h5>
+        
+      </div>
+      </div>
+      <div class="col-md-45 rights_cont_def">
+        <h3><?php echo $dataBlog->description->title; ?></h3>
+        <div class="clear clearfix"></div>
+        <span class="dates"><small><i class="fa fa-calendar"></i> <?php echo date("d F Y", strtotime($dataBlog->date_input)) ?></small></span>
+        <div class="clear clearfix"></div>
+        <div class="py-3"></div>
+        <div class="row feature-data mb-0 mt-0">
+          <div class="col-md-60">
+            
+            <div class="featured_car_detail pb-2">
+                <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/blog/'; ?><?php echo $dataBlog->image ?>" alt="<?php echo $dataBlog->description->title ?>">
+            </div>
+            <div class="contents_det_blog">
+              <?php echo $dataBlog->description->content; ?>
+
+              <?php if ($dataBlog->link): ?>
+                <p>
+                source: <?php echo $dataBlog->link ?>
+                </p>
+              <?php endif ?>
+
+              <div class="py-3"></div>
+              <p><a href="<?php echo CHtml::normalizeUrl(array('/blog/index')); ?>"><i class="fa fa-chevron-left"></i> Back</a></p>
+              <div class="clear"></div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
 
+
+<style type="text/css">
+    section.product-sec-1 .box-konten-kiri{
+        min-height: 600px;
+    }
+    section.product-sec-1 h3{
+      margin-bottom: 15px;
+    }
+    small, .small{
+      font-size: 90%;
+    }
+</style>
+
+
+
+
+<?php
+/*
 <section class="blog-detail">
   <div class="prelative container">
     <div class="row">
@@ -93,76 +160,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
-<?php
-/*
-<section class="outers_page_static back_cream mh500 back_grey_pattern">
-  <div class="insides sub_page_static about_us">
-    <div class="prelatife container">
-      <div class="clear height-50"></div><div class="height-10"></div>
-
-      <div class="content-text insides_static">
-        <h1 class="title_page">BLOGS</h1>
-        <div class="clear"></div>
-        <h3 class="tagline"><?php echo $dataBlog->description->title ?></h3>
-        <div class="clear"></div>
-        <div class="row details_cont_articles">
-          <div class="col-md-9 text-left">
-            <div class="left_cont">
-              <div class="mw906">
-
-                <img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(980,1000, '/images/blog/'.$dataBlog->image , array('method' => 'resize', 'quality' => '90')) ?>" alt="">
-
-                <?php echo $dataBlog->description->content ?>
-
-                <div class="clear height-10"></div>
-                <div class="shares-text text-left p_shares_article">
-                    <span class="inline-t">SHARE</span>&nbsp; / &nbsp;<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=#">FACEBOOK</a>&nbsp; /
-                    &nbsp;<a target="_blank" href="https://plus.google.com/share?url=#">GOOGLE PLUS</a>&nbsp; /
-                    &nbsp;<a target="_blank" href="https://twitter.com/home?status=#">TWITTER</a>
-                </div>
-
-                <div class="clear"></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-3 text-left">
-            <div class="right_cont">
-              <div class="padding-left-25">
-                  <span class="sub_page_title">Other Blogs</span>
-              </div>
-              <div class="clear"></div>
-              <div class="right_sub_menu">
-                <ul class="list-unstyled">
-                    <?php foreach ($dataBlogs->getData() as $key => $value): ?>
-                        
-                  <li><a href="<?php echo CHtml::normalizeUrl(array('detail', 'id'=>$value->id)); ?>"><?php echo $value->description->title ?></a></li>
-                    <?php endforeach ?>
-                </ul>
-                <div class="clear"></div>
-              </div>
-
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        
-
-        <div class="clear"></div>
-      </div>
-      
-      <div class="clear height-20"></div>
-      <div class="clear height-50"></div>
-    </div>
-    <div class="clear"></div>
   </div>
 </section>
 */ ?>
