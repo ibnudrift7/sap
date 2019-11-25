@@ -5,7 +5,7 @@ $link_slide = array(
 		'titles' => 'Bottles and Caps',
 		'info' => 'Recyclable bottles that deliver pristine quality to fulfill customers` needs.',
 		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') )),
-        'covers'=>['bottle001.jpg', 'bottle002.jpg'],
+        'covers'=>['bottle001-new.png', 'bottle002.jpg'],
 	),
 
     array(
@@ -13,7 +13,7 @@ $link_slide = array(
         'titles' => 'Drinking Cups & Lids',
         'info' => 'Our disposable cups are light-weight and cost efficient and offer multiple decoration options.',
         'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') )),
-        'covers'=>['drinking-cups001.jpg','drinking-cups002.jpg'],
+        'covers'=>['drinking-cups001-new.png','drinking-cups002.jpg'],
     ),
     
 	array(
@@ -42,42 +42,43 @@ $link_slide = array(
 ?>
 <script type="text/javascript">
     $(function(){
+        $('section.bawah-slide .nx_item.nmenu_0').addClass('active');
+
         $('section.bawah-slide .nx_item').on('click', function(){
             var to_ons = $(this).attr('data-id');
             $('.others_description').addClass('d-none');
             $('section.bawah-slide .nx_item').removeClass('active');
 
             // console.log(to_ons);
-            $(this).addClass('active');
+            $('section.bawah-slide .nx_item.nmenu_'+ to_ons).addClass('active');
             $('.others_description.nactiv_'+ to_ons).removeClass('d-none');
             return false;
         });
     });
 
-    var sn_log_active = 0;
-    function rundownSlide() {
-        $('.others_description').addClass('d-none');
-        $('section.bawah-slide .nx_item').removeClass('active');
+    // var sn_log_active = 0;
+    // function rundownSlide() {
+    //     $('.others_description').addClass('d-none');
+    //     $('section.bawah-slide .nx_item').removeClass('active');
 
-        $('section.bawah-slide .nx_item.nmenu_'+ sn_log_active).addClass('active');
-        $('.others_description.nactiv_'+ sn_log_active).removeClass('d-none');
-    }
+    //     $('section.bawah-slide .nx_item.nmenu_'+ sn_log_active).addClass('active');
+    //     $('.others_description.nactiv_'+ sn_log_active).removeClass('d-none');
+    // }
 
-    var time = 1;
-    var interval = setInterval(function() { 
-       if (time <= 5) { 
-          rundownSlide();
+    // var time = 1;
+    // var interval = setInterval(function() { 
+    //    if (time <= 5) { 
+    //       rundownSlide();
 
-          console.log('log time = '+time);
-          console.log('log active = '+sn_log_active);
-          time++;
-          sn_log_active++;
-       } else { 
-        time = 1;
-        sn_log_active = 0;
-          // clearInterval(interval);
-       }
-    }, 3000);
+    //       console.log('log time = '+time);
+    //       console.log('log active = '+sn_log_active);
+    //       time++;
+    //       sn_log_active++;
+    //    } else { 
+    //     time = 1;
+    //     sn_log_active = 0;
+    //    }
+    // }, 3000);
 </script>
 
 <section class="bawah-slide">
@@ -103,9 +104,9 @@ $link_slide = array(
         <div class="py-4"></div>
         <?php foreach ($link_slide as $key => $value): ?>
         <div class="others_description <?php if ($key != 0): ?>d-none<?php endif ?> nactiv_<?php echo $key ?>" data-id="<?php echo $key ?>">
-            <div class="row no-gutters">
-                <div class="col-md-38 back-white">
-                    <div class="descriptions_info pt-5 pb-5 pl-4 pr-4">
+            <div class="row no-gutters back-white-def">
+                <div class="col-md-38 back-white my-auto">
+                    <div class="descriptions_info pt-4 pb-4 pl-4 pr-4">
                         <h3><?php echo $value['titles'] ?></h3>
                         <div class="py-1"></div>
                         <p><?php echo $value['info'] ?></p>
@@ -147,26 +148,26 @@ $link_slide = array(
             $arrs_nk = array(
                             array(
                                 'picture' => 'homesec-1.jpg',
-                                'titles' => 'Get to know SAP',
-                                'info' => 'Being in the plastic business since 1975 has bring us so many things other couldn’t achieve.',
+                                'titles' => 'Get to Know SAP',
+                                'info' => 'Established in 1990, we are uniquely positioned to provide customers with the best, on-trend products.',
                                 'link' => CHtml::normalizeUrl(array('/home/abouthistory'))
                             ),
                             array(
                                 'picture' => 'homesec-2.jpg',
                                 'titles' => 'Our Markets',
-                                'info' => 'With more than 4 decades of operations, our business has vastly expand to cover a bigger market.',
+                                'info' => 'Combining three-decade experience and a fully dedicated team, we are ready to serve a wide range of industries.',
                                 'link' => CHtml::normalizeUrl(array('/home/market_landing', 'id'=>0, 'slug'=> 'beverage'))
                             ),
 							array(
 								'picture' => 'homesec-3.jpg',
 								'titles' => 'SAP Solutions',
-								'info' => 'There’s so much capabilities and service solutions that we possess, in order to help you achieve your needs.',
+								'info' => 'Transform your idea into realization with our design team. Discover value-added, customized solutions.',
 								'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
 							),
                             array(
                                 'picture' => 'homesec-4.jpg',
                                 'titles' => 'SAP Career',
-                                'info' => 'We challenge ourselves and became better everyday. If you got what it takes, you’re the one that we’re looking for.',
+                                'info' => 'Join us. Grow together. Get in touch now to explore exciting opportunities.',
                                 'link' => CHtml::normalizeUrl(array('/home/aboutcareer'))
                             ),
                             
@@ -191,6 +192,58 @@ $link_slide = array(
             <?php endforeach; ?>
 
         </div>
+
+        <div class="py-5"></div>
+
+        <div class="inners_block_shortcut">
+            <div class="text-center tops pb-3">
+                <h3>News and Articles</h3>
+            </div>
+            <div class="row innsers_section">
+                <?php 
+                $arrs_blog = array(
+                                array(
+                                    'picture' => 'homesec-1.jpg',
+                                    'titles' => 'Get to know SAP',
+                                    'link' => '#',
+                                ),
+                                array(
+                                    'picture' => 'homesec-2.jpg',
+                                    'titles' => 'Our Markets',
+                                    'link' => '#',
+                                ),
+                                array(
+                                    'picture' => 'homesec-3.jpg',
+                                    'titles' => 'SAP Solutions',
+                                    'link' => '#',
+                                ),
+                                array(
+                                    'picture' => 'homesec-4.jpg',
+                                    'titles' => 'SAP Career',
+                                    'link' => '#',
+                                ),
+                                
+                            );
+                ?>
+                <?php foreach ($arrs_blog as $key => $value): ?>
+                <div class="col-md-15">
+                    <div class="box-content">
+                        <div class="image"><img src="<?php echo $this->assetBaseurl; ?><?php echo $value['picture'] ?>" alt=""></div>
+                        <div class="inner">
+                            <div class="paddings">
+                                <h4><?php echo $value['titles'] ?></h4>
+                            </div>
+                            <div class="buttons_read">
+                                <p><a href="<?php echo $value['link'] ?>">READ MORE</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>        
+        </div>
+
+
     </div>
 </section>
 

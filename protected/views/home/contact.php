@@ -50,6 +50,7 @@
                 <h4>031 5030 450</h4>
                 <p>Jl. Kertajaya 109 </p>
                 <p>Surabaya 60286 - Indonesia</p>
+                <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
               </div>
             </div>
             <div class="col-md-30">
@@ -58,6 +59,7 @@
                 <h4>021 386 1333</h4>
                 <p>Jl. Cideng Timur No. 70E dan F </p>
                 <p>Jakarta Pusat - Indonesia</p>
+                <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
               </div>
             </div>
           </div>
@@ -113,13 +115,13 @@
                   <p>Kec Gempol - Pasuruan</p>
                   <p>Tel. +62 34 3656 329 (hunting)</p>
                 </div>
-				  <div class="col-md-30">
-					  <h3>PT. Suryasukses Inti Makmur</h3>
-<!--					  <h4>Plastic Houseware</h4>-->
-					  <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
-					  <p>Kec Gempol - Pasuruan</p>
-<!--					  <p>Tel. +62 34 3656 329 (hunting)</p>-->
-				  </div>
+          <div class="col-md-30">
+            <h3>PT. Suryasukses Inti Makmur</h3>
+            <h4>UPVC Roofing</h4>
+            <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
+            <p>Kec Gempol - Pasuruan</p>
+<!--            <p>Tel. +62 34 3656 329 (hunting)</p>-->
+          </div>
               </div>
             </div>
           </div>
@@ -128,3 +130,25 @@
     </div>
   </div>
 </section>
+
+
+<style>
+  a{
+    text-decoration: none;
+    color: #6a6a6a;
+  }
+  a:hover{
+    color: #6a6a6a;
+  }
+</style>
+
+<script type="text/javascript">
+  $(window).load(function(){
+    
+    if( $(window).width() > 800 ){
+      var xheight_cont =  $('section.contact-sec-1 .row .col-md-45, section.contact-sec-1 .row .col-md-45').height();
+      $('section.contact-sec-1 .row .box-konten-kiri, section.contact-sec-1 .row .box-konten-kiri').css('height', xheight_cont+'px');
+    } 
+
+  });
+</script>

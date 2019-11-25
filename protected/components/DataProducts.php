@@ -117,7 +117,6 @@ class DataProducts {
                                         ],   
                                     ],
                     ],
-
                     // roofing
                     [
                         'name_category'=>'roofing',
@@ -132,7 +131,6 @@ class DataProducts {
 
                                     ],
                     ],
-                    
 
                 ];
 

@@ -1,9 +1,10 @@
 <section class="inside-cover">
   <div class="text">
-    <h4>ABOUT US</h4>
-    <h3>Locations</h3>
+    <h4>CONTACT US</h4>
+    <h3>We’re at your service</h3>
   </div>
 </section>
+
 
 
 <section class="breadcrumb-det">
@@ -13,8 +14,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">About Us</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Locations</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Contact Us</a></li>
                 </ol>
             </nav>
         </div>
@@ -28,121 +28,105 @@
     </div>
 </section>
 
-<section class="about-location-sec-1">
+
+<section class="contact-sec-1">
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
-      <div class="box-konten-kiri">
-        <h5>About Us</h5>
-        <ol>
-          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
-<!--          <li><a href="--><?php //echo CHtml::normalizeUrl(array('/home/faq')); ?><!--">FAQ</a></li>-->
-        </ol>
-      </div>
+        <div class="box-konten-kiri">
+          <h5>Contact Us</h5>
+        </div>
       </div>
       <div class="col-md-45">
-        <h4>Let’s schedule your visit</h4>
-        <h3>Locations</h3>
-            <p>Please contact each location you’d like to visit, and our customer service team will be there to assist you.</p>
-            <div class="row">
-                <div class="col-md-30">
-                    <div class="title">
-                        <p>PT Suryasukses Abadi Prima</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Thermoforming PP Cup & HDPE Cap</p>
-                    </div>
-                    <div class="alamat">
-                        <p>Jl. Raya Sedati 97 Ds. Wedi</p>
-                        <p>Gedangan - Sidoarjo</p>
-                        <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
-                    </div>
-                    <div class="tel">
-                        <p>Tel. +62 31 8011 888</p>
-                        <p>Fax. +62 31 502 7624, 503 8934</p>
-                    </div>
-                </div>
-                <div class="col-md-30">
-                    <div class="title">
-                        <p>PT Suryasukses Mekar Makmur</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Nonwoven Spunbond</p>
-                    </div>
-                    <div class="alamat">
-                        <p>Jl. Raya Sedati 97 Ds. Wedi</p>
-                        <p>Gedangan - Sidoarjo</p>
-                        <a target="_blank" href="https://g.page/Amari-Spunbdond?share">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
-                    </div>
-                    <div class="tel">
-                        <p>Tel. +62 31 8011 888</p>
-                        <p>Fax. +62 31 502 7624, 503 8934</p>
-                    </div>
-                </div>
-                <div class="col-md-30">
-                    <div class="title">
-                        <p>PT Suryasukses Adi Perkasa</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Thermoforming PP Cup & HDPE Cap</p>
-                    </div>
-                    <div class="alamat">
-                        <p>Jl. Selayar Blok B3-1</p>
-                        <p>Kawasan Industri MM 2100, Cikarang Barat, Bekasi</p>
-                        <p>Jawa Barat - Indonesia</p>
-                        <a target="_blank" href="https://goo.gl/maps/zPAR6jUZrvCZKfuR6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
-                    </div>
-                    <div class="tel">
-                        <p>Tel. +62 21 8998 3777 / 8998 3999</p>
-                        <p>Fax. +62 21 8998 4222</p>
-                    </div>
-                </div>
-                <div class="col-md-30">
-                    <div class="title">
-                        <p>PT Multiplast Indo Makmur</p>
-                    </div>
-                    <div class="subtitle">
-                        <p>Plastic Houseware</p>
-                    </div>
-                    <div class="alamat">
-                        <p>Dusun Winong, Desa Winong
-                        <p>Kec Gempol - Pasuruan</p>
-                        <a target="_blank" href="https://goo.gl/maps/Qr2UKwEr5AY4QU1c7">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
-                    </div>
-                    <div class="tel">
-                        <p>Tel. +62 34 3656 329 (hunting)</p>
-                    </div>
-                </div>
+        <div class="content-top">
+          <h3>We’re here to help you</h3>
+          <p>We provide a variety of resources to assist our customers and partners in configuring, designing, enhancing and upgrading products. Customers will receive support services and product consultancy support, technical asisstance and product sampling.</p>
+          <div class="py-2"></div>
+          <p>Please contact our help-line at these numbers</p>
+          <div class="row">
+            <div class="col-md-30">
+              <div class="inner-content">
+                <h3>SURYASUKSES GROUP SURABAYA</h3>
+                <h4>031 5030 450</h4>
+                <p>Jl. Kertajaya 109 </p>
+                <p>Surabaya 60286 - Indonesia</p>
+                <a target="_blank" href="https://goo.gl/maps/oaJQUrwQLNwagkWt5">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+              </div>
             </div>
+            <div class="col-md-30">
+              <div class="inner-content">
+                <h3>SURYASUKSES GROUP JAKARTA</h3>
+                <h4>021 386 1333</h4>
+                <p>Jl. Cideng Timur No. 70E dan F </p>
+                <p>Jakarta Pusat - Indonesia</p>
+                <a target="_blank" href="https://goo.gl/maps/7qZbFDcurhAALVyy8">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="email pt-4">
+                <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
+              </div>
+              <div class="whatsapp pb-5 mb-3">
+                <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
+              </div>
+          </div>
+
+
+          <!-- <div class="image-bottom">
+            <div class="row no-gutters">
+              <div class="col-md-60">
+                <img src="<?php echo $this->assetBaseurl; ?>Layer-34.jpg" alt="">
+              </div>
+            </div>
+          </div> -->
+          <div class="content-bottom">
+            <h5>Member of Suryasukses Group</h5>
+            <div class="content-inner-bottom">
+              <div class="row">
+                <div class="col-md-30">
+                  <h3>PT Suryasukses Abadi Prima</h3>
+                  <h4>Thermoforming PP Cup & HDPE Cap</h4>
+                  <p>Jl. Raya Sedati 97 Ds. Wedi</p>
+                  <p>Gedangan - Sidoarjo</p>
+                  <p>Tel. +62 31 8011 888</p>
+                  <p>Fax. +62 31 502 7624, 503 8934</p>
+                </div>
+                <div class="col-md-30">
+                  <h3>PT Suryasukses Mekar Makmur</h3>
+                  <h4>Nonwoven Spunbond</h4>
+                  <p>Jl. Raya Sedati 97 Ds. Wedi</p>
+                  <p>Gedangan - Sidoarjo</p>
+                  <p>Tel. +62 31 8011 888</p>
+                  <p>Fax. +62 31 502 7624, 503 8934</p>
+                </div>
+                <div class="col-md-30">
+                  <h3>PT Suryasukses Adi Perkasa</h3>
+                  <h4>Thermoforming PP Cup & HDPE Cap</h4>
+                  <p>Jl. Selayar Blok B3-1</p>
+                  <p>Kawasan Industri MM 2100, Cikarang Barat, Bekasi</p>
+                  <p>Jawa Barat - Indonesia</p>
+                  <p>Tel. +62 21 8998 3777 / 8998 3999</p>
+                  <p>Fax. +62 21 8998 4222</p>
+                </div>
+                <div class="col-md-30">
+                  <h3>PT Multiplast Indo Makmur</h3>
+                  <h4>Plastic Houseware</h4>
+                  <p>Dusun Winong, Desa Winong</p>
+                  <p>Kec Gempol - Pasuruan</p>
+                  <p>Tel. +62 34 3656 329 (hunting)</p>
+                </div>
+          <div class="col-md-30">
+            <h3>PT. Suryasukses Inti Makmur</h3>
+<!--            <h4>Plastic Houseware</h4>-->
+            <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
+            <p>Kec Gempol - Pasuruan</p>
+<!--            <p>Tel. +62 34 3656 329 (hunting)</p>-->
+          </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<?php $str_alink = '<a data-fancybox href="https://www.youtube.com/watch?v=Aj2C4Xp-GMM">'; ?>
-<div class="prelative container2">
-    <section class="home-sec-2">
-            <div class="row">
-                <div class="col-md-60">
-                    <div class="box-content">
-                        <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
-                        </div>
-                        <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
-                        </div>
-                        <div class="blocks_btn text-center pt-1">
-                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-</div>

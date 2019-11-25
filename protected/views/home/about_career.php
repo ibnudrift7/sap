@@ -28,7 +28,7 @@
     </div>
 </section>
 
-<section class="about-location-sec-1">
+<section class="about-location-sec-1 contents_abouts_sec1">
   <div class="prelative container">
     <div class="row">
       <div class="col-md-15">
@@ -38,57 +38,20 @@
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li> -->
           <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li> -->
         </ol>
       </div>
       </div>
       <div class="col-md-45">
-        <h4>Start your future here</h4>
-        <h3>Career</h3>
-            <p>Available positions: </p>
-            <div class="row">
-                <div class="col-md-60">
-                    <div class="sales-tit">
-                        <p>Sales Executive</p>
-                    </div>
-                    <div class="work-loc">
-                        <p>Work Location: Surabaya</p>
-                    </div>
-                </div>
-                <div class="col-md-30">
-                    <div class="job-title">
-                        <p>Job Description</p>
-                    </div>
-                    <ul>
-                        <li>Maintain the existing global email solution in our international organisation (12000 accounts worldwide)</li>
-                        <li>Be the main point of contact for messaging related topics</li>
-                        <li>Coordinate integration between Givaudan messaging systems and other platforms (e.g.: CRM, home grown solutions, SAP, etc.)</li>
-                        <li>Leverage, design and implement evolution in messaging solutions as part of large projects</li>
-                        <li>Ensure smooth deployment and handover to operations (managed services partner)</li>
-                        <li>Produce technical specifications, document solutions and ensure the consistency of the messaging platform in our evolving environment</li>
-                        <li>Drive data and platform migrations (in case of company acquisitions)</li>
-                        <li>Overlook Cpanel configurations changes and new feature implementations</li>
-                        <li>Suggest platform improvements</li>
-                        <li>L3 Support and troubleshoot issues</li>
-                    </ul>
-                </div>
-                <div class="col-md-30">
-                    <div class="job-title">
-                        <p>Qualification</p>
-                    </div>
-                    <ul>
-                        <li>University Degree in IT or related field</li>
-                        <li>Minimum 7 years’ experience ideally with strong experience in Google messaging systems.</li>
-                        <li>Ability to analyze complex requirements, recommend and implement deployment strategies</li>
-                        <li>Ensure implemented solutions abide by security standards</li>
-                        <li>Excellent communication and presentation skills with strong analytical and problem-solving skills.</li>
-                        <li>Capable of understanding, articulating and translating business requirements to system solution at a conceptual level (business to IT translation)</li>
-                        <li>Culturally aware and adaptable to flexible business requirements</li>
-                        <li>Working knowledge of directory integration, of authentication, identity, and access management technologies and certificate management, network topology, DNS and common communication protocols including HTTP/S, TCP and UDP</li>
-                    </ul>
-                </div>
+            <div class="content-top cont_career">
+                <h3>Come Grow with Us</h3>
+                <p>We attribute our success on hiring and maintaining a positive and productive workforce.</p>
+                <p>SuryaSukses Group has established a reputation in the industry for being trustworthy and reliable, Our corporate culture is dynamic, creative, and innovative. Learn more about our career and opportunities.</p>
+                <a class="btn btn-primary pl-3 pr-3" target="_blank" href="https://www.jobstreet.co.id/en/companies/749600-surya-sukses">Join Our Team</a>
+
+                <div class="clear clearfix"></div>
             </div>
         </div>
       </div>
@@ -118,3 +81,10 @@
             </div>
     </section>
 </div>
+
+<style type="text/css">
+    section.about-location-sec-1 .box-konten-kiri, 
+    section.cerf-sec-1.block_section_faq .box-konten-kiri{
+        min-height: 410px;
+    }
+</style>

@@ -1,93 +1,133 @@
 <section class="breadcrumb-det">
     <div class="prelative container">
-      <div class="row">
-        <div class="col-md-45">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Solution</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Blue Bottle Studio</a></li>
-                </ol>
-            </nav>
+        <div class="row">
+            <div class="col-md-45">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Solution</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Capabilities</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-15">
+                <div class="block-back-link text-right">
+                    <a href="#">Back</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-15">
-          <div class="block-back-link text-right">
-            <a href="#">Back</a>
-          </div>
-        </div>
-      </div>
-      <div class="py-2"></div>
+        <div class="py-2"></div>
     </div>
 </section>
 
-
 <section class="sol-cap-sec-1">
-  <div class="prelative container">
-    <div class="row">
-      <div class="col-md-15">
-      <div class="box-konten-kiri">
-        <h5>Solutions</h5>
-        <ol>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue Bottle Studio</a></li>
-          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
-        </ol>
-      </div>
-      </div>
-      <div class="col-md-45">
-        <h4>What we can do for you</h4>
-        <h3>Capabilities</h3>
-        <div class="row no-gutters pt-4">
-          <div class="col-md-20">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab1.jpg" alt="">
-          </div>
-          <div class="col-md-40">
-            <div class="content-inner">
-              <div class="innersssss">
-                <h5>Injection Molding</h5>
-                <p>We have over XX products variations and over 30 years of experience and expertise necessary to provide the highest quality results for large and small scale manufacturing.</p>
-              </div>
+    <div class="prelative container">
+        <div class="row">
+            <div class="col-md-15">
+                <div class="box-konten-kiri">
+                    <h5>Solutions</h5>
+                    <ol>
+                        <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Suryasukses Studio</a></li>
+                        <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
+                    </ol>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="row no-gutters pt-4">
-          <div class="col-md-20">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
-          </div>
-          <div class="col-md-40">
-            <div class="content-inner">
-              <div class="innersssss">
-                <h5>Thermoforming</h5>
-                <p>As a trailblazer for deep draw, thermoformed drink cups, we lead the way for innovation.  We are continuously expanding our expertise to include new, thermoformed products.</p>
-
-              </div>
+            <div class="col-md-45">
+                <h4>What we can do for you</h4>
+                <h3>Capabilities</h3>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab1.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Injection Molding</h5>
+                                <p>We have over 1000 products variations and over 30 years of experience and expertise necessary to provide the highest quality results for large and small scale manufacturing.</p>
+                                <p>Applications: Packaging, preform, bottle caps, storage containers, household products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Blow Molding</h5>
+                                <p>As a long-standing name in the blow molding space, we serve a multitude of markets ranging from beverages to automotive.We currently manufacture a range of sizes from some of the smallest to largest bottles.</p>
+                                <p>Applications: Bottles, </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Thermoforming</h5>
+                                <p>As a pioneer for thermoformed drink cups, we lead the way for innovation. We are continuously expanding our expertise to include new thermoformed products. </p>
+                                <p>Applications: disposable cups, containers, lids, trays</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Offset Printing</h5>
+                                <p>The Dry Offset Printing process provides the most efficient method for high speed, large volume printing of multi-colored line copy, half-tones and full process art on preformed plastic parts. This option is widely used and can be completed at very high speeds.</p>
+                                <p>Applications: Round containers, drink cups, jars</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Spunbond Machine</h5>
+                                <p>A versatile product that can be printed or luminated. Its naturally porous, light-weight and eco-friendly characteristics make spunbond a multipurpose product that can support various industries. It is commonly used for shopping/goodies bags, clothes & shoes cover, masks, medical cap/gown, fruit covers and many other things.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Spunmelt Machine</h5>
+                                <p>The extremely fine fibers differ from other extrusions,particularly spun bond, in that they have low intrinsic strength but much smaller size offering key properties. Often melt blown is added to spun bond to form SM or SMS webs, which are strong and offer the intrinsic benefits of fine fibers such as fine filtration, low pressure drop as used in face masks or filters and physical benefits such as acoustic insulation as used in dishwashers. One of the largest users of SM and SMS materials is the disposable diaper and feminine care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-30 pt-4">
+                        <div class="email">
+                            <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
+                        </div>
+                        <div class="whatsapp">
+                            <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row no-gutters pt-4">
-          <div class="col-md-20">
-            <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
-          </div>
-          <div class="col-md-40">
-            <div class="content-inner">
-              <div class="innersssss">
-                <h5>Blow Molding</h5>
-                <p>As a long-standing name in the blow molding space, we serve a multitude of markets ranging from beverages to automotive.  We currently manufacture a range of sizes from some of the smallest to largest bottles.</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-30 pt-4">
-          <div class="email">
-                <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
-              </div>
-              <div class="whatsapp">
-                <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="home-sec-3 py-5 my-auto d-none">
@@ -120,3 +160,24 @@
         </div>
     </div>
 </section>
+
+<style>
+    section.sol-cap-sec-1 .content-inner .innersssss h5 {
+        margin-bottom: 7px !important;
+    }
+    
+    section.sol-cap-sec-1 .content-inner .innersssss p {
+        font-size: 12px !important;
+    }
+</style>
+
+<script type="text/javascript">
+    $(window).load(function() {
+
+        if ($(window).width() > 800) {
+            var xheight_cont = $('section.sol-cap-sec-1 .row .col-md-45, section.sol-cap-sec-1 .row .col-md-45').height();
+            $('section.sol-cap-sec-1 .row .box-konten-kiri, section.sol-cap-sec-1 .row .box-konten-kiri').css('height', xheight_cont + 'px');
+        }
+
+    });
+</script>

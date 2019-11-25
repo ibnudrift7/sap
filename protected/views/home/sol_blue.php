@@ -6,7 +6,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Solution</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Blue Bottle Studio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Suryasukses Studio</a></li>
                 </ol>
             </nav>
         </div>
@@ -50,22 +50,24 @@ $solblue = [
       <div class="box-konten-kiri">
         <h5>Solutions</h5>
         <ol>
-          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue Bottle Studio</a></li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Suryasukses Studio</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
         </ol>
       </div>
       </div>
       <div class="col-md-45">
         <h4>Your partner in design</h4>
-        <h3>Blue Bottle Studio</h3>
+        <h3>Suryasukses Studio</h3>
         <div class="row">
           <div class="col-md-30">
-            <p>Whether you’re looking for a specific cap or closure or designing a revolutionary bottle shape. Blue Bottle Studio at Suryasukses will work together with you to develop a product that your consumers will sure to enjoy.
-              <br><br>
-              For us, this solution will begin with an analysis of the customer portfolio and strategic marketing plan – regardless of whether we are tasked with developing new products or make existing ones better. At work, in interpersonal relations, in life – we are committed to function as a means of ensuring that our ideas really make a better experience.
-              <br><br>
-              Even though technical and design expertise is essential, intuition plays a decisive role at the application level – even more than brainstorming or product development. It's always best to try things out. Blue Bottle Studio design from Suryasukses will provide digital visualization or prototypes. These can be used to form a stable basis on which the key parameters in design and functionality can be discussed, evaluated and, if necessary, modified with the client for each project.
-              <br><br>
+            <p>Whether you’re looking for a specific cap or or designing a revolutionary bottle/cup shape, our teams will work together to develop a product your consumers are sure to enjoy, guaranteed by our many years of experience and well-established networks around the world.</p>
+            <br>
+            <p>Our decoration options includes:</p>
+            <ul>
+                <li><p style="font-weight: 700;">Emboss cap</p></li>
+                <li><p style="font-weight: 700;">Emboss bottle</p></li>
+                <li><p style="font-weight: 700;">Print logo on Houseware products</p></li>
+                <br><br>
               Contact us and discuss your project with us now.</p>
               <div class="email">
                 <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>

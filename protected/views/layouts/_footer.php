@@ -23,7 +23,7 @@
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
                                     <li><a href="#">Our Mission</a></li>
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+                                    <!--<li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>-->
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
                                 </ul>
                             </div>
@@ -43,9 +43,11 @@
                 </div>
                 <div class="col-md-13">
                     <div class="text-right socials_med">
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
                         &nbsp;&nbsp;
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UClbn91UG_JbVJuMIy_6Zb-Q"><i class="fa fa-youtube"></i></a>
+                        &nbsp;&nbsp;
+                        <a target="_blank" href="https://www.instagram.com/suryasuksesgroup/"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -53,3 +55,27 @@
         </div>
     </div>
 </footer>
+
+<section class="live-chat">
+	<div class="row">
+		<div class="col-md-60">
+			<div class="live">
+				<a href="http://wa.me/6285777303030">
+					<img src="<?php echo $this->assetBaseurl; ?>Whatsapp-Click-to-chat.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	section.live-chat{
+		position: fixed;
+		right: 0;
+		top: 60%;
+	}
+	.live a:hover{
+		cursor: pointer;
+	}
+
+</style>

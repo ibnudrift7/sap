@@ -25,7 +25,15 @@
     <div class="row">
       <div class="col-md-15">
         <div class="title">
-          <h5>Our Certification</h5>
+          <h5>Policies</h5>
+            <ul class="list-unstyled lefts_submenu_product">
+            	<li class="dropdown active"><a href="https://richmore.co/sap/home/cerf_iso">ISO 9001 Certification</a>
+            	</li>
+            	<li class="dropdown"><a href="https://richmore.co/sap/home/cerf_fssc">FSSC 22000 Certification</a>
+            	</li>
+            	<li class="dropdown"><a href="https://richmore.co/sap/home/quality">Quality Policy</a>
+            	</li>
+            </ul>
         </div>
       </div>
       <div class="col-md-45">

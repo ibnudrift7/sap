@@ -7,21 +7,17 @@ $login_member = $session['login_member'];
 
 $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
 <div class="prelatife">
-<header class="head headers <?php if ($active_menu_pg == 'home/index'): ?>homes_head<?php endif ?>">
+<header class="head headers <?php if ($active_menu_pg == 'home/index' or $active_menu_pg == 'home/abouthistory' or $active_menu_pg == 'home/aboutquality' or $active_menu_pg == 'home/aboutcareer'): ?>homes_head<?php endif ?> ">
   <div class="prelatife container d-none d-sm-block">
     <div class="inner-header">
       <div class="row">
-        <div class="col-md-20">
+        <div class="col-md-8">
           <div class="logo_heads"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>"><img src="<?php echo $this->assetBaseurl; ?>lgo-header.png" alt="" class="img img-fluid"></a></div>
         </div>
-        <div class="col-md-40">
-          <div class="tops_iso text-right">
-            <div class="isols_headr"><img src="<?php echo $this->assetBaseurl; ?>iso-headers.png" alt="" class="img img-fluid"></div>
-          </div>
-          <div class="clear clearfix"></div>
-          <div class="py-1"></div>
-          <div class="bottoms_head_menu pt-3 text-right">
+        <div class="col-md-32">
+          <div class="bottoms_head_menu pt-4 text-left mt-2">
             <ul class="list-inline m-0">
               <li class="list-inline-item" data-id="products-menu"><a href="#">PRODUCTS&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item" data-id="market-menu"><a href="#">MARKETS&nbsp;<i class="fa fa-caret-down"></i></a></li>
@@ -29,6 +25,11 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <li class="list-inline-item" data-id="about-menu"><a href="#">ABOUT US&nbsp;<i class="fa fa-caret-down"></i></a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</i></a></li>
             </ul>
+          </div>
+        </div>
+        <div class="col-md-20">
+          <div class="tops_iso text-right pt-3 mt-2">
+            <div class="isols_headr"><img src="<?php echo $this->assetBaseurl; ?>iso-headers.png" alt="" class="img img-fluid"></div>
           </div>
         </div>
       </div>
@@ -81,7 +82,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               SOLUTIONS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Suryasukses Studio</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a>
             </div>
           </li>
@@ -93,7 +94,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
               <!-- <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a> -->
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a>
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a>
+              <!--<a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a>-->
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a>
               <!-- <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a> -->
@@ -110,22 +111,21 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="prelatife container">
     <div class="inners_mndropdown">
       <div class="row">
-        <div class="col-md-25">
+        <div class="col-md-60">
             <span class="in_title">ABOUT US</span>
-            <ul class="list-unstyled">
+            <ul class="list-inline">
               <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
+              <!--<li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>-->
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
               <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li> -->
             </ul>
             <div class="clear"></div>
           </div>
         </div>
-        <div class="col-md-35">
-        </div>
+        
       </div>
     </div>
   </div>
@@ -134,20 +134,18 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="prelatife container">
     <div class="inners_mndropdown">
       <div class="row">
-        <div class="col-md-25">
+        <div class="col-md-60">
             <span class="in_title">MARKETS</span>
             <?php 
             $datas = DataMarket::nex_resource();
             ?>
-            <ul class="list-unstyled">
+            <ul class="inline">
               <?php foreach ($datas as $key => $value): ?>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo $value['name_category'] ?></a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo $value['name_category'] ?></a></li>
               <?php endforeach ?>
             </ul>
             <div class="clear"></div>
           </div>
-        </div>
-        <div class="col-md-35">
         </div>
       </div>
     </div>
@@ -157,18 +155,14 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
     <div class="prelatife container">
     <div class="inners_mndropdown">
       <div class="row">
-        <div class="col-md-25">
+        <div class="col-md-60">
             <span class="in_title">SOLUTIONS</span>
-            <ul class="list-unstyled">
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Blue bottle Studios</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
+            <ul class="inline">
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_blue')); ?>">Suryasukses Studio</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/sol_capabilities')); ?>">Capabilities</a></li>
             </ul>
-            <div class="py-5"></div>
-            <div class="py-5"></div>
             <div class="clear"></div>
           </div>
-        </div>
-        <div class="col-md-35">
         </div>
       </div>
     </div>

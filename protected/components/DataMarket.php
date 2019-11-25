@@ -11,13 +11,13 @@ class DataMarket {
         $data = [
                     [
                         'name_category'=>'Beverage',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-beverage.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
                                             'names'=>'Water',
                                             'picture'=>['water.jpg'],
-                                            'info'=>'<p>A cornerstone of the beverage market, we’ll work with you to create lightweight and sustainable packaging solutions to keep shipping costs low and consumer satisfaction high. We can also provide you with our Bullseye shrink film for large packs of water bottles.</p>',
+                                            'info'=>'<p>A cornerstone of the beverage market, we’ll work with you to create lightweight and sustainable packaging solutions to keep shipping costs low and consumer satisfaction high.</p>',
                                         ],
                                         [
                                             'names'=>'Carbonates & Juices',
@@ -33,7 +33,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Healthcare',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-healthcare.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -55,7 +55,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Household',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-households.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -77,7 +77,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Agriculture',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-agriculture.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -94,7 +94,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Industrial',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-industrial.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -111,7 +111,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Filtration',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-filtration.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -128,7 +128,7 @@ class DataMarket {
                     ],
                     [
                         'name_category'=>'Building & Construction',
-                        'picture'=>['product1.jpg','product1.jpg','product1.jpg'],
+                        'picture'=>['ill-building.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
