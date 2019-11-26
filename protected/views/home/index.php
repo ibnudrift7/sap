@@ -193,6 +193,26 @@ $link_slide = array(
 
         </div>
 
+        <?php 
+        $arrs_blog = array(
+                        array(
+                            'picture' => 'homesec-1.jpg',
+                            'titles' => 'Get to know SAP',
+                            'link' => '#',
+                        ),
+                        
+                    );
+
+        $criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('t.active = "1"');
+        $criteria->addCondition('description.language_id = :language_id');
+        $criteria->params[':language_id'] = $this->languageID;
+        $criteria->order = 'date_input DESC';
+
+        $model_blog = Blog::model()->findAll($criteria);
+        ?>
+        <?php if (count($model_blog) > 0): ?>
         <div class="py-5"></div>
 
         <div class="inners_block_shortcut">
@@ -200,25 +220,6 @@ $link_slide = array(
                 <h3>News and Articles</h3>
             </div>
             <div class="row innsers_section justify-content-center">
-                <?php 
-                $arrs_blog = array(
-                                array(
-                                    'picture' => 'homesec-1.jpg',
-                                    'titles' => 'Get to know SAP',
-                                    'link' => '#',
-                                ),
-                                
-                            );
-
-                $criteria = new CDbCriteria;
-                $criteria->with = array('description');
-                $criteria->addCondition('t.active = "1"');
-                $criteria->addCondition('description.language_id = :language_id');
-                $criteria->params[':language_id'] = $this->languageID;
-                $criteria->order = 'date_input DESC';
-
-                $model_blog = Blog::model()->findAll($criteria);
-                ?>
                 <?php foreach ($model_blog as $key => $value): ?>
                 <div class="col-md-15">
                     <div class="box-content">
@@ -240,6 +241,7 @@ $link_slide = array(
                 <?php endforeach; ?>
             </div>        
         </div>
+        <?php endif ?>
 
 
     </div>
