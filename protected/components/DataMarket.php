@@ -26,8 +26,8 @@ class DataMarket {
                                         ],
                                         [
                                             'names'=>'Coffee & Tea',
-                                            'picture'=>['tea-coffee.jpg'],
-                                            'info'=>'<p>We have a variety of packaging capabilities in RTD tea and coffee, from traditional bottle and pouch packaging to k-cups.</p>',
+                                            'picture'=>['CCJ_0068.jpg'],
+                                            'info'=>'<p>We have a variety of packaging capabilities in RTD tea and coffee, from traditional bottle to 120 ml single wall cup. SAP Group also offer oxium additive options to make our product eco-friendly and biodegradable.</p>',
                                         ]
                                    ],
                     ],
@@ -44,7 +44,7 @@ class DataMarket {
                                         [
                                             'names'=>'Surgical Needs',
                                             'picture'=>['surgical.jpg'],
-                                            'info'=>'<p>Our surgical product offerings are second to none and offer manufacturers the ability to address the highest levels of infection prevention, including AAMI 4 level. Our solutions for the surgical suite include: adhesive tapes, films, breathable and non-breathable laminations, and absorbent and barrier nonwoven fabrics.</p>',
+                                            'info'=>'<p>AMARI Nonwoven (PP Spunbond & Meltblown) has a vital role in the medical sector. These include surgical gowns, masks, curtains, pillowcases, pampers, and bed sheets The advantage of AMARI Nonwoven in the medical area is its disposable nature to ensure 100% sterile, practical and does not require cleaning costs for reuse. Along with the development of the latest medical technology, doctors and hospitals are now using nonwoven fabrics as Hygiene Standards, which are not only economical and environmentally friendly but also safe, disposable and practical to use.</p>',
                                         ],
                                         [
                                             'names'=>'Disinfecting Wipes',
@@ -83,12 +83,17 @@ class DataMarket {
                                         [
                                             'names'=>'Greenhouse Film',
                                             'picture'=>['greenhouse.jpg'],
-                                            'info'=>'<p>Surya Sukses Group can help produce an effective and efficient greener green house with plastic green house wrap that is economics and bring lower environment impact.</p>',
+                                            'info'=>'<p>AMARI Nonwoven is used effectively to optimize the productivity of food crops, gardens and greenhouses. With AMARI Nonwoven protection, the need for pesticides and manual labor can be reduced.</p>',
                                         ],
                                         [
                                             'names'=>'Mulch Film',
                                             'picture'=>['munch-film.jpg'],
                                             'info'=>'<p>Agriculture technology are now vast and way more advanced as time goes by. A field with plastic mulch film coverage will help plants grow protected and healthy. </p>',
+                                        ],
+                                        [
+                                            'names'=>'Fruit Protection',
+                                            'picture'=>['fruit-protect.jpg'],
+                                            'info'=>'<p>AMARI nonwoven can be used to Protect fruit without using agro chemicals; ideal for organic or bio-rational plants. It generates microclimate that encourages fruit growth and quality. In Banana Trees, it managed to speed up the harvest for up to 2 weeks</p>',
                                         ]
                                    ],
                     ],
@@ -105,7 +110,7 @@ class DataMarket {
                                         [
                                             'names'=>'Industrial protectors & cover',
                                             'picture'=>['industrial-protector-covers.jpg'],
-                                            'info'=>'<p>Our spunbond polypropylene fabrics can be applied in many automotive and other machinery manufacturing components, such as product covers or packaging / bag, secondary carpet backing, headliners, acoustic scrims, and adhesive layers. </p>',
+                                            'info'=>'<p>Our spunbond polypropylene fabrics can be applied in many automotive and other machinery manufacturing components, such as product covers or packaging / bag,mattress layer, shoe layer, secondary carpet backing, headliners, acoustic scrims, and adhesive layers.</p>',
                                         ]
                                    ],
                     ],
@@ -140,7 +145,13 @@ class DataMarket {
                                             'names'=>'Building wraps and roofing under layer',
                                             'picture'=>['building-wraps.jpg'],
                                             'info'=>'<p>Surya Sukses Group’s spunbond materials can be used as an insulation for  energy efficient building, and it can serve as roofing underlay too. Our product is resistant to climate and weather, and it does not stretch or warp</p>',
-                                        ]
+                                        ],
+                                        [
+                                            'names'=>'UPVC Roofing system',
+                                            'picture'=>['roof-system.jpg'],
+                                            'info'=>'<p>Amari UPVC roof can be used within a larger temperature range than the usual UPVC product in the markets. They preserve all their physical qualities even in the extreme conditions. Other qualities includes heat and noise insualtions and categorized as B1 incombustibility class</p>',
+                                        ],
+                                        
                                    ],
                     ],
                 ];

@@ -43,7 +43,7 @@
             <div class="contents_det_blog">
               <?php echo $dataBlog->description->content; ?>
 
-              <?php if ($dataBlog->link): ?>
+              <?php if (isset($dataBlog->link)): ?>
                 <p>
                 source: <?php echo $dataBlog->link ?>
                 </p>

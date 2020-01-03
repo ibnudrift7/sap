@@ -119,3 +119,10 @@ $products = [
         </div>
     </div>
 </section>
+
+<style type="text/css">
+    section.product-sec-1 p a.btn{
+        color: #fff !important;
+        font-weight: 400;
+    }
+</style>

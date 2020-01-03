@@ -80,9 +80,15 @@
                         <div class="subtitle">
                             <?php echo $value['info'] ?>
                         </div>
-                        <div class="klik d-none">
-                        <a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><p>Learn More</p></a>
+                        <?php if (isset($_GET['slug']) && $_GET['slug'] == 'household'): ?>
+                        <div class="klik">
+                        <a class="btn btn-danger" target="_blank" href="https://drive.google.com/open?id=1B_IKaDCw8XR_H61tv5OFOOepdSOKKHEn"><p>Download Product Catalogue</p></a>
                         </div>
+                        <?php else: ?>
+                        <div class="klik">
+                        <a class="btn btn-danger" href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>"><p>Inquire</p></a>
+                        </div>
+                        <?php endif ?>
                     </div>
                 </div>
             <?php endforeach ?>
@@ -128,5 +134,13 @@
 <style type="text/css">
     section.product-sec-1 .box-konten-kiri{
         min-height: 600px;
+    }
+
+    section.product-sec-1 .box-content .klik a{
+        font-size: 14px;
+    }
+    section.product-sec-1 .box-content .klik a p{
+        color: #ffff;
+        font-size: 14px;
     }
 </style>

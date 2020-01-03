@@ -1492,12 +1492,12 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 			'model'=>$model,
 		));
 	}
-	public function actionAboutlocations()
+	public function actionAboutvalue()
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Company Locations '.$this->pageTitle;
-		$this->render('about_locations', array(
+		$this->pageTitle = 'Our Values '.$this->pageTitle;
+		$this->render('about_value', array(
 			'model'=>$model,
 		));
 	}

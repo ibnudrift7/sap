@@ -1,12 +1,4 @@
-<section class="inside-cover">
-  <div class="text">
-    <h4>ABOUT US</h4>
-    <h3>Company History</h3>
-  </div>
-</section>
-
-
-<section class="breadcrumb-det">
+<section class="breadcrumb-det" style="padding-top:145px;">
     <div class="prelative container">
       <div class="row">
         <div class="col-md-45">
@@ -59,26 +51,25 @@ $solblue = [
         <h5>About Us</h5>
         <ol>
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
-          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li> -->
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
 <!--          <li><a href="--><?php //echo CHtml::normalizeUrl(array('/home/faq')); ?><!--">FAQ</a></li>-->
         </ol>
       </div>
       </div>
       <div class="col-md-45">
-        <h4>How it all began</h4>
-        <h3>Company History</h3>
-        <div class="row">
+        <h4>About Us</h4>
+        <h3>Who We Are</h3>
+		  <img src="<?php echo $this->assetBaseurl; ?>_OPS6362.jpg" alt="" class="img img-fluid pb-5">
+		  <div class="row">
           <div class="col-md-30">
-            <p>It was all started with a small houseware store on Surabaya at 1975. 25 years later, it has become one of the plastic manufacturing company group to be reckoned.
-              <br><br>
-              The trust that given to our small business established a reputation that drives our expansion in the plastic manufacturing industry. We are known as a company that’s flexible and reliable, dedicated to manufacture the highest quality products for houseware to food industry. We began producing plastic bottles for mineral water packaging, supplying our customers with the goal of establishing a long term business relationship with each and every customer.
-              <br><br>
-              Now we are a fully fledged international plastic manufacturing group operating from Surabaya - East Java and Cibitung - Jakarta. We have the ability to create and produce practical to sophisticated solutions and approach on innovative product design to even smallest home industry business until the the major player in the retail business of Food & Beverage, healthcare and so much more.
-              <br><br>
-              Our group comprise of PT Suryasukses Abadi Prima & PT Suryasukses Adi Perkasa which run the production of Thermoforming PP Cup & HDPE Cap, PT Multiplast Indo Makmur that produces and distributes Plastic Housewares and last but not least PT Suryasukses Mekar Makmur that produces Nonwoven Spunbond. Our combined capacity has made us one of the biggest player in the industry, in the Java island region.
+            <p>At Suryasukses, we take pride in our heritage and the company we’ve become today. Throughout our history, it has been the dedication of our team members that has allowed us to grow into a leading plastic manufacturing company.</p>
+            <p>Our history is rich in product innovation, customer focus, and strategic growth. With roots as a small, hometown company based in Surabaya, Indonesia, Suryasukses Group has come a long way since it was established in 1985 under the name Multindo Plastics. Starting with few injection machines, and now we have over 10,000 international and local customers</p>
+            <p>From houseware manufacturer we diversify our business to rigid plastic packaging, starting from thermoforming cups to printing, then preform, bottles, and closures, serving home industries to well established food and beverage companies. We further expand our market with nonwoven products to cater hygiene, agriculture, and industrial markets. Lastly, with deep knowledge of breakthrough materials and backed with professionals with decades of experience, Amari Upvc Roofing will surely satisfies the market with strong, consistent, unique and competitive products.</p>
+            <p>We take great pride in the company we have developed and the products and services we offer. Our ability to support our customers at every stage of the product development process—including expertise in consumer insights, ideation and design, manufacturing and research and development—is what has allowed us to become a leader in the industry.</p>
           </div>
           <div class="col-md-30">
             <div class="row no-gutters">
@@ -117,3 +108,19 @@ $solblue = [
             </div>
     </section>
 </div>
+
+<script type="text/javascript">
+  $(window).load(function(){
+    
+    if( $(window).width() > 800 ){
+      var xheight_cont =  $('section.sol_blue-sec-1 .row .col-md-45, section.sol_blue-sec-1 .row .col-md-45').height();
+      $('section.sol_blue-sec-1 .row .box-konten-kiri, section.sol_blue-sec-1 .row .box-konten-kiri').css('height', xheight_cont+'px');
+    } 
+  });
+</script>
+
+<style type="text/css">
+section.sol_blue-sec-1 p{
+  margin-bottom: 14px;
+}  
+</style>

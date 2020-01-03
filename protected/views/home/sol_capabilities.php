@@ -37,7 +37,7 @@
                 <h3>Capabilities</h3>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab1.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>injection.jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>blow.jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>CCJ_9900.jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
@@ -79,7 +79,7 @@
                 </div>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab3.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>CCJ_0062.jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>10(1).jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
@@ -106,13 +106,26 @@
                 </div>
                 <div class="row no-gutters pt-4">
                     <div class="col-md-20">
-                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>solcab2.jpg" alt="">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>extrusion.jpg" alt="">
                     </div>
                     <div class="col-md-40">
                         <div class="content-inner">
                             <div class="innersssss">
                                 <h5>Spunmelt Machine</h5>
                                 <p>The extremely fine fibers differ from other extrusions,particularly spun bond, in that they have low intrinsic strength but much smaller size offering key properties. Often melt blown is added to spun bond to form SM or SMS webs, which are strong and offer the intrinsic benefits of fine fibers such as fine filtration, low pressure drop as used in face masks or filters and physical benefits such as acoustic insulation as used in dishwashers. One of the largest users of SM and SMS materials is the disposable diaper and feminine care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters pt-4">
+                    <div class="col-md-20">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?>spunmelt2.jpg" alt="">
+                    </div>
+                    <div class="col-md-40">
+                        <div class="content-inner">
+                            <div class="innersssss">
+                                <h5>Extrusion Machine</h5>
+                                <p>Extrusion of roofing sheets, manufactured from UPVC, are designed to suit a diverse range of applications in various markets: DIY, factories, construction, architectural projects, agricultural, manufacturing and fabrication.</p>
                             </div>
                         </div>
                     </div>

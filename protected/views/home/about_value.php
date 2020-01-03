@@ -6,7 +6,7 @@
 </section>
  -->
 
-<section class="breadcrumb-det" style="padding-top:145px;">
+<section class="breadcrumb-det">
     <div class="prelative container">
       <div class="row">
         <div class="col-md-45">
@@ -14,7 +14,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">About Us</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Career</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Our Values</a></li>
                 </ol>
             </nav>
         </div>
@@ -37,22 +37,57 @@
         <ol>
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
+          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li> -->
-          <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li> -->
         </ol>
       </div>
       </div>
       <div class="col-md-45">
             <div class="content-top cont_career">
-                <h3>Come Grow with Us</h3>
+                <h3>Our Values</h3>
                 <img src="<?php echo $this->assetBaseurl; ?>_OPS6411.jpg" alt="" class="img img-fluid pb-5">
+                <?php 
+                $data = [
+                          [
+                            'pict'=>'',
+                            'titles'=>'Partnerships',
+                            'info'=>'We recognize the importance of strong, sustainable partnerships throughout all aspects of our business – we view our employees, customers, suppliers, and communities as our partners.',
+                          ],
+                          [
+                            'pict'=>'',
+                            'titles'=>'Excellence',
+                            'info'=>'We pursue excellence in all that we do by optimizing our processes, enhancing our sustainability initiatives, and by providing the highest quality products and services to our customers. We believe in continuous training and development for our employees so that we can deliver excellence to our customers.',
+                          ],
+                          [
+                            'pict'=>'',
+                            'titles'=>'Growth',
+                            'info'=>'Strategic growth is imperative for our business. Growth comes in many forms – financial growth, customer growth, employee growth and development, product growth and innovation, and the global growth of our Company.',
+                          ],
+                          [
+                            'pict'=>'',
+                            'titles'=>'Safety',
+                            'info'=>'Our number one value. We relentlessly pursue safety in all we do. We maintain high standards to ensure our facilities are safe and environmentally conscious.',
+                          ],
+                          
+                        ];
 
-                <p>We attribute our success on hiring and maintaining a positive and productive workforce.</p>
-                <p>SuryaSukses Group has established a reputation in the industry for being trustworthy and reliable, Our corporate culture is dynamic, creative, and innovative. Learn more about our career and opportunities.</p>
-                <a class="btn btn-primary pl-3 pr-3" target="_blank" href="https://www.jobstreet.co.id/en/companies/749600-surya-sukses">Join Our Team</a>
+                ?>
+
+                <div class="lists_row_csn">
+                  <div class="row">
+                    <?php foreach ($data as $key => $value): ?>
+                    <div class="col-md-30 col-30">
+                      <div class="items pb-3">
+                        <h5><?php echo $value['titles'] ?></h5>
+                        <div class="py-2"></div>
+                        <p><?php echo $value['info'] ?></p>
+                      </div>
+                    </div>
+                    <?php endforeach ?>
+                  </div>
+                </div>                
 
                 <div class="clear clearfix"></div>
             </div>
@@ -61,6 +96,17 @@
     </div>
   </div>
 </section>
+<style type="text/css">
+  .lists_row_csn .items h5{
+    font-weight: 700;
+    font-size: 18px;
+    color: #c52026;
+  }
+  .lists_row_csn .items p{
+    color: #6a6a6a;
+    font-size: 13px;
+  }
+</style>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

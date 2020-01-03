@@ -7,7 +7,7 @@ $login_member = $session['login_member'];
 
 $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
 ?>
-<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+<!--  -->
 <div class="prelatife">
 <header class="head headers <?php if ($active_menu_pg == 'home/index' or $active_menu_pg == 'home/abouthistory' or $active_menu_pg == 'home/aboutquality' or $active_menu_pg == 'home/aboutcareer'): ?>homes_head<?php endif ?> ">
   <div class="prelatife container d-none d-sm-block">
@@ -92,7 +92,7 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <!-- <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a> -->
-              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Company History</a>
+              <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Company-History')); ?>">Who We Are</a>
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Statement</a>
               <!--<a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Locations')); ?>">Locations</a>-->
               <a class="dropdown-item" href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Career')); ?>">Career</a>
@@ -115,9 +115,9 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
             <span class="in_title">ABOUT US</span>
             <ul class="list-inline">
               <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-              <!--<li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>-->
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
               <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
               <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li> -->

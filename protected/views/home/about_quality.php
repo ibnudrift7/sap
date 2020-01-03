@@ -1,12 +1,5 @@
-<section class="inside-cover">
-  <div class="text">
-    <h4>ABOUT US</h4>
-    <h3>Quality Statement</h3>
-  </div>
-</section>
 
-
-<section class="breadcrumb-det">
+<section class="breadcrumb-det" style="padding-top:145px;">
     <div class="prelative container">
       <div class="row">
         <div class="col-md-45">
@@ -37,9 +30,10 @@
         <h5>About Us</h5>
         <ol>
           <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
+          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
           <li class="active"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
-          <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>
+          <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li> -->
           <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
 <!--          <li><a href="--><?php //echo CHtml::normalizeUrl(array('/home/faq')); ?><!--">FAQ</a></li>-->
         </ol>
@@ -48,7 +42,8 @@
       <div class="col-md-45">
         <h4>Our culture of perfections</h4>
         <h3>Quality Statement</h3>
-        <p>Quality products and on time delivery are the things that made us different. With hairline precision production and exceptional discipline in time management, Suryasukses Group has managed to be on top when it comes to quality.</p>
+		  <img src="<?php echo $this->assetBaseurl; ?>_OPS6025.jpg" alt="" class="img img-fluid pb-4 mt-1">
+		  <p>Quality products and on time delivery are the things that made us different. With hairline precision production and exceptional discipline in time management, Suryasukses Group has managed to be on top when it comes to quality.</p>
         <img class="w-100 py-4" src="<?php echo $this->assetBaseurl; ?>quality.jpg" alt="">
         <p>The Suryasukses Group puts strong emphasis on quality. The best manufacturing practice in Suryasukses Group is centrally coordinated and implemented at each plant to ensure superior quality. The best manufacturing practice is continuously pushed up to lift the quality level further. All Suryasukses Group plants are ISO 9000 certified and following the intense and strict interntional safety standard regulation.</p>
 

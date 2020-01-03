@@ -59,7 +59,10 @@ $solblue = [
         <h4>Your partner in design</h4>
         <h3>Suryasukses Studio</h3>
         <div class="row">
-          <div class="col-md-30">
+          <div class="col-md-60">
+            <div class="pb-4">
+              <img src="<?php echo $this->assetBaseurl.'sbl-sap.jpg' ?>" alt="" class="img img-fluid">
+            </div>
             <p>Whether you’re looking for a specific cap or or designing a revolutionary bottle/cup shape, our teams will work together to develop a product your consumers are sure to enjoy, guaranteed by our many years of experience and well-established networks around the world.</p>
             <br>
             <p>Our decoration options includes:</p>
@@ -76,6 +79,7 @@ $solblue = [
                 <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
               </div>
           </div>
+          <?php /*
           <div class="col-md-30">
             <div class="row no-gutters">
             <?php foreach($solblue as $key => $value): ?>
@@ -84,7 +88,8 @@ $solblue = [
               </div>
               <?php endforeach  ?>
             </div>
-          </div>
+          </div>*/ ?>
+
         </div>
       </div>
     </div>
@@ -122,3 +127,9 @@ $solblue = [
         </div>
     </div>
 </section>
+
+<style type="text/css">
+  section.sol_blue-sec-1 p{
+    max-width: inherit;
+  }
+</style>

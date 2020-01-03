@@ -10,9 +10,10 @@ class DataProducts {
         
         $data = [
                     // packaging
+                    // 
                     [
                         'name_category'=>'packaging',
-                        'picture'=>['cover-bottle.jpg','cover-closures.jpg','cover-drinking-cups.jpg','cover-containers.jpg','cover-lids.jpg','cover-preform.jpg'],
+                        'picture'=>['cover-bottle.jpg','cover-closures.jpg','cover-drinking-cups.jpg','cover-containers.jpg', 'cover-lids.jpg', 'cover-preform.jpg'],
                         'desc'=>'',
                         'lists' => [
                                         [
@@ -28,7 +29,7 @@ class DataProducts {
                                         [
                                             'names'=>'closures',
                                             'picture'=>['closures001.jpg'],
-                                            'info'=>'<p>Surya Sukses Group produce approximately 25% of all bottle closures distributed in Indonesia. We are serious when it comes to bottle closure products for healthcare, food and beverage, automotive, household chemical, and personal care markets.</p>',
+                                            'info'=>'<p>Surya Sukses Group produce approximately 25% of all bottle closures distributed in Indonesia. We are serious when it comes to bottle closure products for healthcare, food and beverage, automotive, household chemical, and personal care markets.</p><p>To view more detailed product information, please visit:<br><a target="_blank" href="http://www.botolplastik.id">www.botolplastik.id</a></p>',
                                         ],
                                         [
                                             'names'=>'drinking cups',
@@ -39,12 +40,12 @@ class DataProducts {
                                         [
                                             'names'=>'lids',
                                             'picture'=>['lids001.jpg'],
-                                            'info'=>'<p>To match the wide range of drinking cups, Surya Sukses Group produce even wider lids variety, they are all available for recessed, double seal and tamper resistant applications. Further customization are possible upon your request.</p>',
+                                            'info'=>'<p>To match the wide range of drinking cups, Surya Sukses Group produce even wider lids variety, they are all available for recessed, double seal and tamper resistant applications. Further customization are possible upon your request.</p><p>To view more detailed product information, please visit:<br><a target="_blank" href="http://www.botolplastik.id">www.botolplastik.id</a></p>',
                                         ],
                                         [
                                             'names'=>'containers',
                                             'picture'=>['containers001.jpg','containers002.jpg'],
-                                            'info'=>'<p>Surya Sukses Group has the A to Z of open top containers from 4 oz. to 5.5 gallon sizes. All of our containers are made from high density polyethylene and polypropylene materials by injection molding and thermoforming.</p>',
+                                            'info'=>'<p>Surya Sukses Group has the A to Z of open top containers from 4 oz. to 5.5 gallon sizes. All of our containers are made from high density polyethylene and polypropylene materials by injection molding and thermoforming.</p><p>To view more detailed product information, please visit:<br><a target="_blank" href="http://www.botolplastik.id">www.botolplastik.id</a></p>',
                                         ],
                                     ],
                     ],
@@ -73,14 +74,24 @@ class DataProducts {
                     [
                         'name_category'=>'Housewares',
                         'picture'=>['cover-bathroom.jpg','cover-cleaningware.jpg','cover-garden.jpg','cover-kitchenware.jpg','cover-racks.jpg','cover-sealware.jpg'],
-                        'desc'=>'<p>Surya Sukses Group started its industrial group from a plastic shop for households. Until now, our household plastic business continues to run and develops into a more serious and national scale.</p>',
+                        'desc'=>'<p>Surya Sukses Group started its industrial group from a plastic shop for households. Until now, our household plastic business continues to run and develops into a more serious and national scale.</p><p><a target="_blank" href="https://drive.google.com/open?id=1B_IKaDCw8XR_H61tv5OFOOepdSOKKHEn">Click here to download our full catalog</a></p>',
                         'lists' => [
                                         [
                                             'names'=>'Storage',
-                                            'picture'=>[''],
+                                            'picture'=>['3.jpg'],
                                             'info'=>'<p>We present a variety of plastic products for smart and ergonomic storage with good construction for durability.</p>',
                                         ],
-                                        [
+										[
+											'names'=>'Sealware',
+											'picture'=>['sealware001.jpg','sealware002.jpg'],
+											'info'=>'<p>With Surya Sukses Group`s sophisticated and modern production capabilities, we are able to manufacture Sealware products that have good sealing quality, even in a very competitive selling price range.</p>',
+										],
+										[
+											'names'=>'Kitchen',
+											'picture'=>['10.jpg'],
+											'info'=>'<p>A variety of kitchen utensils and tableware are presented by Surya Sukses Group for customers in Indonesia. Surya Sukses Group`s plastic products are strong and durable, this has become a brand characteristic.</p>',
+										],
+										[
                                             'names'=>'Containers',
                                             'picture'=>['containers001.jpg','containers002.jpg'],
                                             'info'=>'<p>We manufacture varieties of plastic containers for the usage of both food and non-food purpose. Cleanliness and health are our top priority.</p>',
@@ -89,27 +100,17 @@ class DataProducts {
                                             'names'=>'Racks',
                                             'picture'=>['racks001.jpg'],
                                             'info'=>'<p>Surya Sukses Group continues to adapt to the never ending improvement of space saving trends by presenting varieties of smart rack solutions that are ergonomic and able to make better space for living.</p>',
-                                        ],                                        
-                                        [
-                                            'names'=>'Sealware',
-                                            'picture'=>['sealware001.jpg','sealware002.jpg'],
-                                            'info'=>'<p>With Surya Sukses Group`s sophisticated and modern production capabilities, we are able to manufacture Sealware products that have good sealing quality, even in a very competitive selling price range.</p>',
-                                        ],   
-                                        [
-                                            'names'=>'Kitchenware',
-                                            'picture'=>[''],
-                                            'info'=>'<p>A variety of kitchen utensils and tableware are presented by Surya Sukses Group for customers in Indonesia. Surya Sukses Group`s plastic products are strong and durable, this has become a brand characteristic.</p>',
-                                        ],   
+                                        ],
+										[
+											'names'=>'Bathroom',
+											'picture'=>['bathroom001.jpg'],
+											'info'=>'<p>From soap boxes, buckets, to water scoops, all kinds of bathroom plastic products are produced by Surya Sukses Group with the same standards as food grade products.</p>',
+										],
                                         [
                                             'names'=>'Cleaning ware',
                                             'picture'=>['cleaningware-001.jpg','cleaningware-002.jpg'],
                                             'info'=>'<p>Surya Sukses Group has a complete collection of various plastic products for cleaning. With good construction and the best raw materials, cleaningware products that are often damaged will have better durability and last longer.</p>',
-                                        ],   
-                                        [
-                                            'names'=>'Bathroom',
-                                            'picture'=>['bathroom001.jpg'],
-                                            'info'=>'<p>From soap boxes, buckets, to water scoops, all kinds of bathroom plastic products are produced by Surya Sukses Group with the same standards as food grade products.</p>',
-                                        ],   
+                                        ],
                                         [
                                             'names'=>'Garden',
                                             'picture'=>['garden001.jpg'],
@@ -126,7 +127,7 @@ class DataProducts {
                                         [
                                             'names'=>'Twinwall corrugated roofing',
                                             'picture'=>['twin-wall-001.jpg','twin-wall-002.jpg','twin-wall-003.jpg'],
-                                            'info'=>'<p>As a commitment to serve customers in the plastics industry category, Surya Sukses Group complements its plastic product line with the ability to produce uPVC roofs that are environmentally friendly and have excellent durability.</p>',
+                                            'info'=>'<p>As a commitment to serve customers in the plastics industry category, Surya Sukses Group complements its plastic product line with the ability to produce uPVC roofs that are environmentally friendly and have excellent durability.</p><p><a target="_blank" class="btn btn-danger pl-3 pr-3" href="https://amariupvc.com">Learn More</a></p>',
                                         ],
 
                                     ],

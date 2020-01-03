@@ -12,7 +12,7 @@
                                 <ul class="list-unstyled">
                                     <li class="firsts">WE’RE HERE TO HELP</li>
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">Contact Us</a></li>
-                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">Faq</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -20,8 +20,8 @@
                             <div class="texts_menus">
                                 <ul class="list-unstyled">
                                     <li class="firsts">GET TO KNOW US</li>
-                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Company History</a></li>
-                                    <li><a href="#">Our Mission</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
+                                    <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
                                     <!--<li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutlocations')); ?>">Locations</a></li>-->
                                     <li><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
@@ -68,6 +68,18 @@
 	</div>
 </section>
 
+<div class="bottom-footer-home">
+	<div class="inside">
+		<div class="t-footerleft"> <div class="clear height-5"></div> <div class="height-2"></div>
+    		<div class="t-copyright inline">
+    			<img style="width:20px;" src="<?php echo $this->assetBaseurl; ?>waaaaaa.png"> &nbsp;<a href="http://wa.me/6285777303030">Whatsapp</a>
+    		</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+
 <style>
 	section.live-chat{
 		position: fixed;
@@ -78,4 +90,26 @@
 		cursor: pointer;
 	}
 
+    .bottom-footer-home{
+        height: 37px;
+        background-color: #fff;
+        width: 100%;
+        z-index: 20;
+        position: fixed;
+        bottom:0;
+    }
+    .bottom-footer-home .inside{
+        padding: 0 35px
+    }
+    .t-copyright.inline{
+        text-align:center;
+    }
+    .t-copyright.inline a{
+        color:#000;
+    }
+    @media screen and (min-width:450px){
+        .bottom-footer-home{
+            display:none;
+        }
+    }
 </style>

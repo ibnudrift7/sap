@@ -52,8 +52,8 @@ class Controller extends CController
 		$this->assetBaseurl = Yii::app()->baseUrl.'/asset/images/';
 
 		$this->pageTitle = $this->setting['default_meta_title'];
-		$this->metaDesc = $this->setting['default_meta_description'];
 		$this->metaKey = $this->setting['default_meta_keywords'];
+		$this->metaDesc = $this->setting['default_meta_description'];
 
 		Yii::app()->theme = 'default';
 

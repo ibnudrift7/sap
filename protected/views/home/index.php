@@ -44,7 +44,7 @@ $link_slide = array(
     $(function(){
         $('section.bawah-slide .nx_item.nmenu_0').addClass('active');
 
-        $('section.bawah-slide .nx_item').on('click', function(){
+        $('section.bawah-slide .nx_item').on('mouseenter', function(){
             var to_ons = $(this).attr('data-id');
             $('.others_description').addClass('d-none');
             $('section.bawah-slide .nx_item').removeClass('active');
@@ -81,7 +81,7 @@ $link_slide = array(
     // }, 3000);
 </script>
 
-<section class="bawah-slide">
+<section class="bawah-slide d-none d-sm-block">
 	<div class="prelative container ">
 		<div class="row">
 			<?php foreach ($link_slide as $key => $value): ?>
@@ -100,12 +100,11 @@ $link_slide = array(
 			<?php endforeach; ?>
 
 		</div>
-
         <div class="py-4"></div>
         <?php foreach ($link_slide as $key => $value): ?>
         <div class="others_description <?php if ($key != 0): ?>d-none<?php endif ?> nactiv_<?php echo $key ?>" data-id="<?php echo $key ?>">
             <div class="row no-gutters back-white-def">
-                <div class="col-md-38 back-white my-auto">
+                <div class="col-md-38 back-white my-auto order-2 order-sm-1">
                     <div class="descriptions_info pt-4 pb-4 pl-4 pr-4">
                         <h3><?php echo $value['titles'] ?></h3>
                         <div class="py-1"></div>
@@ -115,7 +114,7 @@ $link_slide = array(
                         <div class="clear clearfix"></div>
                     </div>
                 </div>
-                <div class="col-md-22 back-grey my-auto">
+                <div class="col-md-22 back-grey my-auto order-1 order-sm-2">
                     <div class="pictures">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
@@ -209,7 +208,7 @@ $link_slide = array(
         $criteria->addCondition('description.language_id = :language_id');
         $criteria->params[':language_id'] = $this->languageID;
         $criteria->order = 'date_input DESC';
-
+        $criteria->limit  = 4;
         $model_blog = Blog::model()->findAll($criteria);
         ?>
         <?php if (count($model_blog) > 0): ?>
@@ -225,12 +224,12 @@ $link_slide = array(
                     <div class="box-content">
                         <div class="image">
                             <a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id)); ?>">
-                            <img src="<?php echo Yii::app()->baseUrl.'/images/blog/'; ?><?php echo $value->image ?>" alt="<?php echo $value->description->title ?>">
+                            <img style="height:185px;" class="w-100" src="<?php echo Yii::app()->baseUrl.'/images/blog/'; ?><?php echo $value->image ?>" alt="<?php echo $value->description->title ?>">
                             </a>
                         </div>
                         <div class="inner">
                             <div class="paddings">
-                                <h4><?php echo $value->description->title ?></h4>
+                                <h4 style="height:110px;"><?php echo $value->description->title ?></h4>
                             </div>
                             <div class="buttons_read">
                                 <p><a href="<?php echo CHtml::normalizeUrl(array('/blog/detail', 'id'=> $value->id)); ?>">READ MORE</a></p>
@@ -302,3 +301,6 @@ $link_slide = array(
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
+
+<style>
+</style>

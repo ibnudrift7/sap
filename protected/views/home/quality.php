@@ -52,8 +52,8 @@
 				<div class="content-inner-quality">
 					<h4>Our quality certifications: (Click to read more)</h4>
 					<ul>
-						<li>SO 90001 Certification</li>
-						<li>FSSC 22000 Certification</li>
+						<li><a href="https://richmore.co/sap/home/cerf_iso">ISO 90001 Certification</a></li>
+						<li><a href="https://richmore.co/sap/home/cerf_fssc">FSSC 22000 Certification</a></li>
 					</ul>
 				</div>
 			</div>
@@ -66,4 +66,23 @@
     section.about-location-sec-1{
         padding-top: 0 !important;
     }
+    section.about-location-sec-1 .box-konten-kiri{
+        min-height:470px !important;
+    }
+    section.about-location-sec-1 .content-inner-quality ul li a{
+        font-size: 16px;
+        color: #6a6a6a;
+        font-weight: 400;
+    }
 </style>
+
+<script type="text/javascript">
+  $(window).load(function(){
+    
+    if( $(window).width() > 800 ){
+      var xheight_cont =  $('section.about-location-sec-1 .row .col-md-45, section.about-location-sec-1 .row .col-md-45').height();
+      $('section.about-location-sec-1 .row .box-konten-kiri, section.about-location-sec-1 .row .box-konten-kiri').css('height', xheight_cont+'px');
+    } 
+
+  });
+</script>
