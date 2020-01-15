@@ -11,7 +11,7 @@ $link_slide = array(
     array(
         'picture' => 'bawah-slide-5.png',
         'titles' => 'Drinking Cups & Lids',
-        'info' => 'Our disposable cups are light-weight and cost efficient and offer multiple decoration options.',
+        'info' => 'Our disposable cups are light-weight and cost efficient. We also offer multiple decoration options',
         'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 0, 'slug'=>Slug::Create('packaging') )),
         'covers'=>['drinking-cups001-new.png','drinking-cups002.jpg'],
     ),
@@ -19,14 +19,14 @@ $link_slide = array(
 	array(
 		'picture' => 'bawah-slide2.png',
 		'titles' => 'Specialty Nonwoven',
-		'info' => 'A versatile product that can be printed or luminated. Its naturally poroous, light-weight and eco-friendly characteristics make spunbond a multipurpose product.',
+		'info' => 'A versatile product that can be printed or luminated. Its naturally porous, light-weight and eco-friendly characteristics make spunbond a multipurpose product.',
 		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 1, 'slug'=>Slug::Create('specialty-nonwoven') )),
         'covers'=>['cover-specialty.jpg'],
 	),
 	array(
 		'picture' => 'bawah-slide3.png',
 		'titles' => 'Housewares',
-		'info' => 'To provide customers with qualified household products, innovative design, and prompt delivery at a very competitive price. Each products are designed to comfort and ease your life.',
+		'info' => 'We provide customers with qualified household products, innovative design, and prompt delivery at a very competitive price. Each products are designed to comfort and ease your life.',
 		'link' => CHtml::normalizeUrl(array('/home/product_landing', 'id'=> 2, 'slug'=>Slug::Create('housewares') )),
         'covers'=>['cover-bathroom.jpg','cover-cleaningware.jpg','cover-garden.jpg','cover-kitchenware.jpg','cover-racks.jpg','cover-sealware.jpg'],
 	),

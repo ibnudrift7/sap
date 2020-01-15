@@ -125,9 +125,11 @@ class DataProducts {
                         'desc'=>'',
                         'lists' => [
                                         [
-                                            'names'=>'Twinwall corrugated roofing',
+                                            // 'names'=>'Twinwall corrugated roofing',
+                                            'names'=>'UPVC',
                                             'picture'=>['twin-wall-001.jpg','twin-wall-002.jpg','twin-wall-003.jpg'],
-                                            'info'=>'<p>As a commitment to serve customers in the plastics industry category, Surya Sukses Group complements its plastic product line with the ability to produce uPVC roofs that are environmentally friendly and have excellent durability.</p><p><a target="_blank" class="btn btn-danger pl-3 pr-3" href="https://amariupvc.com">Learn More</a></p>',
+                                            // 'info'=>'<p>As a commitment to serve customers in the plastics industry category, Surya Sukses Group complements its plastic product line with the ability to produce uPVC roofs that are environmentally friendly and have excellent durability.</p><p><a target="_blank" class="btn btn-danger pl-3 pr-3" href="https://amariupvc.com">Learn More</a></p>',
+                                            'info'=>'<p>Amari UPVC roofing system is offered as part of the company`s commitment on green consciousness. The roofing sheets, manufactured from UPVC, are designed to suit a diverse range of applications in various markets: factories, warehouse, stadiums, canopies, and many other architectural projects.</p>',
                                         ],
 
                                     ],

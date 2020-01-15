@@ -136,11 +136,11 @@ class DataMarket {
                         'picture'=>['ill-building.jpg'],
                         'desc'=>'',
                         'lists' => [
-                                        [
-                                            'names'=>'Geo Textiles',
-                                            'picture'=>['geotextile.jpg'],
-                                            'info'=>'<p>Surya Sukses Group’s geotextile products will help solve problems for construction and landscaping professionals. It is economic but very useful. Geotextile made from polypropylene spundbond will bring stabilization, landscaping, ground and grass reinforcement, and erosion control.</p>',
-                                        ],
+                                        // [
+                                        //     'names'=>'Geo Textiles',
+                                        //     'picture'=>['geotextile.jpg'],
+                                        //     'info'=>'<p>Surya Sukses Group’s geotextile products will help solve problems for construction and landscaping professionals. It is economic but very useful. Geotextile made from polypropylene spundbond will bring stabilization, landscaping, ground and grass reinforcement, and erosion control.</p>',
+                                        // ],
                                         [
                                             'names'=>'Building wraps and roofing under layer',
                                             'picture'=>['building-wraps.jpg'],
