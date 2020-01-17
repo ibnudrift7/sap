@@ -1,17 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Brand'=>array('index'),
+	'Market'=>array('index'),
 	'Add',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tags',
-	'title'=>'Brand',
-	'subtitle'=>'Data Brand',
+	'title'=>'Market',
+	'subtitle'=>'Data Market',
 );
 
 $this->menu=array(
-	array('label'=>'List Brand', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'List Market', 'icon'=>'th-list','url'=>array('index')),
 );
 ?>
 

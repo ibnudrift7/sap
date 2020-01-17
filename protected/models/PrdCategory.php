@@ -12,7 +12,7 @@
  */
 class PrdCategory extends CActiveRecord
 {
-	public $name;
+	public $name, $kode;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -48,7 +48,7 @@ class PrdCategory extends CActiveRecord
 			array('image, image2', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'insert', 'except'=>array('createTemp', 'copy')),
 			array('image, image2', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'update', 'except'=>array('createTemp', 'copy')),
 
-			// The following rule is used by search().
+			array('image3, image4, image5, image6', 'safe'),
 			// Please remove those attributes that should not be searched.
 			array('id, parent_id, image, type, data', 'safe', 'on'=>'search'),
 		);
@@ -77,10 +77,15 @@ class PrdCategory extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'parent_id' => 'Parent',
-			'image' => 'Image Icon',
-			'image2' => 'Image Menu',
 			'type' => 'Type',
 			'data' => 'Data',
+			
+			'image' => 'Image',
+			'image2' => 'Image 2',
+			'image3' => 'Image 3',
+			'image4' => 'Image 4',
+			'image5' => 'Image 5',
+			'image6' => 'Image 6',
 		);
 	}
 

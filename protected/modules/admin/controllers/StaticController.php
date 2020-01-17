@@ -12,16 +12,35 @@ class StaticController extends ControllerAdmin
 		);
 	}
 
-	public function actionHome()
+	public function actionHomepages()
 	{
 		$model = Setting::model()->getModelSetting('data');
-
 		$model = $this->loadData($model);
 
 		$this->render('home',array(
 			'model'=>$model,
 		));
 	}
+
+	public function actionStudio()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('studio', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionCapabilities()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('capabilities', array(
+			'model'=>$model,
+		));
+	}	
 
 	public function actionProduct()
 	{

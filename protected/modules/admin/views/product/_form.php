@@ -315,17 +315,17 @@ jQuery(document).ready(function($) {
 				?>
 				*/ ?>
 
+				<?php /*
                 <label>Label</label>
                 <span class="formwrapper">
                 	<?php echo $form->checkBox($model, 'onsale') ?> On Sale &nbsp;
                 	<?php echo $form->checkBox($model, 'rekomendasi') ?> Trending Now &nbsp;
-					<?php /*
                 	<?php echo $form->checkBox($model, 'terbaru') ?> Terbaru &nbsp;
                 	<?php echo $form->checkBox($model, 'out_stock') ?> Out Stock &nbsp;
                 	<?php echo $form->checkBox($model, 'rekomendasi') ?> rekomendasi &nbsp;
                 	<?php echo $form->checkBox($model, 'turun_harga') ?> Turun Harga &nbsp;
-                	*/ ?>
                 </span>
+                */ ?>
 
 				<div class="divider10"></div>
 
@@ -337,6 +337,7 @@ jQuery(document).ready(function($) {
 				 -->
 				<div class="divider10"></div>
 
+				<?php /*
 				<div class="row-fluid">
 					<div class="span3">
 						<?php echo $form->textFieldRow($model,'harga',array('class'=>'input-block-level')); ?>
@@ -344,13 +345,14 @@ jQuery(document).ready(function($) {
 					<div class="span3">
 						<?php echo $form->textFieldRow($model,'harga_coret',array('class'=>'input-block-level')); ?>
 					</div>
-					<?php /*
 					<div class="span3">
 						<?php echo $form->textFieldRow($model,'stock',array('class'=>'input-block-level',
 						'hint'=>'Note: Masukkan Stock Barang')); ?>
 					</div>
-					*/ ?>
 				</div>
+				*/ ?>
+				
+				<?php /*
 				<div class="row-fluid">
 					<div class="span3">
 						<?php echo $form->textFieldRow($model,'data[warna]',array('class'=>'input-block-level')); ?>
@@ -365,7 +367,6 @@ jQuery(document).ready(function($) {
 					</div>
 				</div>
 
-						<?php /*
 				<div class="row-fluid">
 					<div class="span6">
 						<?php echo $form->textAreaRow($model,'data[feature]',array('class'=>'input-block-level',
@@ -439,16 +440,13 @@ jQuery(document).ready(function($) {
 		
 		<!-- ----------------- Add Option ----------------- -->
 		<div class="divider15"></div>
+		<?php /*
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
 		        <h4 class="widgettitle">Add Product Variations</h4>
 		    </div>
 		    <div class="widgetcontent">
-<!-- 				<div class="alert">
-				  <button type="button" class="close" data-dismiss="alert">×</button>
-				  Berfungsi untuk memberikan pilihan-pilihan khusus untuk di setting, ex: Ukuran: L, Warna: Hitam, stock: 10, harga: 70.000
-				</div>
- -->				
+
                 <h4 class="widgettitle">Product Variations</h4>
                 <table class="table table-bordered responsive">
                     <thead>
@@ -491,14 +489,7 @@ jQuery(document).ready(function($) {
                 </table>
 				<div class="divider5"></div>
                 <button type="button" class="btn btn-primary tambah-option">Add Product Variations</button>
-				<!-- <div class="alert">
-				  <button type="button" class="close" data-dismiss="alert">×</button>
-				  Bila harga di kosongkan maka akan tersetting sebagai harga default atau harga normal
-				</div> -->
-				<!-- <div class="alert">
-				  <button type="button" class="close" data-dismiss="alert">×</button>
-				  Stock tidak mengikat, hanya sebagai catatan penjual
-				</div> -->
+
                 <script type="text/javascript">
                 jQuery(function( $ ) {
 					$('.tambah-option').tambahData({
@@ -516,7 +507,6 @@ jQuery(document).ready(function($) {
 		    </div>
 		</div>
 
-		<?php /*
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
@@ -667,13 +657,15 @@ jQuery(document).ready(function($) {
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image',array(
-				'hint'=>'<b>Note:</b> Image size is 600 x 600px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
+				'hint'=>'<b>Note:</b> Image size is 914 x 575px. Larger image will be automatically cropped.', 'style'=>"width: 100%")); ?>
 				<?php if ($model->scenario == 'update'): ?>
 				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(600,600, '/images/product/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 				<?php endif; ?>
 		    </div>
 		</div>
 		<div class="divider15"></div>
+		
+		<?php /*
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
 		        <h4 class="widgettitle">Main Image Angle 2</h4>
@@ -686,9 +678,9 @@ jQuery(document).ready(function($) {
 				<?php endif; ?>
 		    </div>
 		</div>
+		*/ ?>
 
 		<!-- ----------------- Gambar Tambahan ----------------- -->
-		<?PHP /*
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
@@ -703,7 +695,7 @@ jQuery(document).ready(function($) {
 					<input type="file" name="PrdProductImage[][image]" style="width: 100%;">
 					<div class="divider10"></div>
 		    	</div>
-		    	<p class="help-block"><b>Note:</b> Image size is 600 x 600px. Larger image will be automatically cropped.</p>
+		    	<p class="help-block"><b>Note:</b> Image size is 914 x 575px. Larger image will be automatically cropped.</p>
 				<style>
 					#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
 					#sortable li { margin: 5px 2.5%; float: left; width: 20%; text-align: center; }
@@ -740,7 +732,6 @@ jQuery(document).ready(function($) {
 				</div>
 		    </div>
 	    </div>
-	    */ ?>
 
 		<?php /*
 		<!-- ----------------- Warna ----------------- -->

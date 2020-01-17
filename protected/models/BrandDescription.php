@@ -40,7 +40,8 @@ class BrandDescription extends CActiveRecord
 			array('title', 'required'),
 			array('id, language_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>255),
-			// The following rule is used by search().
+			// The following rule is used by search()
+			array('content', 'safe'),
 			// Please remove those attributes that should not be searched.
 			array('id, language_id, title, content', 'safe', 'on'=>'search'),
 		);

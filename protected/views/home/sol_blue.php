@@ -63,21 +63,25 @@ $solblue = [
             <div class="pb-4">
               <img src="<?php echo $this->assetBaseurl.'sbl-sap.jpg' ?>" alt="" class="img img-fluid">
             </div>
-            <p>Whether you’re looking for a specific cap or or designing a revolutionary bottle/cup shape, our teams will work together to develop a product your consumers are sure to enjoy, guaranteed by our many years of experience and well-established networks around the world.</p>
-            <br>
-            <p>Our decoration options includes:</p>
-            <ul>
-                <li><p style="font-weight: 700;">Emboss cap</p></li>
-                <li><p style="font-weight: 700;">Emboss bottle</p></li>
-                <li><p style="font-weight: 700;">Print logo on Houseware products</p></li>
-                <br><br>
-              Contact us and discuss your project with us now.</p>
-              <div class="email">
-                <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
+
+            <div class="contents_text">
+              <p>Whether you’re looking for a specific cap or or designing a revolutionary bottle/cup shape, our teams will work together to develop a product your consumers are sure to enjoy, guaranteed by our many years of experience and well-established networks around the world.</p>
+              
+              <p>Our decoration options includes:</p>
+              <ul>
+                  <li>Emboss cap</li>
+                  <li>Emboss bottle</li>
+                  <li>Print logo on Houseware products</li>
+              </ul>
+                
+                <p>Contact us and discuss your project with us now. <br>
+                Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
+                
+                <div class="whatsapp">
+                  <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
+                </div>
               </div>
-              <div class="whatsapp">
-                <h5>Whatsapp <a target="_blank" href="http://wa.me/6285777303030"><img src="<?php echo $this->assetBaseurl; ?>WA-Logo-copy-2.png" alt=""> +62 857 7730 3030</a></h5>
-              </div>
+
           </div>
           <?php /*
           <div class="col-md-30">

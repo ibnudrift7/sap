@@ -10,9 +10,9 @@
 <div class="row-fluid">
 	<div class="span8">
 	<?php if ($model->scenario == 'update'): ?>
-		<h1>Edit Brand</h1>
+		<h1>Edit Market</h1>
 	<?php else: ?>
-		<h1>Add Brand</h1>
+		<h1>Add Market</h1>
 	<?php endif; ?>
 
 
@@ -50,7 +50,22 @@
 			    ),
 			)); ?>
 
-			<?php echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
+			<?php // echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
+			<?php 
+			$criteria = new CDbCriteria;
+			$criteria->with = array('description');
+			$criteria->addCondition('t.type = :type');
+			$criteria->params[':type'] = 'filtercat';
+			$criteria->order = 'sort ASC';
+			$dtc_category = PrdCategory::model()->findAll($criteria);
+
+			$nellmodels = array();
+			foreach ($dtc_category as $key => $value) {
+				$nellmodels[$value->id] = $value->description->name;
+			}
+
+			?>
+			<?php echo $form->dropDownListRow($model, 'category_id', $nellmodels, array('class'=>'form-control') ); ?>
 
 			<?php
 			foreach ($modelDesc as $key => $value) {
@@ -66,7 +81,6 @@
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 				</div>
 
-				<?php /*
 				<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($key==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $lang->id ?>">
 				<?php
 				echo $form->labelEx($value, '['.$lang->code.']content');
@@ -75,7 +89,6 @@
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 				</div>
-				*/ ?>
 
 			    <?php
 			}
@@ -117,9 +130,9 @@
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image',array(
-				'hint'=>'<b>Note:</b> Ukuran gambar adalah maxheight 80px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+				'hint'=>'<b>Note:</b> Ukuran gambar adalah max-width 914px and max-height 575px.', 'style'=>"width: 100%")); ?>
 				<?php if ($model->scenario == 'update'): ?>
-				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(180,80, '/images/brand/'.$model->image , array('method' => 'resize', 'quality' => '90')) ?>"/>
+				<img style="width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(914,575, '/images/brand/'.$model->image , array('method' => 'resize', 'quality' => '90')) ?>"/>
 				<?php endif; ?>
 		    </div>
 		</div>

@@ -98,6 +98,20 @@ class CategoryController extends ControllerAdmin
 				$model->image3 = substr(md5(time()),0,5).'-'.$image3->name;
 			}
 
+			$image4 = CUploadedFile::getInstance($model,'image4');
+			if ($image4->name != '') {
+				$model->image4 = substr(md5(time()),0,5).'-'.$image4->name;
+			}
+			$image5 = CUploadedFile::getInstance($model,'image5');
+			if ($image5->name != '') {
+				$model->image5 = substr(md5(time()),0,5).'-'.$image5->name;
+			}
+			$image6 = CUploadedFile::getInstance($model,'image6');
+			if ($image6->name != '') {
+				$model->image6 = substr(md5(time()),0,5).'-'.$image6->name;
+			}
+			
+
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
@@ -111,6 +125,16 @@ class CategoryController extends ControllerAdmin
 					if ($image3->name != '') {
 						$image3->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image3);
 					}
+					if ($image4->name != '') {
+						$image4->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image4);
+					}
+					if ($image5->name != '') {
+						$image5->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image5);
+					}
+					if ($image6->name != '') {
+						$image6->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image6);
+					}
+					
 					$model->type = $this->type;
 
 					$model->save();
@@ -188,10 +212,16 @@ class CategoryController extends ControllerAdmin
 			$image = $model->image;//mengamankan nama file
 			$image2 = $model->image2;//mengamankan nama file
 			$image3 = $model->image3;//mengamankan nama file
+			$image4 = $model->image4;//mengamankan nama file
+			$image5 = $model->image5;//mengamankan nama file
+			$image6 = $model->image6;//mengamankan nama file
 			$model->attributes=$_POST['PrdCategory'];//setting semua nilai
 			$model->image = $image;//mengembalikan nama file
 			$model->image2 = $image2;//mengembalikan nama file
 			$model->image3 = $image3;//mengembalikan nama file
+			$model->image4 = $image4;//mengembalikan nama file
+			$model->image5 = $image5;//mengembalikan nama file
+			$model->image6 = $image6;//mengembalikan nama file
 
 			unset($modelDesc);
 			$valid=true;
@@ -220,6 +250,19 @@ class CategoryController extends ControllerAdmin
 				$model->image3 = substr(md5(time()),0,5).'-'.$image3->name;
 			}
 
+			$image4 = CUploadedFile::getInstance($model,'image4');
+			if ($image4->name != '') {
+				$model->image4 = substr(md5(time()),0,5).'-'.$image4->name;
+			}
+			$image5 = CUploadedFile::getInstance($model,'image5');
+			if ($image5->name != '') {
+				$model->image5 = substr(md5(time()),0,5).'-'.$image5->name;
+			}
+			$image6 = CUploadedFile::getInstance($model,'image6');
+			if ($image6->name != '') {
+				$model->image6 = substr(md5(time()),0,5).'-'.$image6->name;
+			}
+
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
@@ -233,6 +276,17 @@ class CategoryController extends ControllerAdmin
 					if ($image3->name != '') {
 						$image3->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image3);
 					}
+					if ($image4->name != '') {
+						$image4->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image4);
+					}
+					if ($image5->name != '') {
+						$image5->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image5);
+					}
+					if ($image6->name != '') {
+						$image6->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image6);
+					}
+
+
 					$model->save();
 
 					PrdCategoryDescription::model()->deleteAll('category_id = :id', array(':id'=>$model->id));
@@ -294,7 +348,9 @@ class CategoryController extends ControllerAdmin
 	 */
 	public function actionDelete($id)
 	{
-			$this->loadModel($id)->delete();
+			$n_parent = $this->loadModel($id);
+			PrdCategoryDescription::model()->deleteAll('category_id = :id', array(':id'=>$n_parent->id));
+			$n_parent->delete();
 
 			$this->redirect(array('index'));
 	}

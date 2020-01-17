@@ -1,20 +1,20 @@
 <?php
 $this->breadcrumbs=array(
-	'Brand'=>array('index'),
+	'Market'=>array('index'),
 	// $model->id=>array('view','id'=>$model->id),
 	'Edit',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tags',
-	'title'=>'Brand',
-	'subtitle'=>'Data Brand',
+	'title'=>'Market',
+	'subtitle'=>'Data Market',
 );
 
 $this->menu=array(
-	array('label'=>'List Brand', 'icon'=>'th-list','url'=>array('index')),
-	array('label'=>'Add Brand', 'icon'=>'plus-sign','url'=>array('create')),
-	// array('label'=>'View Brand', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
+	array('label'=>'List Market', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'Add Market', 'icon'=>'plus-sign','url'=>array('create')),
+	// array('label'=>'View Market', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
 );
 ?>
 

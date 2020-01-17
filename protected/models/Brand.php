@@ -51,7 +51,7 @@ class Brand extends CActiveRecord
 			array('active', 'required'),
 			array('active', 'numerical', 'integerOnly'=>true),
 			array('image, insert_by, last_update_by', 'length', 'max'=>255),
-			array('kode', 'safe'),
+			array('kode, category_id', 'safe'),
 			
 			// array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>FALSE, 'on'=>'insert'),
 			// array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>TRUE, 'on'=>'update'),
@@ -81,6 +81,7 @@ class Brand extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'category_id' => 'Category',
 			'title' => 'Title',
 			'writer_name' => 'writer_name',
 			'active' => 'Status',

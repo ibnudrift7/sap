@@ -1,23 +1,23 @@
 <?php
 $this->breadcrumbs=array(
-	'Brand',
+	'Market',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tags',
-	'title'=>'Brand',
-	'subtitle'=>'Data Brand',
+	'title'=>'Market',
+	'subtitle'=>'Data Market',
 );
 
 $this->menu=array(
-	array('label'=>'Add Brand', 'icon'=>'plus-sign','url'=>array('create')),
+	array('label'=>'Add Market', 'icon'=>'plus-sign','url'=>array('create')),
 );
 ?>
 
 <?php $this->widget('bootstrap.widgets.TbButtonGroup',array('buttons'=>$this->menu,)); ?>
 <div class="row-fluid">
 	<div class="span12">
-<h1>Brand</h1>
+<h1>Market</h1>
 		<?php $this->widget('bootstrap.widgets.TbGridView',array(
 			'id'=>'brand-grid',
 			'dataProvider'=>$model->search($this->languageID),

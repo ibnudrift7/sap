@@ -46,20 +46,20 @@
 	}
 	?>
 
-	<?php echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
-	<?php /*
+	<?php // echo $form->textFieldRow($model,'kode',array('class'=>'input-block-level')); ?>
+	
 	<?php echo $form->fileFieldRow($model,'image',array(
-	'hint'=>'<b>Note:</b> Ukuran gambar adalah 349 x 356px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+	'hint'=>'<b>Note:</b> Ukuran gambar adalah 914 x 575px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
 	<?php if ($model->scenario == 'update'): ?>
 	<div class="control-group">
 		<label class="control-label">&nbsp;</label>
 		<div class="controls">
-			<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(349,356, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
+			<img src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(450,270, '/images/category/'.$model->image , array('method' => 'adaptiveResize', 'quality' => '90')) ?>"/>
 		</div>
 	</div>
 	<?php endif; ?>
 	<br>
-	*/ ?>
+	
 	<?php $this->widget('bootstrap.widgets.TbButton', array(
 		'buttonType'=>'submit',
 		'type'=>'primary',

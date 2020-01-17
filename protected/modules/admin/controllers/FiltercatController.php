@@ -84,18 +84,18 @@ class FiltercatController extends ControllerAdmin
 	            }
 	        }
 
-			// $image = CUploadedFile::getInstance($model,'image');
-			// if ($image->name != '') {
-			// 	$model->image = substr(md5(time()),0,5).'-'.$image->name;
-			// }
+			$image = CUploadedFile::getInstance($model,'image');
+			if ($image->name != '') {
+				$model->image = substr(md5(time()),0,5).'-'.$image->name;
+			}
 
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
-					// if ($image->name != '') {
-					// 	$image->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image);
-					// }
+					if ($image->name != '') {
+						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image);
+					}
 					$model->type = $this->type;
 
 					$model->save();
@@ -170,7 +170,9 @@ class FiltercatController extends ControllerAdmin
 		// $this->performAjaxValidation($model);
 
 		if (isset($_POST['PrdCategoryDescription'])) {
+			$image = $model->image;//mengamankan nama file
 			$model->attributes=$_POST['PrdCategory'];//setting semua nilai
+			$model->image = $image;//mengembalikan nama file
 
 			unset($modelDesc);
 			$valid=true;
@@ -184,10 +186,19 @@ class FiltercatController extends ControllerAdmin
 	            }
 	        }
 
+	        $image = CUploadedFile::getInstance($model,'image');
+			if ($image->name != '') {
+				$model->image = substr(md5(time()),0,5).'-'.$image->name;
+			}
+
 			if($model->validate() AND $valid){
 				$transaction=$model->dbConnection->beginTransaction();
 				try
 				{
+					if ($image->name != '') {
+						$image->saveAs(Yii::getPathOfAlias('webroot').'/images/category/'.$model->image);
+					}
+					
 					$model->save();
 
 					PrdCategoryDescription::model()->deleteAll('category_id = :id', array(':id'=>$model->id));

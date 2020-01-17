@@ -1,20 +1,20 @@
 <?php
 $this->breadcrumbs=array(
-	'Dealer Shop Location'=>array('index'),
+	'Address Office Group'=>array('index'),
 	// $model->id=>array('view','id'=>$model->id),
 	'Edit',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-bank',
-	'title'=>'Dealer Shop Location',
-	'subtitle'=>'Edit Dealer Shop Location',
+	'title'=>'Address Office Group',
+	'subtitle'=>'Edit Address Office Group',
 );
 
 $this->menu=array(
-	array('label'=>'List Dealer Shop Location', 'icon'=>'th-list','url'=>array('index')),
-	array('label'=>'Add Dealer Shop Location', 'icon'=>'plus-sign','url'=>array('create')),
-	// array('label'=>'View Dealer Shop Location', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
+	array('label'=>'List Address Office Group', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'Add Address Office Group', 'icon'=>'plus-sign','url'=>array('create')),
+	// array('label'=>'View Address Office Group', 'icon'=>'pencil','url'=>array('view','id'=>$model->id)),
 );
 ?>
 
