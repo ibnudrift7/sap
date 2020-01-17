@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Jan 2020 pada 10.36
+-- Waktu pembuatan: 17 Jan 2020 pada 11.28
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.1.24
 
@@ -43,6 +43,7 @@ CREATE TABLE `address` (
   `id` int(25) NOT NULL,
   `category_id` int(11) NOT NULL,
   `nama` varchar(225) NOT NULL,
+  `subtitle` varchar(225) DEFAULT NULL,
   `address_1` varchar(100) NOT NULL,
   `address_2` varchar(100) NOT NULL,
   `telp` varchar(100) NOT NULL,
@@ -1260,7 +1261,74 @@ INSERT INTO `log` (`id`, `username`, `activity`, `time`) VALUES
 (374, 'info@markdesign.net', 'BlogController Update 7', '0000-00-00 00:00:00'),
 (375, 'info@markdesign.net', 'BlogController Update 5', '0000-00-00 00:00:00'),
 (376, 'info@markdesign.net', 'Login: info@markdesign.net', '0000-00-00 00:00:00'),
-(377, 'info@markdesign.net', 'Login: info@markdesign.net', '0000-00-00 00:00:00');
+(377, 'info@markdesign.net', 'Login: info@markdesign.net', '0000-00-00 00:00:00'),
+(378, 'info@markdesign.net', 'Login: info@markdesign.net', '2020-01-17 07:03:54'),
+(379, 'info@markdesign.net', 'Create Category 1', '2020-01-17 07:14:56'),
+(380, 'info@markdesign.net', 'Login: info@markdesign.net', '2020-01-17 07:28:26'),
+(381, 'info@markdesign.net', 'Create Category 2', '2020-01-17 08:49:22'),
+(382, 'info@markdesign.net', 'Create Category 1', '2020-01-17 08:51:06'),
+(383, 'info@markdesign.net', 'Create Category 2', '2020-01-17 08:51:43'),
+(384, 'info@markdesign.net', 'Create Category 3', '2020-01-17 08:51:50'),
+(385, 'info@markdesign.net', 'Create Category 4', '2020-01-17 08:51:55'),
+(386, 'info@markdesign.net', 'Create Category 5', '2020-01-17 08:51:59'),
+(387, 'info@markdesign.net', 'Create Category 6', '2020-01-17 08:52:27'),
+(388, 'info@markdesign.net', 'Login: info@markdesign.net', '2020-01-17 09:23:03'),
+(389, 'info@markdesign.net', 'Create Category 7', '2020-01-17 09:30:02'),
+(390, 'info@markdesign.net', 'Create Category 8', '2020-01-17 09:30:07'),
+(391, 'info@markdesign.net', 'Login: info@markdesign.net', '2020-01-17 09:30:10'),
+(392, 'info@markdesign.net', 'Create Category 9', '2020-01-17 09:30:19'),
+(393, 'info@markdesign.net', 'Create Category 10', '2020-01-17 09:30:24'),
+(394, 'info@markdesign.net', 'Create Category 11', '2020-01-17 09:30:26'),
+(395, 'info@markdesign.net', 'Create Category 12', '2020-01-17 09:30:46'),
+(396, 'info@markdesign.net', 'PrdProduct Controller Create 1', '2020-01-17 09:31:41'),
+(397, 'info@markdesign.net', 'PrdProduct Controller Create 2', '2020-01-17 09:33:56'),
+(398, 'info@markdesign.net', 'Create Category 2', '2020-01-17 09:34:43'),
+(399, 'info@markdesign.net', 'PrdProduct Controller Create 3', '2020-01-17 09:35:03'),
+(400, 'info@markdesign.net', 'Create Category 3', '2020-01-17 09:37:26'),
+(401, 'info@markdesign.net', 'PrdProduct Controller Create 4', '2020-01-17 09:38:20'),
+(402, 'info@markdesign.net', 'PrdProduct Controller Create 5', '2020-01-17 09:39:22'),
+(403, 'info@markdesign.net', 'PrdProduct Controller Create 6', '2020-01-17 09:40:45'),
+(404, 'info@markdesign.net', 'PrdProduct Controller Create 7', '2020-01-17 09:42:18'),
+(405, 'info@markdesign.net', 'Create Category 4', '2020-01-17 09:42:44'),
+(406, 'info@markdesign.net', 'PrdProduct Controller Create 8', '2020-01-17 09:43:26'),
+(407, 'info@markdesign.net', 'Create Category 5', '2020-01-17 09:43:40'),
+(408, 'info@markdesign.net', 'PrdProduct Controller Create 9', '2020-01-17 09:44:53'),
+(409, 'info@markdesign.net', 'Create Category 6', '2020-01-17 09:45:45'),
+(410, 'info@markdesign.net', 'Create Category 7', '2020-01-17 09:46:14'),
+(411, 'info@markdesign.net', 'Create Category 8', '2020-01-17 09:46:44'),
+(412, 'info@markdesign.net', 'Create Category 9', '2020-01-17 09:47:12'),
+(413, 'info@markdesign.net', 'PrdProduct Controller Create 10', '2020-01-17 09:47:21'),
+(414, 'info@markdesign.net', 'Create Category 10', '2020-01-17 09:47:38'),
+(415, 'info@markdesign.net', 'Create Category 11', '2020-01-17 09:48:08'),
+(416, 'info@markdesign.net', 'PrdProduct Controller Create 11', '2020-01-17 09:48:28'),
+(417, 'info@markdesign.net', 'PrdProduct Controller Create 12', '2020-01-17 09:48:28'),
+(418, 'info@markdesign.net', 'Create Category 12', '2020-01-17 09:48:41'),
+(419, 'info@markdesign.net', 'PrdProduct Controller Create 13', '2020-01-17 09:50:11'),
+(420, 'info@markdesign.net', 'PrdProduct Controller Create 14', '2020-01-17 09:51:12'),
+(421, 'info@markdesign.net', 'PrdProduct Controller Create 15', '2020-01-17 09:52:10'),
+(422, 'info@markdesign.net', 'PrdProduct Controller Create 16', '2020-01-17 09:54:41'),
+(423, 'info@markdesign.net', 'PrdProduct Controller Create 17', '2020-01-17 09:55:35'),
+(424, 'info@markdesign.net', 'PrdProduct Controller Create 18', '2020-01-17 09:56:54'),
+(425, 'info@markdesign.net', 'Brand Controller Create 1', '2020-01-17 10:09:36'),
+(426, 'info@markdesign.net', 'BrandController Update 1', '2020-01-17 10:10:38'),
+(427, 'info@markdesign.net', 'Brand Controller Create 2', '2020-01-17 10:13:34'),
+(428, 'info@markdesign.net', 'Brand Controller Create 3', '2020-01-17 10:13:45'),
+(429, 'info@markdesign.net', 'Brand Controller Create 4', '2020-01-17 10:14:24'),
+(430, 'info@markdesign.net', 'Brand Controller Create 5', '2020-01-17 10:14:35'),
+(431, 'info@markdesign.net', 'Brand Controller Create 6', '2020-01-17 10:15:27'),
+(432, 'info@markdesign.net', 'Brand Controller Create 7', '2020-01-17 10:15:47'),
+(433, 'info@markdesign.net', 'Brand Controller Create 8', '2020-01-17 10:15:59'),
+(434, 'info@markdesign.net', 'Brand Controller Create 9', '2020-01-17 10:16:30'),
+(435, 'info@markdesign.net', 'Brand Controller Create 10', '2020-01-17 10:16:55'),
+(436, 'info@markdesign.net', 'Brand Controller Create 11', '2020-01-17 10:17:10'),
+(437, 'info@markdesign.net', 'Brand Controller Create 12', '2020-01-17 10:17:56'),
+(438, 'info@markdesign.net', 'Brand Controller Create 13', '2020-01-17 10:17:59'),
+(439, 'info@markdesign.net', 'Brand Controller Create 14', '2020-01-17 10:18:27'),
+(440, 'info@markdesign.net', 'Brand Controller Create 15', '2020-01-17 10:18:55'),
+(441, 'info@markdesign.net', 'Brand Controller Create 16', '2020-01-17 10:18:57'),
+(442, 'info@markdesign.net', 'Brand Controller Create 17', '2020-01-17 10:19:46'),
+(443, 'info@markdesign.net', 'Brand Controller Create 18', '2020-01-17 10:20:45'),
+(444, 'info@markdesign.net', 'Brand Controller Create 19', '2020-01-17 10:20:45');
 
 -- --------------------------------------------------------
 
@@ -1759,6 +1827,7 @@ INSERT INTO `pg_type_letak` (`id`, `letak`, `page_id`, `tampil`, `sort`) VALUES
 
 CREATE TABLE `prd_brand` (
   `id` int(11) NOT NULL,
+  `category_id` int(10) DEFAULT NULL,
   `kode` varchar(225) DEFAULT NULL,
   `image` varchar(255) NOT NULL,
   `active` int(11) NOT NULL,
@@ -1767,6 +1836,30 @@ CREATE TABLE `prd_brand` (
   `insert_by` varchar(255) NOT NULL,
   `last_update_by` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_brand`
+--
+
+INSERT INTO `prd_brand` (`id`, `category_id`, `kode`, `image`, `active`, `date_input`, `date_update`, `insert_by`, `last_update_by`) VALUES
+(1, 6, NULL, '85484-water.jpg', 1, '0000-00-00 00:00:00', '2020-01-17 17:10:38', 'info@markdesign.net', 'info@markdesign.net'),
+(2, 6, NULL, 'bb939-carbonated.jpg', 1, '2020-01-17 17:13:34', '2020-01-17 17:13:34', 'info@markdesign.net', 'info@markdesign.net'),
+(3, 10, NULL, '8d00c-industrial-wipes.jpg', 1, '2020-01-17 17:13:45', '2020-01-17 17:13:45', 'info@markdesign.net', 'info@markdesign.net'),
+(4, 6, NULL, '33616-CCJ_0068.jpg', 1, '2020-01-17 17:14:24', '2020-01-17 17:14:24', 'info@markdesign.net', 'info@markdesign.net'),
+(5, 10, NULL, 'bd03c-industrial-protector-covers.jpg', 1, '2020-01-17 17:14:35', '2020-01-17 17:14:35', 'info@markdesign.net', 'info@markdesign.net'),
+(6, 11, NULL, '8560a-air-filtration.jpg', 1, '2020-01-17 17:15:27', '2020-01-17 17:15:27', 'info@markdesign.net', 'info@markdesign.net'),
+(7, 7, NULL, '95ad6-pharmaceutical.jpg', 1, '2020-01-17 17:15:47', '2020-01-17 17:15:47', 'info@markdesign.net', 'info@markdesign.net'),
+(8, 11, NULL, 'b51b4-liquid-filtration.jpg', 1, '2020-01-17 17:15:59', '2020-01-17 17:15:59', 'info@markdesign.net', 'info@markdesign.net'),
+(9, 7, NULL, 'fd9ac-surgical.jpg', 1, '2020-01-17 17:16:30', '2020-01-17 17:16:30', 'info@markdesign.net', 'info@markdesign.net'),
+(10, 12, NULL, '150ad-building-wraps.jpg', 1, '2020-01-17 17:16:55', '2020-01-17 17:16:55', 'info@markdesign.net', 'info@markdesign.net'),
+(11, 7, NULL, 'ae960-disinfecting-wipes.jpg', 1, '2020-01-17 17:17:10', '2020-01-17 17:17:10', 'info@markdesign.net', 'info@markdesign.net'),
+(12, 12, NULL, '49425-roof-system.jpg', 1, '2020-01-17 17:17:56', '2020-01-17 17:17:56', 'info@markdesign.net', 'info@markdesign.net'),
+(13, 8, NULL, '7d524-laundry.jpg', 1, '2020-01-17 17:17:59', '2020-01-17 17:17:59', 'info@markdesign.net', 'info@markdesign.net'),
+(14, 8, NULL, 'c3305-cleaning-products.jpg', 1, '2020-01-17 17:18:27', '2020-01-17 17:18:27', 'info@markdesign.net', 'info@markdesign.net'),
+(15, 8, NULL, 'd7743-gardening.jpg', 1, '2020-01-17 17:18:55', '2020-01-17 17:18:55', 'info@markdesign.net', 'info@markdesign.net'),
+(16, 9, NULL, '90e27-greenhouse.jpg', 1, '2020-01-17 17:18:57', '2020-01-17 17:18:57', 'info@markdesign.net', 'info@markdesign.net'),
+(17, 9, NULL, 'ae21b-munch-film.jpg', 1, '2020-01-17 17:19:46', '2020-01-17 17:19:46', 'info@markdesign.net', 'info@markdesign.net'),
+(19, 9, NULL, 'cf2da-fruit-protect.jpg', 1, '2020-01-17 17:20:45', '2020-01-17 17:20:45', 'info@markdesign.net', 'info@markdesign.net');
 
 -- --------------------------------------------------------
 
@@ -1782,6 +1875,31 @@ CREATE TABLE `prd_brand_description` (
   `content` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_brand_description`
+--
+
+INSERT INTO `prd_brand_description` (`id`, `brand_id`, `language_id`, `title`, `content`) VALUES
+(2, 1, 2, 'Water', '<p>A cornerstone of the beverage market, we’ll work with you to create lightweight and sustainable packaging solutions to keep shipping costs low and consumer satisfaction high.</p>'),
+(3, 2, 2, 'Carbonates & Juices', '<p>Our design and manufacturing expertise allows us to constantly create new, innovative, and eye-catching packaging solutions that will set your product apart from the competition.</p>'),
+(4, 3, 2, 'Industrial Wipes', '<p>Our spunbond product solutions support general purpose industrial cleaning needs and specialized tasks in every stage of the automotive and other technical manufacturing process.</p>'),
+(5, 4, 2, 'Coffee & Tea', '<p>We have a variety of packaging capabilities in RTD tea and coffee, from traditional bottle to 120 ml single wall cup. SAP Group also offer oxium additive options to make our product eco-friendly and biodegradable.</p>'),
+(6, 5, 2, 'Industrial Protectors & Cover', '<p>Our spunbond polypropylene fabrics can be applied in many automotive and other machinery manufacturing components, such as product covers or packaging / bag,mattress layer, shoe layer, secondary carpet backing, headliners, acoustic scrims, and adhesive layers.</p>'),
+(7, 6, 2, 'Air Filtration', '<p>Surya Sukses Group’s meltblown materials serve a wide variety of air applications from room air purifier to facemasks to cabin air filtration.</p>'),
+(8, 7, 2, 'Pharmaceutical', '<p>We are proud to be a global leader in packaging. Our pharmaceutical packaging expertise spans the full range of drug delivery routes. From child-resistant and senior-friendly closures to user-independent droppers, we can also develop custom packaging solutions to fit your specific needs.</p>'),
+(9, 8, 2, 'Liquid Filtration', '<p>Surya Sukses Group’s spunbond materials are suitable for filter manufacturers factory for their high strength, uniformity, and cleanliness in pleated filter cartridges. The polypropylene materials allows for a wide range of temperature and chemical compatibility.</p>'),
+(10, 9, 2, 'Surgical Needs', '<p>AMARI Nonwoven (PP Spunbond & Meltblown) has a vital role in the medical sector. These include surgical gowns, masks, curtains, pillowcases, pampers, and bed sheets The advantage of AMARI Nonwoven in the medical area is its disposable nature to ensure 100% sterile, practical and does not require cleaning costs for reuse. Along with the development of the latest medical technology, doctors and hospitals are now using nonwoven fabrics as Hygiene Standards, which are not only economical and environmentally friendly but also safe, disposable and practical to use.</p>'),
+(11, 10, 2, 'Building Wraps And Roofing Under Layer', '<p><span class=\"redactor-invisible-space\"></span>Surya Sukses Group’s spunbond materials can be used as an insulation for energy efficient building, and it can serve as roofing underlay too. Our product is resistant to climate and weather, and it does not stretch or warp</p>'),
+(12, 11, 2, 'Disinfecting Wipes', '<p>The increasing rate of hospital acquired infections is a worry to us all. We are fighting back with a wipes product range that supports disinfectants and their required contact times with supporting materials that medical professionals can trust.</p>'),
+(13, 12, 2, 'UPVC Roofing System', '<del></del>Amari UPVC roof can be used within a larger temperature range than the usual UPVC product in the markets. They preserve all their physical qualities even in the extreme conditions. Other qualities includes heat and noise insualtions and categorized as B1 incombustibility class'),
+(14, 13, 2, 'Laundry', ''),
+(15, 14, 2, 'Cleaning Products', ''),
+(16, 15, 2, 'Gardening', ''),
+(17, 16, 2, 'Greenhouse Film', '<p>AMARI Nonwoven is used effectively to optimize the productivity of food crops, gardens and greenhouses. With AMARI Nonwoven protection, the need for pesticides and manual labor can be reduced.</p>'),
+(18, 17, 2, 'Mulch Film', '<p>Agriculture technology are now vast and way more advanced as time goes by. A field with plastic mulch film coverage will help plants grow protected and healthy.</p>'),
+(19, 18, 2, 'Fruit Protection', '<p>AMARI nonwoven can be used to Protect fruit without using agro chemicals; ideal for organic or bio-rational plants. It generates microclimate that encourages fruit growth and quality. In Banana Trees, it managed to speed up the harvest for up to 2 weeks</p>'),
+(20, 19, 2, 'Fruit Protection', '<p>AMARI nonwoven can be used to Protect fruit without using agro chemicals; ideal for organic or bio-rational plants. It generates microclimate that encourages fruit growth and quality. In Banana Trees, it managed to speed up the harvest for up to 2 weeks</p>');
+
 -- --------------------------------------------------------
 
 --
@@ -1796,8 +1914,28 @@ CREATE TABLE `prd_category` (
   `image2` varchar(200) NOT NULL,
   `image3` varchar(200) NOT NULL,
   `type` varchar(100) NOT NULL,
-  `data` text NOT NULL
+  `data` text NOT NULL,
+  `image4` varchar(225) DEFAULT NULL,
+  `image5` varchar(225) DEFAULT NULL,
+  `image6` varchar(225) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_category`
+--
+
+INSERT INTO `prd_category` (`id`, `parent_id`, `sort`, `image`, `image2`, `image3`, `type`, `data`, `image4`, `image5`, `image6`) VALUES
+(2, 0, 0, '7a1e5-cover-bottle.jpg', '7a1e5-cover-closures.jpg', '7a1e5-cover-drinking-cups.jpg', 'category', '', '7a1e5-cover-containers.jpg', '7a1e5-cover-lids.jpg', '7a1e5-cover-preform.jpg'),
+(3, 0, 0, 'e7176-cover-specialty.jpg', '', '', 'category', '', NULL, NULL, NULL),
+(4, 0, 0, 'a6ef0-cover-bathroom.jpg', 'a6ef0-cover-cleaningware.jpg', 'a6ef0-cover-garden.jpg', 'category', '', 'a6ef0-cover-kitchenware.jpg', 'a6ef0-cover-racks.jpg', 'a6ef0-cover-sealware.jpg'),
+(5, 0, 0, 'f4cfc-cover-roofing-suryasukses.jpg', '', '', 'category', '', NULL, NULL, NULL),
+(6, 0, 0, 'e9419-ill-beverage.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(7, 0, 0, '3cedf-ill-healthcare.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(8, 0, 0, '52426-ill-households.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(9, 0, 0, '266aa-ill-agriculture.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(10, 0, 0, 'd6c99-ill-industrial.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(11, 0, 0, '36daa-ill-filtration.jpg', '', '', 'filtercat', '', NULL, NULL, NULL),
+(12, 0, 0, '51342-ill-building.jpg', '', '', 'filtercat', '', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1814,6 +1952,23 @@ CREATE TABLE `prd_category_description` (
   `data` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_category_description`
+--
+
+INSERT INTO `prd_category_description` (`id`, `category_id`, `language_id`, `name`, `desc`, `data`) VALUES
+(13, 2, 2, 'Packaging', '', ''),
+(14, 3, 2, 'Specialty Nonwoven', '<p>Our nonwoven fabric solutions are produced on unique and world-leading technology. Through partnership and innovation we deliver value and differentiation for our customers.\r\n</p>', ''),
+(15, 4, 2, 'Housewares', '<p>Surya Sukses Group started its industrial group from a plastic shop for households. Until now, our household plastic business continues to run and develops into a more serious and national scale.\r\n</p><p>\r\n	<a target=\"_blank\" href=\"https://drive.google.com/open?id=1B_IKaDCw8XR_H61tv5OFOOepdSOKKHEn\">Click here to download our full catalog</a>\r\n</p>', ''),
+(16, 5, 2, 'Roofing', '', ''),
+(17, 6, 2, 'Beverage', '', ''),
+(18, 7, 2, 'Healthcare', '', ''),
+(19, 8, 2, 'Household', '', ''),
+(20, 9, 2, 'Agriculture', '', ''),
+(21, 10, 2, 'Industrial', '', ''),
+(22, 11, 2, 'Filtration', '', ''),
+(23, 12, 2, 'Building & Construction', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1825,6 +1980,30 @@ CREATE TABLE `prd_category_product` (
   `category_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_category_product`
+--
+
+INSERT INTO `prd_category_product` (`id`, `category_id`, `product_id`) VALUES
+(1, 2, 1),
+(2, 2, 2),
+(3, 2, 3),
+(4, 2, 4),
+(5, 2, 5),
+(6, 2, 6),
+(7, 3, 7),
+(8, 3, 8),
+(9, 4, 9),
+(10, 4, 10),
+(11, 4, 11),
+(12, 4, 12),
+(13, 4, 13),
+(14, 4, 14),
+(15, 4, 15),
+(16, 4, 16),
+(17, 4, 17),
+(18, 5, 18);
 
 -- --------------------------------------------------------
 
@@ -1894,6 +2073,30 @@ CREATE TABLE `prd_product` (
   `urutan` int(100) DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_product`
+--
+
+INSERT INTO `prd_product` (`id`, `category_id`, `brand_id`, `image`, `image2`, `kode`, `harga`, `harga_coret`, `harga_retail`, `stock`, `berat`, `terbaru`, `terlaris`, `out_stock`, `status`, `date`, `date_input`, `date_update`, `data`, `tag`, `filter`, `onsale`, `rekomendasi`, `turun_harga`, `urutan`) VALUES
+(1, 0, 0, '59f66-preform001.jpg', NULL, '111', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:28:07', '2020-01-17 16:31:41', '2020-01-17 16:31:41', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(2, 0, 0, '4610a-bottle001.jpg', NULL, '222', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:32:12', '2020-01-17 16:33:56', '2020-01-17 16:33:56', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(3, 0, 0, '7775c-closures001.jpg', NULL, '333', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:34:01', '2020-01-17 16:35:03', '2020-01-17 16:35:03', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(4, 0, 0, '009cb-drinking-cups001.jpg', NULL, '444', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:35:10', '2020-01-17 16:38:20', '2020-01-17 16:38:20', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(5, 0, 0, '64a99-lids001.jpg', NULL, '555', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:38:26', '2020-01-17 16:39:22', '2020-01-17 16:39:22', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(6, 0, 0, 'cb27c-containers001.jpg', NULL, '666', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:39:27', '2020-01-17 16:40:45', '2020-01-17 16:40:45', 'N;', ', brand=, category=Packaging, category=2,', '||brand=||category=Packaging||category=2||', 0, 0, 0, 0),
+(7, 0, 0, '72bd6-spubond-polypropylene.jpg', NULL, '777', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:41:11', '2020-01-17 16:42:18', '2020-01-17 16:42:18', 'N;', ', brand=, category=Specialty Nonwoven, category=3,', '||brand=||category=Specialty Nonwoven||category=3||', 0, 0, 0, 0),
+(8, 0, 0, '7780e-meltblown-001.jpg', NULL, '888', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:42:26', '2020-01-17 16:43:26', '2020-01-17 16:43:26', 'N;', ', brand=, category=Specialty Nonwoven, category=3,', '||brand=||category=Specialty Nonwoven||category=3||', 0, 0, 0, 0),
+(9, 0, 0, 'f7a5b-3.jpg', NULL, '999', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:43:30', '2020-01-17 16:44:53', '2020-01-17 16:44:53', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(10, 0, 0, '8bace-sealware001.jpg', NULL, 'qqq', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:44:58', '2020-01-17 16:47:21', '2020-01-17 16:47:21', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(11, 0, 0, 'e7d1a-10.jpg', NULL, 'www', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:47:27', '2020-01-17 16:48:28', '2020-01-17 16:48:28', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(12, 0, 0, 'e7d1a-10.jpg', NULL, 'www', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:47:27', '2020-01-17 16:48:28', '2020-01-17 16:48:28', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(13, 0, 0, 'd92f5-containers001.jpg', NULL, 'eee', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:48:32', '2020-01-17 16:50:11', '2020-01-17 16:50:11', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(14, 0, 0, '57e92-racks001.jpg', NULL, 'rrr', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:50:15', '2020-01-17 16:51:12', '2020-01-17 16:51:12', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(15, 0, 0, 'c81a6-bathroom001.jpg', NULL, 'ttt', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:51:16', '2020-01-17 16:52:10', '2020-01-17 16:52:10', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(16, 0, 0, 'c8698-cleaningware-001.jpg', NULL, 'yyy', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:52:14', '2020-01-17 16:54:41', '2020-01-17 16:54:41', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(17, 0, 0, 'ce790-garden001.jpg', NULL, 'uuu', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:54:45', '2020-01-17 16:55:35', '2020-01-17 16:55:35', 'N;', ', brand=, category=Housewares, category=4,', '||brand=||category=Housewares||category=4||', 0, 0, 0, 0),
+(18, 0, 0, '78fdd-twin-wall-001.jpg', NULL, 'iii', '0.00', '0.00', 0, 0, 0, 0, 0, 0, 1, '2020-01-17 16:55:38', '2020-01-17 16:56:54', '2020-01-17 16:56:54', 'N;', ', brand=, category=Roofing, category=5,', '||brand=||category=Roofing||category=5||', 0, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -1944,6 +2147,30 @@ CREATE TABLE `prd_product_description` (
   `note` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `prd_product_description`
+--
+
+INSERT INTO `prd_product_description` (`id`, `product_id`, `language_id`, `name`, `subtitle`, `desc`, `meta_title`, `meta_desc`, `meta_key`, `note`) VALUES
+(1, 1, 2, 'Preform', '', '<p>Our PET preform infrastructure and machineries are one of the broadest in the industry and our large manufacturing footprint allows us to provide excellent service to our customers.</p>', '', '', '', ''),
+(2, 2, 2, 'Bottles', '', '<p>Surya Sukses Group offers high quality bottles made from Injection Blow molding to our customers. Our wide range of bottles are in HDPE, PET and PP to meet the modern needs of the markets. We also offer a design, development and customization of your bottle design following your brand identity. Our design studio will help bring your imagination to reality.</p><p>To view more detailed product information, please visit:<br><a target=\"_blank\" href=\"http://www.botolplastik.id/\">www.botolplastik.id</a></p>', '', '', '', ''),
+(3, 3, 2, 'Closures', '', '<p>Surya Sukses Group produce approximately 25% of all bottle closures distributed in Indonesia. We are serious when it comes to bottle closure products for healthcare, food and beverage, automotive, household chemical, and personal care markets.</p><p>To view more detailed product information, please visit:<br><a target=\"_blank\" href=\"http://www.botolplastik.id/\">www.botolplastik.id</a></p>', '', '', '', ''),
+(4, 4, 2, 'Drinking Cups', '', '<p>At Surya Sukses Group, we produce any kind and variety of cups, they are souvenir cups, disposable cups, and other food related cups, along with printing process to suit your needs.</p><p>To view more detailed product information, please visit:<br><a target=\"_blank\" href=\"http://www.botolplastik.id/\">www.botolplastik.id</a></p>', '', '', '', ''),
+(5, 5, 2, 'Lids', '', '<p>To match the wide range of drinking cups, Surya Sukses Group produce even wider lids variety, they are all available for recessed, double seal and tamper resistant applications. Further customization are possible upon your request.</p><p>To view more detailed product information, please visit:<br><a target=\"_blank\" href=\"http://www.botolplastik.id/\">www.botolplastik.id</a></p>', '', '', '', ''),
+(6, 6, 2, 'Containers', '', '<p>Surya Sukses Group has the A to Z of open top containers from 4 oz. to 5.5 gallon sizes. All of our containers are made from high density polyethylene and polypropylene materials by injection molding and thermoforming.</p><p>To view more detailed product information, please visit:<br><a target=\"_blank\" href=\"http://www.botolplastik.id/\">www.botolplastik.id</a></p>', '', '', '', ''),
+(7, 7, 2, 'Spunbond Polypropylene', '', '<p>Surya Sukses Group is catering the needs of economic yet durable on performance spunbond fabric – made from polypropylene. Unlike the usual nonwoven fabric, Surya Sukses Group’s nonwoven material quality is felt instantly when you touch it, we will exceed your expectations.</p>', '', '', '', ''),
+(8, 8, 2, 'Meltblown', '', '<p>Our meltblown nonwoven products are formed from micro fibers that are smaller than those found in other nonwovens or textiles made by other manufacturer. The smooth silky surface texture and the elegant round cross-section provide a high surface area for excellent insulation, softness, and filtration characteristics. Custom-laminated meltblown composites can also be manufactured upon request.</p>', '', '', '', ''),
+(9, 9, 2, 'Storage', '', '<p>We present a variety of plastic products for smart and ergonomic storage with good construction for durability.</p>', '', '', '', ''),
+(10, 10, 2, 'Sealware', '', '<p>With Surya Sukses Group`s sophisticated and modern production capabilities, we are able to manufacture Sealware products that have good sealing quality, even in a very competitive selling price range.</p>', '', '', '', ''),
+(11, 11, 2, 'Kitchen', '', '<p>A variety of kitchen utensils and tableware are presented by Surya Sukses Group for customers in Indonesia. Surya Sukses Group`s plastic products are strong and durable, this has become a brand characteristic.</p>', '', '', '', ''),
+(12, 12, 2, 'Kitchen', '', '<p>A variety of kitchen utensils and tableware are presented by Surya Sukses Group for customers in Indonesia. Surya Sukses Group`s plastic products are strong and durable, this has become a brand characteristic.</p>', '', '', '', ''),
+(13, 13, 2, 'Containers', '', '<p>We manufacture varieties of plastic containers for the usage of both food and non-food purpose. Cleanliness and health are our top priority.</p>', '', '', '', ''),
+(14, 14, 2, 'Racks', '', '<p>Surya Sukses Group continues to adapt to the never ending improvement of space saving trends by presenting varieties of smart rack solutions that are ergonomic and able to make better space for living.</p>', '', '', '', ''),
+(15, 15, 2, 'Bathroom', '', '<p>From soap boxes, buckets, to water scoops, all kinds of bathroom plastic products are produced by Surya Sukses Group with the same standards as food grade products.</p>', '', '', '', ''),
+(16, 16, 2, 'Cleaning Ware', '', '<p>Surya Sukses Group has a complete collection of various plastic products for cleaning. With good construction and the best raw materials, cleaningware products that are often damaged will have better durability and last longer.</p>', '', '', '', ''),
+(17, 17, 2, 'Garden', '', '<p>Your garden and plants will become more attractive with a complete collection of garden plastic products from Surya Sukses Group.</p>', '', '', '', ''),
+(18, 18, 2, 'UPVC', '', '<p>Amari UPVC roofing system is offered as part of the company`s commitment on green consciousness. The roofing sheets, manufactured from UPVC, are designed to suit a diverse range of applications in various markets: factories, warehouse, stadiums, canopies, and many other architectural projects.</p>', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -1955,6 +2182,22 @@ CREATE TABLE `prd_product_image` (
   `product_id` int(11) NOT NULL,
   `image` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `prd_product_image`
+--
+
+INSERT INTO `prd_product_image` (`id`, `product_id`, `image`) VALUES
+(1, 1, '59f66-preform002.jpg'),
+(2, 2, '4610a-bottle002.jpg'),
+(3, 4, '009cb-drinking-cups002.jpg'),
+(4, 6, 'cb27c-containers002.jpg'),
+(5, 8, '7780e-meltblown-002.jpg'),
+(6, 10, '8bace-sealware002.jpg'),
+(7, 13, 'd92f5-containers002.jpg'),
+(8, 16, 'c8698-cleaningware-002.jpg'),
+(9, 18, '78fdd-twin-wall-002.jpg'),
+(10, 18, '78fdd-twin-wall-003.jpg');
 
 -- --------------------------------------------------------
 
@@ -2088,58 +2331,35 @@ INSERT INTO `setting` (`id`, `name`, `label`, `value`, `type`, `hide`, `group`, 
 (9, 'invoice_increment', 'Invoice Increment', '5', 'text', 0, 'invoice', 'n', 0),
 (10, 'invoice_auto_cancel_after', 'Invoice Auto Cancel After', '72', 'text', 0, 'invoice', 'n', 0),
 (11, 'lang_deff', 'Language Default', 'en', 'text', 0, 'data', 'n', 0),
-(12, 'email', 'Email Form', 'info@luckystarplastics.com', 'text', 0, 'data', 'n', 1),
-(13, 'home_content_1', 'Content 1', '', 'text', 0, 'data', 'y', 0),
-(14, 'home_subtitle_1', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
-(15, 'home2_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
-(16, 'home2_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(17, 'home2_picture', 'Picture', '', 'image', 0, 'data', 'n', 0),
-(18, 'home3_title', 'Content', '', 'text', 0, 'data', 'y', 0),
-(19, 'home3_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
-(20, 'home3_icons_picture_1', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
-(21, 'home3_icons_title_1', 'Title', '', 'text', 0, 'data', 'y', 0),
-(22, 'home3_icons_picture_2', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
-(23, 'home3_icons_title_2', 'Title', '', 'text', 0, 'data', 'y', 0),
-(24, 'home3_icons_picture_3', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
-(25, 'home3_icons_title_3', 'Title', '', 'text', 0, 'data', 'y', 0),
-(26, 'home3_icons_picture_4', 'Picture Icon', '', 'image', 0, 'data', 'n', 0),
-(27, 'home3_icons_title_4', 'Title', '', 'text', 0, 'data', 'y', 0),
-(28, 'about_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(29, 'about_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
-(30, 'about_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
-(31, 'about1_content', 'Top Content', '', 'text', 0, 'data', 'y', 0),
-(32, 'about2_titles_1', 'Title', '', 'text', 0, 'data', 'y', 0),
-(33, 'about2_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
-(34, 'about2_pictures_1', 'Banner Image', '', 'image', 0, 'data', 'n', 0),
-(35, 'about2_titles_2', 'Title', '', 'text', 0, 'data', 'y', 0),
-(36, 'about2_content_2', 'Content', '', 'text', 0, 'data', 'y', 0),
-(37, 'about2_pictures_2', 'Banner Image', '', 'image', 0, 'data', 'n', 0),
-(38, 'about3_title', 'Title', '', 'text', 0, 'data', 'y', 0),
-(39, 'about3_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(40, 'about3_background', 'Picture', '', 'image', 0, 'data', 'n', 0),
-(41, 'about4_subtitle', 'Subtitles', '', 'text', 0, 'data', 'y', 0),
-(42, 'about4_contents', 'Content', '', 'text', 0, 'data', 'y', 0),
-(43, 'store_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(44, 'store_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
-(45, 'store_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
-(46, 'partner_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(47, 'partner_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
-(48, 'partner_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
-(49, 'partner_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
-(50, 'partner2_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(51, 'partner2_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(52, 'partner3_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(53, 'partner3_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(54, 'partner4_subtitle', 'Subtitle', '', 'text', 0, 'data', 'y', 0),
-(55, 'partner4_content', 'Content', '', 'text', 0, 'data', 'y', 0),
-(56, 'how_hero_image', 'Image', '', 'image', 0, 'data', 'n', 0),
-(57, 'how_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
-(58, 'how_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
-(59, 'how_content_1', 'Content', '', 'text', 0, 'data', 'y', 0),
-(60, 'how_content_bottom_2', 'Content Bottom', '', 'text', 0, 'data', 'y', 0),
-(61, 'how_wa_contacts', 'Wa How to Order', '', 'text', 0, 'data', 'n', 0),
-(62, 'url_tokopedia', 'Url Tokopedia', '', 'text', 0, 'data', 'n', 0),
-(63, 'url_bukalapak', 'Url Bukalapak', '', 'text', 0, 'data', 'n', 0);
+(12, 'email', 'Email Form', 'info@suryasukses.com', 'text', 0, 'data', 'n', 1),
+(76, 'studio_hero_cover', 'Image', '', 'image', 0, 'data', 'n', 0),
+(77, 'studio_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
+(78, 'studio_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
+(79, 'studio1_content', 'Content', '', 'text', 0, 'data', 'y', 0),
+(80, 'capabilities_hero_cover', 'Image', '', 'image', 0, 'data', 'n', 0),
+(81, 'capabilities_hero_title', 'Title', '', 'text', 0, 'data', 'y', 0),
+(82, 'capabilities_hero_subtitle', 'Sub Title', '', 'text', 0, 'data', 'y', 0),
+(83, 'capabilities2_pictures_t1', 'Image', '', 'image', 0, 'data', 'n', 0),
+(84, 'capabilities2_title_t1', 'Title', '', 'text', 0, 'data', 'y', 0),
+(85, 'capabilities2_content_t1', 'Content', '', 'text', 0, 'data', 'y', 0),
+(86, 'capabilities2_pictures_t2', 'Image', '', 'image', 0, 'data', 'n', 0),
+(87, 'capabilities2_title_t2', 'Title', '', 'text', 0, 'data', 'y', 0),
+(88, 'capabilities2_content_t2', 'Content', '', 'text', 0, 'data', 'y', 0),
+(89, 'capabilities2_pictures_t3', 'Image', '', 'image', 0, 'data', 'n', 0),
+(90, 'capabilities2_title_t3', 'Title', '', 'text', 0, 'data', 'y', 0),
+(91, 'capabilities2_content_t3', 'Content', '', 'text', 0, 'data', 'y', 0),
+(92, 'capabilities2_pictures_t4', 'Image', '', 'image', 0, 'data', 'n', 0),
+(93, 'capabilities2_title_t4', 'Title', '', 'text', 0, 'data', 'y', 0),
+(94, 'capabilities2_content_t4', 'Content', '', 'text', 0, 'data', 'y', 0),
+(95, 'capabilities2_pictures_t5', 'Image', '', 'image', 0, 'data', 'n', 0),
+(96, 'capabilities2_title_t5', 'Title', '', 'text', 0, 'data', 'y', 0),
+(97, 'capabilities2_content_t5', 'Content', '', 'text', 0, 'data', 'y', 0),
+(98, 'capabilities2_pictures_t6', 'Image', '', 'image', 0, 'data', 'n', 0),
+(99, 'capabilities2_title_t6', 'Title', '', 'text', 0, 'data', 'y', 0),
+(100, 'capabilities2_content_t6', 'Content', '', 'text', 0, 'data', 'y', 0),
+(101, 'capabilities2_pictures_t7', 'Image', '', 'image', 0, 'data', 'n', 0),
+(102, 'capabilities2_title_t7', 'Title', '', 'text', 0, 'data', 'y', 0),
+(103, 'capabilities2_content_t7', 'Content', '', 'text', 0, 'data', 'y', 0);
 
 -- --------------------------------------------------------
 
@@ -3168,106 +3388,10 @@ INSERT INTO `tt_text` (`id`, `category`, `message`) VALUES
 (63, 'admin', 'Static Page'),
 (64, 'admin', 'Blog'),
 (65, 'admin', 'Download Katalog Brosur'),
-(66, 'admin', 'Store Location');
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_blog`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_blog` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` int(25)
-,`id2` int(11)
-,`blog_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`quote` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_category`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_category` (
-`id` int(11)
-,`parent_id` int(11)
-,`sort` int(11)
-,`image` varchar(200)
-,`type` varchar(100)
-,`data` text
-,`id2` int(11)
-,`category_id` int(11)
-,`language_id` int(11)
-,`name` varchar(100)
-,`data2` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_gallery`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_gallery` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`image2` varchar(200)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`city` varchar(100)
-,`harga` int(11)
-,`color` varchar(100)
-,`orientation` int(11)
-,`id2` int(11)
-,`gallery_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`sub_title` text
-,`sub_title_2` text
-,`content` text
-);
-
--- --------------------------------------------------------
-
---
--- Stand-in struktur untuk tampilan `view_slide`
--- (Lihat di bawah untuk tampilan aktual)
---
-CREATE TABLE `view_slide` (
-`id` int(11)
-,`topik_id` int(11)
-,`image` varchar(255)
-,`active` int(11)
-,`date_input` datetime
-,`date_update` datetime
-,`insert_by` varchar(255)
-,`last_update_by` varchar(255)
-,`writer` varchar(200)
-,`id2` int(11)
-,`slide_id` int(11)
-,`language_id` int(11)
-,`title` varchar(255)
-,`content` text
-,`url` varchar(200)
-,`sort` int(11)
-);
+(66, 'admin', 'Store Location'),
+(67, 'admin', 'Solution'),
+(68, 'admin', 'Markets'),
+(69, 'admin', 'Address Company');
 
 -- --------------------------------------------------------
 
@@ -3276,7 +3400,7 @@ CREATE TABLE `view_slide` (
 --
 DROP TABLE IF EXISTS `view_blog`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
+CREATE VIEW `view_blog`  AS  select `pg_blog`.`id` AS `id`,`pg_blog`.`topik_id` AS `topik_id`,`pg_blog`.`image` AS `image`,`pg_blog`.`active` AS `active`,`pg_blog`.`date_input` AS `date_input`,`pg_blog`.`date_update` AS `date_update`,`pg_blog`.`insert_by` AS `insert_by`,`pg_blog`.`last_update_by` AS `last_update_by`,`pg_blog`.`writer` AS `writer`,`pg_blog_description`.`id` AS `id2`,`pg_blog_description`.`blog_id` AS `blog_id`,`pg_blog_description`.`language_id` AS `language_id`,`pg_blog_description`.`title` AS `title`,`pg_blog_description`.`content` AS `content`,`pg_blog_description`.`quote` AS `quote` from (`pg_blog` join `pg_blog_description` on((`pg_blog`.`id` = `pg_blog_description`.`blog_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3285,7 +3409,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_category`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
+CREATE VIEW `view_category`  AS  select `prd_category`.`id` AS `id`,`prd_category`.`parent_id` AS `parent_id`,`prd_category`.`sort` AS `sort`,`prd_category`.`image` AS `image`,`prd_category`.`type` AS `type`,`prd_category`.`data` AS `data`,`prd_category_description`.`id` AS `id2`,`prd_category_description`.`category_id` AS `category_id`,`prd_category_description`.`language_id` AS `language_id`,`prd_category_description`.`name` AS `name`,`prd_category_description`.`data` AS `data2` from (`prd_category` join `prd_category_description` on((`prd_category`.`id` = `prd_category_description`.`category_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3294,7 +3418,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_gallery`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
+CREATE VIEW `view_gallery`  AS  select `gal_gallery`.`id` AS `id`,`gal_gallery`.`topik_id` AS `topik_id`,`gal_gallery`.`image` AS `image`,`gal_gallery`.`image2` AS `image2`,`gal_gallery`.`active` AS `active`,`gal_gallery`.`date_input` AS `date_input`,`gal_gallery`.`date_update` AS `date_update`,`gal_gallery`.`insert_by` AS `insert_by`,`gal_gallery`.`last_update_by` AS `last_update_by`,`gal_gallery`.`writer` AS `writer`,`gal_gallery`.`city` AS `city`,`gal_gallery`.`harga` AS `harga`,`gal_gallery`.`color` AS `color`,`gal_gallery`.`orientation` AS `orientation`,`gal_gallery_description`.`id` AS `id2`,`gal_gallery_description`.`gallery_id` AS `gallery_id`,`gal_gallery_description`.`language_id` AS `language_id`,`gal_gallery_description`.`title` AS `title`,`gal_gallery_description`.`sub_title` AS `sub_title`,`gal_gallery_description`.`sub_title_2` AS `sub_title_2`,`gal_gallery_description`.`content` AS `content` from (`gal_gallery` join `gal_gallery_description` on((`gal_gallery`.`id` = `gal_gallery_description`.`gallery_id`))) ;
 
 -- --------------------------------------------------------
 
@@ -3303,7 +3427,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `view_slide`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
+CREATE VIEW `view_slide`  AS  select `sl_slide`.`id` AS `id`,`sl_slide`.`topik_id` AS `topik_id`,`sl_slide`.`image` AS `image`,`sl_slide`.`active` AS `active`,`sl_slide`.`date_input` AS `date_input`,`sl_slide`.`date_update` AS `date_update`,`sl_slide`.`insert_by` AS `insert_by`,`sl_slide`.`last_update_by` AS `last_update_by`,`sl_slide`.`writer` AS `writer`,`sl_slide_description`.`id` AS `id2`,`sl_slide_description`.`slide_id` AS `slide_id`,`sl_slide_description`.`language_id` AS `language_id`,`sl_slide_description`.`title` AS `title`,`sl_slide_description`.`content` AS `content`,`sl_slide_description`.`url` AS `url`,`sl_slide`.`sort` AS `sort` from (`sl_slide` join `sl_slide_description` on((`sl_slide_description`.`slide_id` = `sl_slide`.`id`))) ;
 
 --
 -- Indexes for dumped tables
@@ -3769,7 +3893,7 @@ ALTER TABLE `language`
 -- AUTO_INCREMENT untuk tabel `log`
 --
 ALTER TABLE `log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=378;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=445;
 
 --
 -- AUTO_INCREMENT untuk tabel `me_member`
@@ -3877,31 +4001,31 @@ ALTER TABLE `pg_type_letak`
 -- AUTO_INCREMENT untuk tabel `prd_brand`
 --
 ALTER TABLE `prd_brand`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_brand_description`
 --
 ALTER TABLE `prd_brand_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category`
 --
 ALTER TABLE `prd_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_description`
 --
 ALTER TABLE `prd_category_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_category_product`
 --
 ALTER TABLE `prd_category_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_excel`
@@ -3919,7 +4043,7 @@ ALTER TABLE `prd_gallery_highlight`
 -- AUTO_INCREMENT untuk tabel `prd_product`
 --
 ALTER TABLE `prd_product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_product_attributes`
@@ -3937,13 +4061,13 @@ ALTER TABLE `prd_product_color`
 -- AUTO_INCREMENT untuk tabel `prd_product_description`
 --
 ALTER TABLE `prd_product_description`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `prd_product_image`
 --
 ALTER TABLE `prd_product_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `promo`
@@ -3967,7 +4091,7 @@ ALTER TABLE `sertifikasi`
 -- AUTO_INCREMENT untuk tabel `setting`
 --
 ALTER TABLE `setting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT untuk tabel `setting_description`
@@ -4033,7 +4157,7 @@ ALTER TABLE `trips`
 -- AUTO_INCREMENT untuk tabel `tt_text`
 --
 ALTER TABLE `tt_text`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
