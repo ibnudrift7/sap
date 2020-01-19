@@ -28,7 +28,10 @@
       <div class="col-md-15">
       <div class="box-konten-kiri">
         <h5>Market</h5>
-        <?php echo $this->renderPartial('//layouts/_left_menu_market', array('market_resource'=> $market_resource)); ?>
+        <?php 
+        // echo $this->renderPartial('//layouts/_left_menu_market', array('market_resource'=> $market_resource)); 
+        echo $this->renderPartial('//layouts/_left_menu_market'); 
+        ?>
         
       </div>
       </div>
@@ -37,48 +40,65 @@
         <div class="clear clearfix"></div>
         <div class="py-1"></div>
         <div class="clear clearfix"></div>
-        <h3><?php echo ucwords($n_model['name_category']) ?></h3>
+        <h3><?php echo ucwords($category_one->description->name) ?></h3>
         <div class="row feature-data mb-0 mt-0">
           <div class="col-md-60">
             
+            <?php 
+            $full_stslide[] = $category_one->image;
+            if (isset($category_one->image2) && $category_one->image2 != '') {
+                $full_stslide[] = $category_one->image2;
+            }
+            if (isset($category_one->image3) && $category_one->image3 != '') {
+                $full_stslide[] = $category_one->image3;
+            }
+            if (isset($category_one->image4) && $category_one->image4 != '') {
+                $full_stslide[] = $category_one->image4;
+            }
+            if (isset($category_one->image5) && $category_one->image5 != '') {
+                $full_stslide[] = $category_one->image5;
+            }
+            if (isset($category_one->image6) && $category_one->image6 != '') {
+                $full_stslide[] = $category_one->image6;
+            }
+
+            ?>
+
+
             <div class="featured_car_detail">
                 <div id="carouselEx_gallery" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators d-none">
-                    <?php foreach ($n_model['picture'] as $key => $value): ?>
-                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?>></li>
-                    <?php endforeach ?>
+                    <li data-target="#carouselEx_gallery" data-slide-to="0" class="active"></li>
                   </ol>
                   <div class="carousel-inner">
-                    <?php foreach ($n_model['picture'] as $key => $value): ?>
-                    <div class="carousel-item <?php if ($key == 0): ?>active<?php endif ?>">
-                       <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/markets/'; ?><?php echo $value ?>" alt="<?php echo $_GET['slug'] ?>">
+                     <div class="carousel-item active">
+                       <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/category/'; ?><?php echo $category_one->image ?>" alt="<?php echo $_GET['slug'] ?>">
                     </div>
-                    <?php endforeach; ?>
                   </div>
                 </div>
             </div>
 
-            <?php if ($n_model['desc'] != ''): ?>
+            <?php // if ($n_model['desc'] != ''): ?>
             <?php // echo $n_model['desc'] ?>
-            <?php endif ?>
+            <?php // endif ?>
           </div>
         </div>
 
-        <?php if ($n_model['lists']): ?>
+        <?php if (count($n_model) > 0): ?>
         <div class="row default-data">
-            <?php foreach ($n_model['lists'] as $key => $value): ?>
+            <?php foreach ($n_model as $key => $value): ?>
                 <div class="col-md-20">
                     <div class="box-content">
                         <div class="image">
-                            <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl.'../../images/markets/'; ?><?php echo $value['picture'][0] ?>" alt="">
+                            <img class="img img-fluid w-100"src="<?php echo $this->assetBaseurl.'../../images/brand/'; ?><?php echo $value->image ?>" alt="">
                             <a href="<?php // echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $_GET['id'], 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>">
                             </a>
                         </div>
                         <div class="title">
-                            <p><?php echo ucwords($value['names']); ?></p>
+                            <p><?php echo ucwords($value->description->title); ?></p>
                         </div>
                         <div class="subtitle">
-                            <?php echo $value['info'] ?>
+                            <?php echo $value->description->content ?>
                         </div>
                         <?php if (isset($_GET['slug']) && $_GET['slug'] == 'household'): ?>
                         <div class="klik">

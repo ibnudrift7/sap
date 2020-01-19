@@ -27,20 +27,24 @@
         <div class="title">
           <h5>Policies</h5>
             <ul class="list-unstyled lefts_submenu_product">
-            	<li class="dropdown"><a href="https://richmore.co/sap/home/cerf_iso">ISO 9001 Certification</a>
+            	<li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_iso')); ?>">ISO 9001 Certification</a>
             	</li>
-            	<li class="dropdown active"><a href="https://richmore.co/sap/home/cerf_fssc">FSSC 22000 Certification</a>
+            	<li class="dropdown active"><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">FSSC 22000 Certification</a>
             	</li>
-            	<li class="dropdown"><a href="https://richmore.co/sap/home/quality">Quality Policy</a>
+            	<li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Policy</a>
             	</li>
             </ul>
         </div>
       </div>
       <div class="col-md-45">
         <div class="box-content">
-          <h3>FSSC 22000 Certification</h3>
-          <p>The FSSC 22000 Scheme is managed by Foundation FSSC 22000 and governed by an independent board of shareholders which consists of representatives from several sectors in the food industry.</p>
-			<a data-fancybox="gallery" href="<?php echo $this->assetBaseurl; ?>sertfikat-fssc.jpg"><img style="border: 1px solid #ccc;" class="img img-fluid" src="<?php echo $this->assetBaseurl; ?>sertfikat-fssc.jpg" alt=""></a>
+          <h3><?php echo $this->setting['cerfiso2_title'] ?></h3>
+          <?php echo $this->setting['cerfiso2_content'] ?>
+
+         <a data-fancybox="gallery" href="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['cerfiso2_image'] ?>">
+          <img style="border: 1px solid #ccc;" class="img img-fluid" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(800,2500, '/images/static/'. $this->setting['cerfiso2_image'] , array('method' => 'resize', 'quality' => '90')) ?>" alt="">
+         </a>
+          
         </div>
       </div>
     </div>

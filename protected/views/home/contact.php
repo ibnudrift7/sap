@@ -1,7 +1,7 @@
-<section class="inside-cover">
+<section class="inside-cover" style="background-image: url('<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['contact_hero_image']; ?>');">
   <div class="text">
-    <h4>CONTACT US</h4>
-    <h3>We’re at your service</h3>
+    <h4><?php echo $this->setting['contact_hero_title'] ?></h4>
+    <h3><?php echo $this->setting['contact_hero_subtitle'] ?></h3>
   </div>
 </section>
 
@@ -39,21 +39,24 @@
       </div>
       <div class="col-md-45">
         <div class="content-top">
-          <h3>We’re here to help you</h3>
-          <p>We provide a variety of resources to assist our customers and partners in configuring, designing, enhancing and upgrading products. Customers will receive support services and product consultancy support, technical asisstance and product sampling.</p>
+          <?php echo $this->setting['contact_content'] ?>
+          <!-- <h3>We’re here to help you</h3>
+          <p>We provide a variety of resources to assist our customers and partners in configuring, designing, enhancing and upgrading products. Customers will receive support services and product consultancy support, technical asisstance and product sampling.</p> -->
+
           <div class="py-2"></div>
           <p>Please contact our help-line at these numbers</p>
           <div class="row">
+            <?php for ($i=1; $i < 3; $i++) { ?>
             <div class="col-md-30">
               <div class="inner-content">
-                <h3>SURYASUKSES GROUP SURABAYA</h3>
-                <h4>031 5030 450</h4>
-                <p>Jl. Kertajaya 109 </p>
-                <p>Surabaya 60286 - Indonesia</p>
-                <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
+                <h3><?php echo $this->setting['contact_address_titles_'. $i] ?></h3>
+                <h4><?php echo $this->setting['contact_address_phone_'. $i] ?></h4>
+                <p><?php echo nl2br($this->setting['contact_address_cont_'. $i]) ?></p>
+                <a target="_blank" href="<?php echo $this->setting['contact_address_maps_link_'. $i] ?>">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
               </div>
             </div>
-            <div class="col-md-30">
+            <?php } ?>
+            <!-- <div class="col-md-30">
               <div class="inner-content">
                 <h3>SURYASUKSES GROUP JAKARTA</h3>
                 <h4>021 386 1333</h4>
@@ -61,7 +64,7 @@
                 <p>Jakarta Pusat - Indonesia</p>
                 <a target="_blank" href="https://goo.gl/maps/RmAtJontTNyMtMuZ6">Click here to view on Google Map <i class="fa fa-map-marker"></i></a>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="email pt-4">
                 <p>Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>
@@ -82,16 +85,21 @@
           <div class="content-bottom">
             <h5>Member of Suryasukses Group</h5>
             <div class="content-inner-bottom">
+              <?php 
+              $nx_list_address = Address::model()->findAll();
+              ?>
               <div class="row">
+                <?php foreach ($nx_list_address as $key => $value): ?>
                 <div class="col-md-30">
-                  <h3>PT Suryasukses Abadi Prima</h3>
-                  <h4>Thermoforming PP Cup & HDPE Cap</h4>
-                  <p>Jl. Raya Sedati 97 Ds. Wedi</p>
-                  <p>Gedangan - Sidoarjo</p>
-                  <p>Tel. +62 31 8011 888</p>
-                  <p>Fax. +62 31 502 7624, 503 8934</p>
+                  <h3><?php echo $value->nama ?></h3>
+                  <h4><?php echo $value->subtitle ?></h4>
+                  <p><?php echo $value->address_1 ?></p>
+                  <p><?php echo $value->address_2 ?></p>
+                  <p>Tel. <?php echo $value->telp ?></p>
+                  <p>Fax. <?php echo $value->fax ?></p>
                 </div>
-                <div class="col-md-30">
+                <?php endforeach ?>
+                <!-- <div class="col-md-30">
                   <h3>PT Suryasukses Mekar Makmur</h3>
                   <h4>Nonwoven Spunbond</h4>
                   <p>Jl. Raya Sedati 97 Ds. Wedi</p>
@@ -115,13 +123,12 @@
                   <p>Kec Gempol - Pasuruan</p>
                   <p>Tel. +62 34 3656 329 (hunting)</p>
                 </div>
-          <div class="col-md-30">
-            <h3>PT. Suryasukses Inti Makmur</h3>
-            <h4>UPVC Roofing</h4>
-            <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
-            <p>Kec Gempol - Pasuruan</p>
-<!--            <p>Tel. +62 34 3656 329 (hunting)</p>-->
-          </div>
+                <div class="col-md-30">
+                  <h3>PT. Suryasukses Inti Makmur</h3>
+                  <h4>UPVC Roofing</h4>
+                  <p>Jl. Raya Surabaya - Malang KM 40.8 Desa Kepulungan,</p>
+                  <p>Kec Gempol - Pasuruan</p>
+                </div> -->
               </div>
             </div>
           </div>

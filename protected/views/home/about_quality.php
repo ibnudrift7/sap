@@ -40,43 +40,47 @@
       </div>
       </div>
       <div class="col-md-45">
-        <h4>Our culture of perfections</h4>
-        <h3>Quality Statement</h3>
-		  <img src="<?php echo $this->assetBaseurl; ?>_OPS6025.jpg" alt="" class="img img-fluid pb-4 mt-1">
-		  <p>Quality products and on time delivery are the things that made us different. With hairline precision production and exceptional discipline in time management, Suryasukses Group has managed to be on top when it comes to quality.</p>
+
+        <h4><?php echo $this->setting['quality_hero_title'] ?></h4>
+        <h3><?php echo $this->setting['quality_hero_subtitle'] ?></h3>
+        <img src="<?php echo Yii::app()->baseUrl .'/images/static/'. $this->setting['quality_hero_cover']; ?>" alt="" class="img img-fluid pb-4 mt-1">
+
+  		  <!-- <p>Quality products and on time delivery are the things that made us different. With hairline precision production and exceptional discipline in time management, Suryasukses Group has managed to be on top when it comes to quality.</p>
         <img class="w-100 py-4" src="<?php echo $this->assetBaseurl; ?>quality.jpg" alt="">
-        <p>The Suryasukses Group puts strong emphasis on quality. The best manufacturing practice in Suryasukses Group is centrally coordinated and implemented at each plant to ensure superior quality. The best manufacturing practice is continuously pushed up to lift the quality level further. All Suryasukses Group plants are ISO 9000 certified and following the intense and strict interntional safety standard regulation.</p>
+        <p>The Suryasukses Group puts strong emphasis on quality. The best manufacturing practice in Suryasukses Group is centrally coordinated and implemented at each plant to ensure superior quality. The best manufacturing practice is continuously pushed up to lift the quality level further. All Suryasukses Group plants are ISO 9000 certified and following the intense and strict interntional safety standard regulation.</p> -->
+
+        <?php echo $this->setting['quality1_content'] ?>
 
         <div class="row no-gutters py-4">
           <div class="col-md-30">
             <div class="content">
               <div class="content-inner">
                 <div class="title">
-                  <p>There Are No Shortcuts</p>
+                  <p><?php echo $this->setting['quality2_title_t1'] ?></p>
                 </div>
                 <div class="isi">
-                  <p>The quality control team at Suryasukses group continually assessed for precision without tolerance. Our test lab are fully equipped with the highest technology available to ensure quality checking. This attention to detail is reflected in the end product that our customer receive.</p>
+                  <p><?php echo $this->setting['quality2_content_t1'] ?></p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-30">
-            <img class="w-100" src="<?php echo $this->assetBaseurl; ?>Layer-43.jpg" alt="">
+            <img class="w-100" src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['quality2_pictures_t1'] ?>" alt="">
           </div>
         </div>
 
         <div class="row no-gutters py-4">
           <div class="col-md-30">
-            <img class="w-100" src="<?php echo $this->assetBaseurl; ?>Layer-44.jpg" alt="">
+            <img class="w-100" src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['quality2_pictures_t2'] ?>" alt="">
           </div>
           <div class="col-md-30">
             <div class="content pl-4">
               <div class="content-inner">
                 <div class="title">
-                  <p>When Technology Meets Human Skill</p>
+                  <p><?php echo $this->setting['quality2_title_t2'] ?></p>
                 </div>
                 <div class="isi">
-                  <p>It is our quality standard that high-end production result still need to be final checked in batches, it is the harmony between high tech and skilled human resource with eye for detail. Blending the human capability with precision machinery will bring consistency to the whole process and finished products.</p>
+                  <p><?php echo $this->setting['quality2_content_t2'] ?></p>
                 </div>
               </div>
             </div>
@@ -90,7 +94,7 @@
           <div class="title-logosss">
             <h3>Our Quality Certfications</h3>
           </div>
-          <img src="<?php echo $this->assetBaseurl; ?>Layer-42.png" alt="">
+          <img src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['quality3_pictures_sertifikat'] ?>" class="img img-fluid" alt="">
         </div>
       </div>
 
@@ -108,13 +112,13 @@
                 <div class="col-md-60">
                     <div class="box-content">
                         <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
+                            <h3><?php echo $this->setting['home4_titles'] ?></h3>
                         </div>
                         <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                            <p><?php echo $this->setting['home4_subtitles'] ?></p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="<?php echo $this->setting['home4_links_t5'] ?>"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="Video Title link" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>

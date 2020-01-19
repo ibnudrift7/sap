@@ -1,16 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Gallery',
+	'Product Shortcut',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tag',
-	'title'=>'Product Gallery',
-	'subtitle'=>'Data Product Gallery',
+	'title'=>'Product Shortcut',
+	'subtitle'=>'Data Product Shortcut',
 );
 
 $this->menu=array(
-	array('label'=>'Add Product Gallery', 'icon'=>'plus-sign','url'=>array('create')),
+	array('label'=>'Add Product Shortcut', 'icon'=>'plus-sign','url'=>array('create')),
 );
 ?>
 
@@ -19,7 +19,7 @@ $this->menu=array(
 	<div class="span12">
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
-		        <h4 class="widgettitle">Data Product Gallery</h4>
+		        <h4 class="widgettitle">Data Product Shortcut</h4>
 		    </div>
 		    <div class="widgetcontent">
 				<ul class="thumbnails">

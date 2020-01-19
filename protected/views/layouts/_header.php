@@ -114,13 +114,10 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-60">
             <span class="in_title">ABOUT US</span>
             <ul class="list-inline">
-              <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/pages', 'page'=>'Our-Mission')); ?>">Our Mission</a></li> -->
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/abouthistory')); ?>">Who We Are</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutvalue')); ?>">Our Values</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutquality')); ?>">Quality Statement</a></li>
               <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/aboutcareer')); ?>">Career</a></li>
-              <!-- <li><a href="<?php echo CHtml::normalizeUrl(array('/home/faq')); ?>">FAQ</a></li>
-              <li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">Certification</a></li> -->
             </ul>
             <div class="clear"></div>
           </div>
@@ -137,11 +134,18 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
         <div class="col-md-60">
             <span class="in_title">MARKETS</span>
             <?php 
-            $datas = DataMarket::nex_resource();
+            // $datas = DataMarket::nex_resource();
+            $criteria = new CDbCriteria;
+            $criteria->with = array('description');
+            $criteria->addCondition('t.type = :type');
+            $criteria->params[':type'] = 'filtercat';
+            // $criteria->limit = 3;
+            $criteria->order = 'sort ASC';
+            $Cat_market = PrdCategory::model()->findAll($criteria);
             ?>
             <ul class="inline">
-              <?php foreach ($datas as $key => $value): ?>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$key, 'slug'=>Slug::Create($value['name_category']) )); ?>"><?php echo $value['name_category'] ?></a></li>
+              <?php foreach ($Cat_market as $key => $value): ?>
+              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/market_landing', 'id'=>$value->id, 'slug'=>Slug::Create($value->description->name) )); ?>"><?php echo $value->description->name ?></a></li>
               <?php endforeach ?>
             </ul>
             <div class="clear"></div>
@@ -173,16 +177,31 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       <div class="inners_mndropdown menu_small">
         <span class="in_title">PRODUCTS</span>
         <?php 
-        $n_resource = DataProducts::nex_resource();
-        $kn_data = array(0, 1, 2, 3);
+        // $n_resource = DataProducts::nex_resource();
+        // $kn_data = array(0, 1, 2, 3);
+        $criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('t.type = :type');
+        $criteria->params[':type'] = 'category';
+        $criteria->order = 'sort ASC';
+        $Cat_products = PrdCategory::model()->findAll($criteria);
         ?>
         <div class="row">
-          <?php foreach ($kn_data as $k_kat => $nkat): ?>
+          <?php foreach ($Cat_products as $k_kat => $nkat): ?>
           <div class="col-md-15">
               <ul class="list-unstyled">
-                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $k_kat, 'slug'=>Slug::Create($n_resource[$k_kat]['name_category']) )); ?>"><?php echo ucwords($n_resource[$k_kat]['name_category']) ?></a></li>
-                <?php foreach ($n_resource[$k_kat]['lists'] as $key => $value): ?>
-                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $k_kat, 'id' => $key, 'slug'=>Slug::Create($value['names']) )); ?>"><?php echo ucwords($value['names']) ?></a></li>
+                <li class="firsts"><a href="<?php echo CHtml::normalizeUrl(array('/home/product_landing', 'id'=> $nkat->id, 'slug'=>Slug::Create($nkat->description->name) )); ?>"><?php echo ucwords($nkat->description->name) ?></a></li>
+                <?php 
+                // Get products by category
+                $criteria2 = new CDbCriteria;
+                $criteria2->with = array('description', 'categories');
+                $criteria2->addCondition('categories.category_id = :category_id');
+                $criteria2->params[':category_id'] = $nkat->id;
+                $criteria2->order = 't.urutan ASC';
+                $nlist_product = PrdProduct::model()->findAll($criteria2);
+                ?>
+                <?php foreach ($nlist_product as $key => $value): ?>
+                <li><a href="<?php echo CHtml::normalizeUrl(array('/home/product_range', 'parent'=> $nkat->id, 'id' => $value->id, 'slug'=>Slug::Create($value->description->name) )); ?>"><?php echo ucwords($value->description->name) ?></a></li>
                 <?php endforeach ?>
               </ul>
           </div>
@@ -217,60 +236,8 @@ $active_menu_pg = $controllers_ac.'/'.$e_activemenu;
       // return false;
     });
 
-    // $('.bottoms_head_menu ul li').hover(
-    //   function(){
-    //       var cs_active = $(this).attr("data-id");
-    //       // console.log(cs_active);
-    //       if (typeof cs_active === "undefined") {
-    //         console.log('masuk cok');
-    //         $('.blocks_bottom_menuDropdown').slideUp('fast');
-    //         $('.blocks_bottom_menuDropdown').removeClass('opened');  
-    //       } else {
-    //         $('#'+cs_active+'.blocks_bottom_menuDropdown').slideDown();
-    //         $('#'+cs_active+'.blocks_bottom_menuDropdown').addClass('opened');
-    //       }
-    //   }, function(){
-    //     var cs_active = $(this).attr("data-id");
-    //      setTimeout(function(){
-    //       $('.blocks_bottom_menuDropdown').slideUp();
-    //       $('.blocks_bottom_menuDropdown').removeClass('opened');
-    //     }, 5000);
-    //   }
-    // );
-
   });
 </script>
-
-<!-- <section id="myAffix" class="header-affixs affix-top">
-  <div class="clear height-15"></div>
-  <div class="prelatife container">
-    <div class="row">
-      <div class="col-md-15 col-sm-15">
-        <div class="lgo_web_headrs_wb">
-          <a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">
-            <img src="<?php echo $this->assetBaseurl; ?>lgo-heads-lic.png" alt="" class="img img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-45 col-sm-45">
-        <div class="text-right"> 
-          <div class="menu-taffix">
-            <ul class="list-inline d-inline">
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/index')); ?>">HOME</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/product')); ?>">PRODUCTS</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/project')); ?>">PROJECT REFERENCES</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/brochures')); ?>">BROCHURE</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/showroom')); ?>">SHOWROOM</a></li>
-              <li class="list-inline-item"><a href="<?php echo CHtml::normalizeUrl(array('/home/contact')); ?>">CONTACT US</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section> -->
-
 
 <script type="text/javascript">
   $(document).ready(function() {

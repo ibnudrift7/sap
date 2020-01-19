@@ -1,13 +1,13 @@
 <?php
 $this->breadcrumbs=array(
 	'setting'=>array('/admin/setting/index'),
-	'What is Realfood?',
+	'Who We Are',
 );
 
 $this->pageHeader=array(
-	'icon'=>'fa fa-file',
-	'title'=>'About',
-	'subtitle'=>'What is Realfood?',
+	'icon'=>'fa fa-info',
+	'title'=>'Who We Are',
+	'subtitle'=>'Who We Are',
 );
 ?>
 <?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm',array(
@@ -21,9 +21,9 @@ $this->pageHeader=array(
 )); ?>
 
 <div class="row-fluid">
-	<div class="span8">
+	<div class="span12">
 		<div class="widget">
-		<h4 class="widgettitle">Section 1</h4>
+		<h4 class="widgettitle">Section Hero Image</h4>
 		<div class="widgetcontent">
 			<div class="multilang pj-form-langbar">
 				<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
@@ -44,8 +44,8 @@ $this->pageHeader=array(
 				<?php $this->widget('ImperaviRedactorWidget', array(
 				    'selector' => '.redactor',
 				    'options' => array(
-				        'imageUpload'=> $this->createUrl('/admin/setting/imgUpload', array('type'=>'image')),
-				        'clipboardUploadUrl'=> $this->createUrl('/admin/setting/imgUpload', array('type'=>'clip')),
+				        'imageUpload'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'image')),
+				        'clipboardUploadUrl'=> $this->createUrl('admin/setting/uploadimage', array('type'=>'clip')),
 				    ),
 				    'plugins' => array(
 				        'clips' => array(
@@ -53,7 +53,21 @@ $this->pageHeader=array(
 				    ),
 				)); ?>
 
-				<?php $type = 'about_whoweare_title' ?>
+				<?php $type = 'who_hero_cover' ?>
+				<?php Common::createSetting($type, 'Image', 'image', 'n') ?>
+				<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+				<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+				<p class="help-block">NOTE: Picture  landscape with min size 1600 x 534 px, Larger image will be automatically cropped.</p>
+				<?php if ($model[$type]['data']->value): ?>
+					<div style="">
+						<img style="height: auto; max-width: 300px;" src="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $model[$type]['data']->value; ?>" alt="">
+					</div>
+					<div class="clearfix" style="height: 15px;"></div>
+					<div class="clearfix" style="height: 1px;"></div>
+				<?php endif ?>
+
+				<?php $type = 'who_hero_title' ?>
+				<?php Common::createSetting($type, 'Title', 'text', 'y') ?>
 				<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
 					<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
 						<label class="control-label required" for="Setting_<?php echo $type ?>_<?php echo $value->code ?>"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
@@ -64,27 +78,71 @@ $this->pageHeader=array(
 					</div>
 				<?php endforeach ?>
 
-				<?php $type = 'about_whoweare_content' ?>
+				<?php $type = 'who_hero_subtitle' ?>
+				<?php Common::createSetting($type, 'Sub Title', 'text', 'y') ?>
 				<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
 					<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
 						<label class="control-label required" for="Setting_<?php echo $type ?>_<?php echo $value->code ?>"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
-						<textarea id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span5 redactor" rows="4"><?php echo $model[$type]['desc'][$value->code]->value ?></textarea>
+						<textarea id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span11" rows="2"><?php echo $model[$type]['desc'][$value->code]->value ?></textarea>
 
 					    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
 					    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
 					</div>
-				<?php endforeach ?>
+				<?php endforeach; ?>				
+				
+				<div class="divider10"></div>
+				<?php $this->widget('bootstrap.widgets.TbButton', array(
+					'buttonType'=>'submit',
+					'type'=>'primary',
+					'label'=>'Save',
+				)); ?>
+		</div>
+		</div>
+		
+		<div class="widget">
+			<h4 class="widgettitle">Section Content</h4>
+			<div class="widgetcontent">
+				<div class="row-fluid">
+					<div class="span6">
+						<?php $type = 'who1_content' ?>
+						<?php Common::createSetting($type, 'Content', 'text', 'y') ?>
+						<?php foreach (Language::model()->getLanguage() as $key => $value): ?>
+							<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($value->code==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $value->id ?>">
+								<label class="control-label required" for="Setting_<?php echo $type ?>_<?php echo $value->code ?>"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+								<textarea id="Setting_<?php echo $type ?>_<?php echo $value->code ?>" name="Setting[<?php echo $type ?>][<?php echo $value->code ?>]" class="span5 redactor" rows="4"><?php echo $model[$type]['desc'][$value->code]->value ?></textarea>
 
+							    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$value->code.'.png' ?>"></span>
+							    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
+							</div>
+						<?php endforeach ?>
+					</div>
+					<div class="span6">
+						 <?php $type = 'who_right_picture' ?>
+						<?php Common::createSetting($type, 'Image', 'image', 'n') ?>
+						<label for="Setting_<?php echo $model[$type]['data']->name ?>" class="control-label required"><?php echo $model[$type]['data']->label ?><span class="required"></span></label>
+						<?php echo CHtml::fileField('Setting['.$model[$type]['data']->name.']', $model[$type]['data']->value, array('class'=>'span12')) ?>
+						<p class="help-block">NOTE: Picture  landscape with min size 443px x 665px, Larger image will be automatically cropped.</p>
+						<?php if ($model[$type]['data']->value): ?>
+							<div style="">
+								<img style="height: auto; max-width: 300px;" src="<?php echo Yii::app()->baseUrl; ?>/images/static/<?php echo $model[$type]['data']->value; ?>" alt="">
+							</div>
+							<div class="clearfix" style="height: 15px;"></div>
+							<div class="clearfix" style="height: 1px;"></div>
+						<?php endif ?>
+					</div>
+				</div>
+				
+				<div class="divider10"></div>
+
+				<div class="divider10"></div>
 				<?php $this->widget('bootstrap.widgets.TbButton', array(
 					'buttonType'=>'submit',
 					'type'=>'primary',
 					'label'=>'Save',
 				)); ?>
 
-			
+			</div>
 		</div>
-		</div>
-
 
 		<div class="alert">
 		  <button type="button" class="close" data-dismiss="alert">×</button>
@@ -105,8 +163,10 @@ $this->pageHeader=array(
 		})
 		</script>
 	</div>
+	<?php /*
 	<div class="span4">
 		<?php $this->renderPartial('/setting/page_menu') ?>
 	</div>
+	*/ ?>
 </div>
 <?php $this->endWidget(); ?>

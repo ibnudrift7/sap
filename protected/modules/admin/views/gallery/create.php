@@ -1,17 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Product Gallery'=>array('index'),
+	'Product Shortcut'=>array('index'),
 	'Add',
 );
 
 $this->pageHeader=array(
 	'icon'=>'fa fa-tag',
-	'title'=>'Product Gallery',
-	'subtitle'=>'Data Product Gallery',
+	'title'=>'Product Shortcut',
+	'subtitle'=>'Data Product Shortcut',
 );
 
 $this->menu=array(
-	array('label'=>'List Product Gallery', 'icon'=>'th-list','url'=>array('index')),
+	array('label'=>'List Product Shortcut', 'icon'=>'th-list','url'=>array('index')),
 );
 ?>
 

@@ -46,29 +46,29 @@
       </div>
       <div class="col-md-45">
             <div class="content-top cont_career">
-                <h3>Our Values</h3>
-                <img src="<?php echo $this->assetBaseurl; ?>_OPS6411.jpg" alt="" class="img img-fluid pb-5">
+              <h3><?php echo $this->setting['value_hero_title'] ?></h3>
+              <img src="<?php echo Yii::app()->baseUrl .'/images/static/'. $this->setting['value_hero_cover']; ?>" alt="" class="img img-fluid pb-5">
                 <?php 
                 $data = [
                           [
                             'pict'=>'',
-                            'titles'=>'Partnerships',
-                            'info'=>'We recognize the importance of strong, sustainable partnerships throughout all aspects of our business – we view our employees, customers, suppliers, and communities as our partners.',
+                            'titles'=>$this->setting['value2_title_t1'],
+                            'info'=>$this->setting['value2_content_t1'],
                           ],
                           [
                             'pict'=>'',
-                            'titles'=>'Excellence',
-                            'info'=>'We pursue excellence in all that we do by optimizing our processes, enhancing our sustainability initiatives, and by providing the highest quality products and services to our customers. We believe in continuous training and development for our employees so that we can deliver excellence to our customers.',
+                            'titles'=>$this->setting['value2_title_t2'],
+                            'info'=>$this->setting['value2_content_t2'],
                           ],
                           [
                             'pict'=>'',
-                            'titles'=>'Growth',
-                            'info'=>'Strategic growth is imperative for our business. Growth comes in many forms – financial growth, customer growth, employee growth and development, product growth and innovation, and the global growth of our Company.',
+                            'titles'=>$this->setting['value2_title_t3'],
+                            'info'=>$this->setting['value2_content_t3'],
                           ],
                           [
                             'pict'=>'',
-                            'titles'=>'Safety',
-                            'info'=>'Our number one value. We relentlessly pursue safety in all we do. We maintain high standards to ensure our facilities are safe and environmentally conscious.',
+                            'titles'=>$this->setting['value2_title_t4'],
+                            'info'=>$this->setting['value2_content_t4'],
                           ],
                           
                         ];
@@ -117,13 +117,13 @@
                 <div class="col-md-60">
                     <div class="box-content">
                         <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
+                            <h3><?php echo $this->setting['home4_titles'] ?></h3>
                         </div>
                         <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                            <p><?php echo $this->setting['home4_subtitles'] ?></p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="<?php echo $this->setting['home4_links_t5'] ?>"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="Video Title link" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>

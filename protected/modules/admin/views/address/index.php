@@ -70,8 +70,8 @@ $this->menu=array(
 	'type'=>'bordered',
 	'columns'=>array(
 		// 'id',
-		'prov',
-		'kota',
+		// 'prov',
+		// 'kota',
 		'nama',
 		'type',
 		// 'fax',

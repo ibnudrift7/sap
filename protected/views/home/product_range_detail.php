@@ -9,7 +9,7 @@
                     <?php if ( !isset($_GET['parent']) ): ?>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#"><?php echo ucwords($_GET['slug']) ?></a></li>
                     <?php else: ?>
-                    <li class="breadcrumb-item" aria-current="page"><a href="#"><?php echo ucwords($n_parent['name_category']) ?></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="#"><?php echo ucwords($n_parent->description->name) ?></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#"><?php echo ucwords($_GET['slug']) ?></a></li>
                     <?php endif ?>
                 </ol>
@@ -31,38 +31,47 @@
       <div class="col-md-15">
       <div class="box-konten-kiri">
         <h5>Products</h5>
-        <?php echo $this->renderPartial('//layouts/_left_menu_products', array('product_resource'=> $product_resource)); ?>
+        <?php echo $this->renderPartial('//layouts/_left_menu_products'); ?>
 
         <div class="clearfix clear"></div>
       </div>
       </div>
       <div class="col-md-45 rights_cont_def">
 
-        <h6><?php echo ucwords($n_parent['name_category']) ?></h6>
+        <h6><?php echo ucwords($n_parent->description->name) ?></h6>
         <div class="clear clearfix py-1"></div>
-        <h3><?php echo ucwords($n_child['names']) ?></h3>
+        <h3><?php echo ucwords($n_child->description->name) ?></h3>
 
         <div class="row feature-data">
           <div class="col-md-60">
             <div class="featured_car_detail">
                 <div id="carouselEx_gallery" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                    <?php foreach ($n_child['picture'] as $key => $value): ?>
-                    <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $key ?>" <?php if ($key == 0): ?>class="active"<?php endif ?>></li>
-                    <?php endforeach ?>
+                    <li data-target="#carouselEx_gallery" data-slide-to="0" class="active"></li>
+                    <?php if (count($n_child->alternateImage) > 0): ?>
+                      <?php foreach ($n_child->alternateImage as $key => $value): ?>
+                      <?php $key = $key + 1; ?>
+                      <li data-target="#carouselEx_gallery" data-slide-to="<?php echo $key ?>"></li>
+                      <?php endforeach ?>
+                    <?php endif ?>
                   </ol>
                   <div class="carousel-inner">
-                    <?php foreach ($n_child['picture'] as $key => $value): ?>
-                    <div class="carousel-item <?php if ($key == 0): ?>active<?php endif ?>">
-                      <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/products/'; ?><?php echo $value ?>" alt="<?php echo $_GET['slug'] ?>"> 
-                    </div>
-                    <?php endforeach ?>
+                    <div class="carousel-item active">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/product/'; ?><?php echo $n_child->image ?>" alt="<?php echo $_GET['slug'] ?>"> 
+                      </div>
+                    <?php if (count($n_child->alternateImage) > 0): ?>
+                      <?php foreach ($n_child->alternateImage as $key => $value): ?>
+                      <div class="carousel-item">
+                        <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl.'../../images/product/'; ?><?php echo $value->image ?>" alt="<?php echo $_GET['slug'] ?>"> 
+                      </div>
+                      <?php endforeach ?>
+                    <?php endif ?>
                   </div>
                 </div>
             </div>
 
-            <?php if ($n_child['info'] != ''): ?>
-            <?php echo $n_child['info'] ?>
+            <?php if ($n_child->description->desc != ''): ?>
+            <?php echo $n_child->description->desc ?>
             <?php endif ?>
           </div>
         </div>
@@ -110,5 +119,9 @@
     section.product-sec-1 p a.btn{
         color: #fff !important;
         font-weight: 400;
+    }
+
+    .featured_car_detail .carousel ol.carousel-indicators li{
+      cursor: pointer;
     }
 </style>

@@ -146,32 +146,33 @@ $link_slide = array(
             <?php 
             $arrs_nk = array(
                             array(
-                                'picture' => 'homesec-1.jpg',
-                                'titles' => 'Get to Know SAP',
-                                'info' => 'Established in 1990, we are uniquely positioned to provide customers with the best, on-trend products.',
-                                'link' => CHtml::normalizeUrl(array('/home/abouthistory'))
+                                'picture' => $this->setting['home2_pictures_t1'],
+                                'titles' => $this->setting['home2_title_t1'],
+                                'info' => $this->setting['home2_content_t1'],
+                                'link' => $this->setting['home2_links_t1'],
                             ),
                             array(
-                                'picture' => 'homesec-2.jpg',
-                                'titles' => 'Our Markets',
-                                'info' => 'Combining three-decade experience and a fully dedicated team, we are ready to serve a wide range of industries.',
-                                'link' => CHtml::normalizeUrl(array('/home/market_landing', 'id'=>0, 'slug'=> 'beverage'))
+                                'picture' => $this->setting['home2_pictures_t2'],
+                                'titles' => $this->setting['home2_title_t2'],
+                                'info' => $this->setting['home2_content_t2'],
+                                'link' => $this->setting['home2_links_t2'],
                             ),
 							array(
-								'picture' => 'homesec-3.jpg',
-								'titles' => 'SAP Solutions',
-								'info' => 'Transform your idea into realization with our design team. Discover value-added, customized solutions.',
-								'link' => CHtml::normalizeUrl(array('/home/sol_blue'))
+								'picture' => $this->setting['home2_pictures_t3'],
+								'titles' => $this->setting['home2_title_t3'],
+								'info' => $this->setting['home2_content_t3'],
+								'link' => $this->setting['home2_links_t3'],
 							),
                             array(
-                                'picture' => 'homesec-4.jpg',
-                                'titles' => 'SAP Career',
-                                'info' => 'Join us. Grow together. Get in touch now to explore exciting opportunities.',
-                                'link' => CHtml::normalizeUrl(array('/home/aboutcareer'))
+                                'picture' => $this->setting['home2_pictures_t4'],
+                                'titles' => $this->setting['home2_title_t4'],
+                                'info' => $this->setting['home2_content_t4'],
+                                'link' => $this->setting['home2_links_t4'],
                             ),
                             
                         );
             ?>
+
             <?php foreach ($arrs_nk as $key => $value): ?>
             <div class="col-md-15">
                 <div class="box-content">
@@ -252,13 +253,13 @@ $link_slide = array(
                 <div class="col-md-60">
                     <div class="box-content">
                         <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
+                            <h3><?php echo $this->setting['home4_titles'] ?></h3>
                         </div>
                         <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                            <p><?php echo $this->setting['home4_subtitles'] ?></p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <a data-fancybox href="https://www.youtube.com/watch?v=Aj2C4Xp-GMM"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="<?php echo $this->setting['home4_links_t5'] ?>"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="Video Title link" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>
@@ -268,39 +269,3 @@ $link_slide = array(
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-<!--<section class="home-sec-3 py-5 my-auto">-->
-<!--    <div class="prelative container">-->
-<!--        <div class="row py-5">-->
-<!--            <div class="col-md-60">-->
-<!--                <div class="py-3"></div>-->
-<!--                <div class="box-content ">-->
-<!--                    <div class="our-corporation">-->
-<!--                        <h4>OUR CORPORATION GROUP</h4>-->
-<!--                    </div>-->
-<!--                    <div class="py-3"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-md-60">-->
-<!--                <div class="box-content inners_listcompany">-->
-<!--                    <ul class="list-inline text-center justify-content-center">-->
-<!--                        <li class="list-inline-item">-->
-<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_1.png" alt="" class="img img-fluid">-->
-<!--                        </li>-->
-<!--                        <li class="list-inline-item">-->
-<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_2.png" alt="" class="img img-fluid">-->
-<!--                        </li>-->
-<!--                        <li class="list-inline-item">-->
-<!--                            <img src="--><?php //echo $this->assetBaseurl; ?><!--small_logo_companys_3.png" alt="" class="img img-fluid">-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--                <div class="py-3"></div>-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<style>
-</style>

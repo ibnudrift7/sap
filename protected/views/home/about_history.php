@@ -61,23 +61,21 @@ $solblue = [
       </div>
       </div>
       <div class="col-md-45">
-        <h4>About Us</h4>
-        <h3>Who We Are</h3>
-		  <img src="<?php echo $this->assetBaseurl; ?>_OPS6362.jpg" alt="" class="img img-fluid pb-5">
+        <h4><?php echo $this->setting['who_hero_title'] ?></h4>
+        <h3><?php echo $this->setting['who_hero_subtitle'] ?></h3>
+		    <img src="<?php echo Yii::app()->baseUrl .'/images/static/'. $this->setting['who_hero_cover']; ?>" alt="" class="img img-fluid pb-5">
+
 		  <div class="row">
           <div class="col-md-30">
-            <p>At Suryasukses, we take pride in our heritage and the company we’ve become today. Throughout our history, it has been the dedication of our team members that has allowed us to grow into a leading plastic manufacturing company.</p>
-            <p>Our history is rich in product innovation, customer focus, and strategic growth. With roots as a small, hometown company based in Surabaya, Indonesia, Suryasukses Group has come a long way since it was established in 1985 under the name Multindo Plastics. Starting with few injection machines, and now we have over 10,000 international and local customers</p>
-            <p>From houseware manufacturer we diversify our business to rigid plastic packaging, starting from thermoforming cups to printing, then preform, bottles, and closures, serving home industries to well established food and beverage companies. We further expand our market with nonwoven products to cater hygiene, agriculture, and industrial markets. Lastly, with deep knowledge of breakthrough materials and backed with professionals with decades of experience, Amari Upvc Roofing will surely satisfies the market with strong, consistent, unique and competitive products.</p>
-            <p>We take great pride in the company we have developed and the products and services we offer. Our ability to support our customers at every stage of the product development process—including expertise in consumer insights, ideation and design, manufacturing and research and development—is what has allowed us to become a leader in the industry.</p>
+            <?php echo $this->setting['who1_content']; ?>
           </div>
           <div class="col-md-30">
             <div class="row no-gutters">
-            <?php foreach($solblue as $key => $value): ?>
-              <div class="col-md-30 col-30">
-                <img class="img img-fluid w-100" src="<?php echo $this->assetBaseurl; ?><?php echo $value['images'] ?>" alt="">  
+            <?php // foreach($solblue as $key => $value): ?>
+              <div class="col-md-60">
+                <img class="img img-fluid w-100" src="<?php echo Yii::app()->baseUrl .'/images/static/'. $this->setting['who_right_picture']; ?>" alt="">
               </div>
-              <?php endforeach  ?>
+              <?php // endforeach  ?>
             </div>
           </div>
         </div>
@@ -95,13 +93,13 @@ $solblue = [
                 <div class="col-md-60">
                     <div class="box-content">
                         <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
+                            <h3><?php echo $this->setting['home4_titles'] ?></h3>
                         </div>
                         <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                            <p><?php echo $this->setting['home4_subtitles'] ?></p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="<?php echo $this->setting['home4_links_t5'] ?>"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="Video Title link" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +118,7 @@ $solblue = [
 </script>
 
 <style type="text/css">
-section.sol_blue-sec-1 p{
-  margin-bottom: 14px;
-}  
+  section.sol_blue-sec-1 p{
+    margin-bottom: 14px;
+  }  
 </style>

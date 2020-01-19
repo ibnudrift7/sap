@@ -56,23 +56,16 @@ $solblue = [
       </div>
       </div>
       <div class="col-md-45">
-        <h4>Your partner in design</h4>
-        <h3>Suryasukses Studio</h3>
+        <h4><?php echo $this->setting['studio_hero_title'] ?></h4>
+        <h3><?php echo $this->setting['studio_hero_subtitle'] ?></h3>
         <div class="row">
           <div class="col-md-60">
             <div class="pb-4">
-              <img src="<?php echo $this->assetBaseurl.'sbl-sap.jpg' ?>" alt="" class="img img-fluid">
+              <img src="<?php echo Yii::app()->baseUrl.'/images/static/'. $this->setting['studio_hero_cover'] ?>" alt="" class="img img-fluid">
             </div>
 
             <div class="contents_text">
-              <p>Whether you’re looking for a specific cap or or designing a revolutionary bottle/cup shape, our teams will work together to develop a product your consumers are sure to enjoy, guaranteed by our many years of experience and well-established networks around the world.</p>
-              
-              <p>Our decoration options includes:</p>
-              <ul>
-                  <li>Emboss cap</li>
-                  <li>Emboss bottle</li>
-                  <li>Print logo on Houseware products</li>
-              </ul>
+              <?php echo $this->setting['studio1_content'] ?>
                 
                 <p>Contact us and discuss your project with us now. <br>
                 Email your inquiry at <a href="mailto:cs@suryasukses.com">cs@suryasukses.com</a></p>

@@ -94,36 +94,37 @@
 			    ?>
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
-				</div>						
-				<?php /*
+				</div>	
+
 				<div class="pj-multilang-wrap myLanguage control-group" style="display: <?php if ($key==$this->setting['lang_deff']): ?>block<?php else: ?>none<?php endif ?>;" data-id="<?php echo $lang->id ?>">
 				<?php
 				echo $form->labelEx($value, '['.$lang->code.']content');
-			    echo $form->textArea($value,'['.$lang->code.']content',array('class'=>'span5 redactor', 'maxlength'=>200));
+			    echo $form->textArea($value,'['.$lang->code.']content', array('class'=>'span5 redactor', 'maxlength'=>200));
 			    ?>
 			    <span class="pj-multilang-input"><img src="<?php echo Yii::app()->baseUrl.'/asset/backend/language/'.$lang->code.'.png' ?>"></span>
 			    <span class="help-inline _em_" style="display: none;">Please correct the error</span>
-				</div>*/ ?>
+				</div>
 
 			    <?php
 			}
 			?>
-			<?php
-	    	$models = PrdProduct::model()->getAllDataDesc($this->languageID);
-		    $lists_gallery = CHtml::listData($models, 
-		                'id', 'name'); 
-	    	?>
-			<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
 
-				<div class="row-fluid">
-					<div class="span6">
-			        	<?php echo $form->dropDownListRow($model, 'active', array(
-			        		'1'=>'Di Tampilkan',
-			        		'0'=>'Di Sembunyikan',
-			        	)); ?>
-						
-					</div>
+			<?php
+	    	// $models = PrdProduct::model()->getAllDataDesc($this->languageID);
+		    // $lists_gallery = CHtml::listData($models, 
+		    //             'id', 'name'); 
+	    	?>
+			<?php // echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
+
+			<div class="row-fluid">
+				<div class="span6">
+		        	<?php echo $form->dropDownListRow($model, 'active', array(
+		        		'1'=>'Di Tampilkan',
+		        		'0'=>'Di Sembunyikan',
+		        	)); ?>
+					
 				</div>
+			</div>
 			
 		</div>
 	<!-- span 12 -->
@@ -162,7 +163,7 @@
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
-		        <h4 class="widgettitle">Gambar Utama</h4>
+		        <h4 class="widgettitle">Gambar Icon Utama</h4>
 		    </div>
 		    <div class="widgetcontent">
 				<?php echo $form->fileFieldRow($model,'image',array(
@@ -172,34 +173,7 @@
 				<?php endif; ?>
 		    </div>
 		</div>
-		<?php /*
-		<div class="divider15"></div>
-		<div class="widgetbox block-rightcontent">                        
-		    <div class="headtitle">
-		        <h4 class="widgettitle">Pilih Produk</h4>
-		    </div>
-		    <div class="widgetcontent">
-				<?php
-		    	$models = PrdProduct::model()->getAllDataDesc($this->languageID);
-			    $lists_gallery = CHtml::listData($models, 
-			                'id', 'name'); 
-		    	?>
-				<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
-		    </div>
-		</div>
-		<div class="divider15"></div>
-		<div class="widgetbox block-rightcontent">                        
-		    <div class="headtitle">
-		        <h4 class="widgettitle">Gambar Pop Up</h4>
-		    </div>
-		    <div class="widgetcontent">
-				<?php echo $form->fileFieldRow($model,'image2',array(
-				'hint'=>'<b>Note:</b> Ukuran gambar adalah 640 x 640px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
-				<?php if ($model->scenario == 'update'): ?>
-				<img style="max-width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(200,200, '/images/gallery/'.$model->image2 , array('method' => 'resize', 'quality' => '90')) ?>"/>
-				<?php endif; ?>
-		    </div>
-		</div>
+
 		<div class="divider15"></div>
 		<div class="widgetbox block-rightcontent">                        
 		    <div class="headtitle">
@@ -253,6 +227,35 @@
 		    </div>
 		</div>
 		<div class="divider15"></div>
+
+		<?php /*
+		<div class="divider15"></div>
+		<div class="widgetbox block-rightcontent">                        
+		    <div class="headtitle">
+		        <h4 class="widgettitle">Pilih Produk</h4>
+		    </div>
+		    <div class="widgetcontent">
+				<?php
+		    	$models = PrdProduct::model()->getAllDataDesc($this->languageID);
+			    $lists_gallery = CHtml::listData($models, 
+			                'id', 'name'); 
+		    	?>
+				<?php echo $form->dropDownListRow($model,'product_id', $lists_gallery, array('class'=>'input-block-level', 'empty'=>'-- Pilih Produk --')); ?>
+		    </div>
+		</div>
+		<div class="divider15"></div>
+		<div class="widgetbox block-rightcontent">                        
+		    <div class="headtitle">
+		        <h4 class="widgettitle">Gambar Pop Up</h4>
+		    </div>
+		    <div class="widgetcontent">
+				<?php echo $form->fileFieldRow($model,'image2',array(
+				'hint'=>'<b>Note:</b> Ukuran gambar adalah 640 x 640px. Gambar yang lebih besar akan ter-crop otomatis', 'style'=>"width: 100%")); ?>
+				<?php if ($model->scenario == 'update'): ?>
+				<img style="max-width: 100%;" src="<?php echo Yii::app()->baseUrl.ImageHelper::thumb(200,200, '/images/gallery/'.$model->image2 , array('method' => 'resize', 'quality' => '90')) ?>"/>
+				<?php endif; ?>
+		    </div>
+		</div>
 		*/ ?>
 
 	</div>

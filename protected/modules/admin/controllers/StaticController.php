@@ -172,39 +172,77 @@ class StaticController extends ControllerAdmin
 		));
 	}
 
-	public function actionAbout()
+	public function actionWhowe()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('whoweare', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionOurvalue()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('ourvalue', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionQualitys()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('qualitys', array(
+			'model'=>$model,
+		));
+	}
+
+	public function actionCareer()
 	{
 		$model = Setting::model()->getModelSetting('data');
 
 		$model = $this->loadData($model);
 
-		$this->render('about',array(
+		$this->render('career',array(
 			'model'=>$model,
 		));
 	}
 
-	public function actionMerek()
+
+	public function actionPolicies()
+	{
+		$model = Setting::model()->getModelSetting('data');
+		$model = $this->loadData($model);
+
+		$this->render('policies',array(
+			'model'=>$model,
+		));
+	}
+	public function actionCerfiso()
 	{
 		$model = Setting::model()->getModelSetting('data');
 
 		$model = $this->loadData($model);
 
-		$this->render('merek',array(
+		$this->render('cerf1',array(
 			'model'=>$model,
 		));
 	}
-
-	public function actionAgen()
+	public function actionCerfssc()
 	{
 		$model = Setting::model()->getModelSetting('data');
 
 		$model = $this->loadData($model);
 
-		$this->render('agen',array(
+		$this->render('cerf2',array(
 			'model'=>$model,
 		));
-	}
-	
+	}	
 
 	public function actionContact()
 	{

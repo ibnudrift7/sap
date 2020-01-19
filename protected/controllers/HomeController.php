@@ -889,14 +889,29 @@ class HomeController extends Controller
 		$this->layout='//layouts/column2';
 		$this->pageTitle = 'Products - '. $this->pageTitle;
 
-		$data = DataProducts::nex_resource();
-		$s_id = intval($_GET['id']);
+		// $data = DataProducts::nex_resource();
+		// $s_id = intval($_GET['id']);
+		// $n_model = $data[$s_id];
+		$criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('t.type = :type');
+        $criteria->params[':type'] = 'category';
+        $criteria->addCondition('t.id = :ids');
+        $criteria->params[':ids'] = intval($_GET['id']);
+        $criteria->order = 'sort ASC';
+        $category = PrdCategory::model()->find($criteria);
 
-		$n_model = $data[$s_id];
+        // Get products by category
+        $criteria2 = new CDbCriteria;
+        $criteria2->with = array('description', 'categories');
+        $criteria2->addCondition('categories.category_id = :category_id');
+        $criteria2->params[':category_id'] = $category->id;
+        $criteria2->order = 't.urutan ASC';
+        $mproducts = PrdProduct::model()->findAll($criteria2);
 
 		$this->render('product_landing', array(
-			'product_resource'=>$data,
-			'n_model'=>$n_model,
+			'category'=>$category,
+			'n_model'=>$mproducts,
 		));
 	}
 
@@ -908,17 +923,38 @@ class HomeController extends Controller
 		$this->layout='//layouts/column2';
 		$this->pageTitle = 'Products - '. $this->pageTitle;
 
-		$data = DataProducts::nex_resource();
-		$s_parent = intval($_GET['parent']);
-		$s_ids = intval($_GET['id']);
+		// $data = DataProducts::nex_resource();
+		// $s_parent = intval($_GET['parent']);
+		// $s_ids = intval($_GET['id']);
 
-		$n_parent = $data[$s_parent];
-		$n_child = $data[$s_parent]['lists'][$s_ids];
+		// $n_parent = $data[$s_parent];
+		// $n_child = $data[$s_parent]['lists'][$s_ids];
+
+		$criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('t.type = :type');
+        $criteria->params[':type'] = 'category';
+        $criteria->addCondition('t.id = :ids');
+        $criteria->params[':ids'] = intval($_GET['parent']);
+        $criteria->order = 'sort ASC';
+        $category = PrdCategory::model()->find($criteria);
+
+        // Get products by category
+        $criteria2 = new CDbCriteria;
+        $criteria2->with = array('description', 'categories', 'alternateImage');
+        $criteria2->addCondition('categories.category_id = :category_id');
+        $criteria2->params[':category_id'] = $category->id;
+
+        $criteria2->addCondition('t.id = :idss');
+        $criteria2->params[':idss'] = intval($_GET['id']);
+
+        $criteria2->order = 't.urutan ASC';
+        $mproducts = PrdProduct::model()->find($criteria2);
 
 		$this->render('product_range_detail', array(
 			'product_resource'=>$data,
-			'n_parent'=>$n_parent,
-			'n_child'=>$n_child,
+			'n_parent'=>$category,
+			'n_child'=>$mproducts,
 		));
 	}
 
@@ -930,14 +966,33 @@ class HomeController extends Controller
 		$this->layout='//layouts/column2';
 		$this->pageTitle = 'Products - '. $this->pageTitle;
 
-		$data = DataMarket::nex_resource();
-		$s_id = intval($_GET['id']);
+		// $data = DataMarket::nex_resource();
+		// $s_id = intval($_GET['id']);
+		// $n_model = $data[$s_id];
 
-		$n_model = $data[$s_id];
+		$criteria = new CDbCriteria;
+        $criteria->with = array('description');
+        $criteria->addCondition('t.type = :type');
+        $criteria->params[':type'] = 'filtercat';
+        $criteria->order = 'sort ASC';
+        $categorys = PrdCategory::model()->findAll($criteria);
+
+        $criteria->addCondition('t.id = :ids');
+        $criteria->params[':ids'] = intval($_GET['id']);
+        $category_one = PrdCategory::model()->find($criteria);
+
+        // Get products by category
+        $criteria2 = new CDbCriteria;
+        $criteria2->with = array('description');
+        $criteria2->addCondition('t.category_id = :categ');
+        $criteria2->params[':categ'] = $category_one->id;
+
+        $n_market = Brand::model()->findAll($criteria2);
 
 		$this->render('market_landing', array(
-			'market_resource'=>$data,
-			'n_model'=>$n_model,
+			'categorys'=>$cats,
+			'category_one'=>$category_one,
+			'n_model'=>$n_market,
 		));
 	}
 
@@ -1437,7 +1492,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Cerf_iso'.$this->pageTitle;
+		$this->pageTitle = 'Certificate ISO ' . $this->pageTitle;
 		$this->render('cerf_iso', array(
 			'model'=>$model,
 		));
@@ -1496,7 +1551,7 @@ Staff dari perabotplastik.com akan menghubungi anda untuk konfirmasi dan penjela
 	{
 		$this->layout='//layouts/column2';
 
-		$this->pageTitle = 'Our Values '.$this->pageTitle;
+		$this->pageTitle = 'Our Values ' . $this->pageTitle;
 		$this->render('about_value', array(
 			'model'=>$model,
 		));

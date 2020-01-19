@@ -47,11 +47,11 @@
       </div>
       <div class="col-md-45">
             <div class="content-top cont_career">
-                <h3>Come Grow with Us</h3>
-                <img src="<?php echo $this->assetBaseurl; ?>_OPS6411.jpg" alt="" class="img img-fluid pb-5">
+                <h3><?php echo $this->setting['career_hero_title'] ?></h3>
+                <img src="<?php echo Yii::app()->baseUrl .'/images/static/'. $this->setting['career_hero_cover']; ?>" alt="" class="img img-fluid pb-4 mb-2">
 
-                <p>We attribute our success on hiring and maintaining a positive and productive workforce.</p>
-                <p>SuryaSukses Group has established a reputation in the industry for being trustworthy and reliable, Our corporate culture is dynamic, creative, and innovative. Learn more about our career and opportunities.</p>
+                <?php echo $this->setting['career1_content'] ?>
+
                 <a class="btn btn-primary pl-3 pr-3" target="_blank" href="https://www.jobstreet.co.id/en/companies/749600-surya-sukses">Join Our Team</a>
 
                 <div class="clear clearfix"></div>
@@ -71,13 +71,13 @@
                 <div class="col-md-60">
                     <div class="box-content">
                         <div class="title">
-                            <h3>SAP Corporate Profile Video</h3>
+                            <h3><?php echo $this->setting['home4_titles'] ?></h3>
                         </div>
                         <div class="subtitle">
-                            <p>Sharing our passion, realizing your ideas and visions.</p>
+                            <p><?php echo $this->setting['home4_subtitles'] ?></p>
                         </div>
                         <div class="blocks_btn text-center pt-1">
-                            <?php echo $str_alink ?><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="" class="img img-fluid"></a>
+                            <a data-fancybox href="<?php echo $this->setting['home4_links_t5'] ?>"><img src="<?php echo $this->assetBaseurl; ?>btn-playsvideo.png" alt="Video Title link" class="img img-fluid"></a>
                         </div>
                     </div>
                 </div>

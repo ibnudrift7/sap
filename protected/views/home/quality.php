@@ -28,32 +28,29 @@
       <div class="box-konten-kiri">
         <h5>Policies</h5>
             <ul class="list-unstyled lefts_submenu_product">
-            	<li class="dropdown"><a href="https://richmore.co/sap/home/cerf_iso">ISO 9001 Certification</a>
+            	<li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_iso')); ?>">ISO 9001 Certification</a>
             	</li>
-            	<li class="dropdown"><a href="https://richmore.co/sap/home/cerf_fssc">FSSC 22000 Certification</a>
+            	<li class="dropdown"><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">FSSC 22000 Certification</a>
             	</li>
-            	<li class="dropdown active"><a href="https://richmore.co/sap/home/quality">Quality Policy</a>
+            	<li class="dropdown active"><a href="<?php echo CHtml::normalizeUrl(array('/home/quality')); ?>">Quality Policy</a>
             	</li>
             </ul>
       </div>
       </div>
       <div class="col-md-45">
-		  <h3>Quality is our strength</h3>
+		  <h3><?php echo $this->setting['policies_title']; ?></h3>
 			<div class="content">
-				<p>To be a leader in providing, safe, high-quality, products and services; that always protect what’s important to our customers, employees, shareholders, neighbors, and suppliers. This is accomplished through responsible sourcing and utilization of resources focusing on innovation and sustainability.</p>
+				<?php echo $this->setting['policies_content']; ?>
 				<div class="content-inner-quality">
-					<h4>Our quality policies that we embrace as our culture:</h4>
-					<ul>
-						<li>Provide safe, high-quality products, and services that meet customers’ expectations.</li>
-						<li>Comply with applicable regulatory and customer requirements.</li>
-						<li>Maintain system effectiveness through utilization of technology, teamwork, and skilled employees that are United, Focused, Agile, and Accountable.</li>
-					</ul>
+					<?php echo $this->setting['policies_content2']; ?>
+
+          <div class="clearfix clear"></div>
 				</div>
 				<div class="content-inner-quality">
 					<h4>Our quality certifications: (Click to read more)</h4>
 					<ul>
-						<li><a href="https://richmore.co/sap/home/cerf_iso">ISO 90001 Certification</a></li>
-						<li><a href="https://richmore.co/sap/home/cerf_fssc">FSSC 22000 Certification</a></li>
+						<li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_iso')); ?>">ISO 90001 Certification</a></li>
+						<li><a href="<?php echo CHtml::normalizeUrl(array('/home/cerf_fssc')); ?>">FSSC 22000 Certification</a></li>
 					</ul>
 				</div>
 			</div>
